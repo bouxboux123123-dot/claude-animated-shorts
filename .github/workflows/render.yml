@@ -65,8 +65,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Install FFmpeg
-        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Verify FFmpeg
+        run: ffmpeg -version
 
       - name: Download All Chunks
         uses: actions/download-artifact@v4
@@ -77,7 +77,8 @@ jobs:
       - name: Concatenate Slices & Mux Master Audio
         run: |
           mkdir -p final
-          echo "" > concat_list.txt
+          ls -lh chunks/
+          > concat_list.txt
           for i in {0..19}; do
             echo "file 'chunks/chunk_$i.mp4'" >> concat_list.txt
           done
