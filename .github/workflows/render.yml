@@ -1,0 +1,100 @@
+name: Distributed 20-Runner Remotion Render
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      composition:
+        description: "Remotion Composition ID"
+        required: true
+        default: "MoneyShort"
+      total_frames:
+        description: "Total frames to render"
+        required: true
+        default: "1788"
+
+jobs:
+  render-chunk:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Calculate Frame Range & Render Slice
+        run: |
+          TOTAL=${{ github.event.inputs.total_frames || 1788 }}
+          CHUNKS=20
+          IDX=${{ matrix.chunk }}
+          CHUNK_SIZE=$(( (TOTAL + CHUNKS - 1) / CHUNKS ))
+          START=$(( IDX * CHUNK_SIZE ))
+          END=$(( (IDX + 1) * CHUNK_SIZE - 1 ))
+          if [ $END -ge $TOTAL ]; then
+            END=$(( TOTAL - 1 ))
+          fi
+          echo "Rendering chunk $IDX: frames $START to $END..."
+          mkdir -p out
+          npx remotion render src/index.ts MoneyShort "out/chunk_${IDX}.mp4" --frames="${START}-${END}" --gl=swangle --concurrency=1 --scale=1.0
+
+      - name: Upload Chunk Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: chunk-${{ matrix.chunk }}
+          path: out/chunk_${{ matrix.chunk }}.mp4
+          retention-days: 1
+
+  merge-video:
+    needs: render-chunk
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Download All Chunks
+        uses: actions/download-artifact@v4
+        with:
+          path: chunks
+          merge-multiple: true
+
+      - name: Concatenate Slices & Mux Master Audio
+        run: |
+          mkdir -p final
+          echo "" > concat_list.txt
+          for i in {0..19}; do
+            echo "file 'chunks/chunk_$i.mp4'" >> concat_list.txt
+          done
+          cat concat_list.txt
+          
+          # Lossless concat
+          ffmpeg -f concat -safe 0 -i concat_list.txt -c copy final/stitched_video.mp4
+          
+          # Mux with master soundtrack
+          if [ -f "public/voice.wav" ]; then
+            ffmpeg -y -i final/stitched_video.mp4 -i public/voice.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 192k final/final_reel_20x.mp4
+          else
+            mv final/stitched_video.mp4 final/final_reel_20x.mp4
+          fi
+
+      - name: Upload Final Video
+        uses: actions/upload-artifact@v4
+        with:
+          name: final-animated-reel
+          path: final/final_reel_20x.mp4
+          retention-days: 7

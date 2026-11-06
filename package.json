@@ -1,0 +1,28 @@
+{
+  "name": "money-3d-short",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "render": "remotion render src/index.ts MoneyShort out/video.mp4",
+    "still": "node templates/scripts/bridge-stills.mjs out/stills/x_ 100,500 0.5",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.530",
+    "@remotion/cli": "4.0.530",
+    "@remotion/renderer": "4.0.530",
+    "@remotion/three": "4.0.530",
+    "@react-three/fiber": "^8.16.8",
+    "@react-three/postprocessing": "^2.16.2",
+    "postprocessing": "^6.35.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.530",
+    "three": "^0.164.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/three": "^0.164.0",
+    "typescript": "^5.4.5"
+  }
+}

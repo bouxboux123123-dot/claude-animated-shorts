@@ -1,0 +1,1082 @@
+[
+  {
+    "word": "Why",
+    "start": 0.0,
+    "end": 0.25,
+    "frame": 0
+  },
+  {
+    "word": "can't",
+    "start": 0.25,
+    "end": 0.5,
+    "frame": 8
+  },
+  {
+    "word": "you",
+    "start": 0.5,
+    "end": 0.536,
+    "frame": 15
+  },
+  {
+    "word": "just",
+    "start": 0.536,
+    "end": 0.696,
+    "frame": 16
+  },
+  {
+    "word": "print",
+    "start": 0.696,
+    "end": 0.857,
+    "frame": 21
+  },
+  {
+    "word": "trillions",
+    "start": 0.857,
+    "end": 1.161,
+    "frame": 26
+  },
+  {
+    "word": "of",
+    "start": 1.161,
+    "end": 1.321,
+    "frame": 35
+  },
+  {
+    "word": "dollars",
+    "start": 1.321,
+    "end": 1.536,
+    "frame": 40
+  },
+  {
+    "word": "on",
+    "start": 1.536,
+    "end": 1.696,
+    "frame": 46
+  },
+  {
+    "word": "your",
+    "start": 1.696,
+    "end": 1.804,
+    "frame": 51
+  },
+  {
+    "word": "office",
+    "start": 1.804,
+    "end": 1.982,
+    "frame": 54
+  },
+  {
+    "word": "printer?",
+    "start": 1.982,
+    "end": 2.25,
+    "frame": 59
+  },
+  {
+    "word": "Because",
+    "start": 3.018,
+    "end": 3.393,
+    "frame": 91
+  },
+  {
+    "word": "real",
+    "start": 3.393,
+    "end": 3.661,
+    "frame": 102
+  },
+  {
+    "word": "cash",
+    "start": 3.661,
+    "end": 3.911,
+    "frame": 110
+  },
+  {
+    "word": "is",
+    "start": 3.911,
+    "end": 4.107,
+    "frame": 117
+  },
+  {
+    "word": "forged",
+    "start": 4.107,
+    "end": 4.339,
+    "frame": 123
+  },
+  {
+    "word": "under",
+    "start": 4.339,
+    "end": 4.571,
+    "frame": 130
+  },
+  {
+    "word": "20",
+    "start": 4.571,
+    "end": 4.804,
+    "frame": 137
+  },
+  {
+    "word": "tons",
+    "start": 4.804,
+    "end": 5.0,
+    "frame": 144
+  },
+  {
+    "word": "of",
+    "start": 5.0,
+    "end": 5.125,
+    "frame": 150
+  },
+  {
+    "word": "mechanical",
+    "start": 5.125,
+    "end": 5.393,
+    "frame": 154
+  },
+  {
+    "word": "pressure,",
+    "start": 5.393,
+    "end": 5.768,
+    "frame": 162
+  },
+  {
+    "word": "using",
+    "start": 6.071,
+    "end": 6.232,
+    "frame": 182
+  },
+  {
+    "word": "steel",
+    "start": 6.232,
+    "end": 6.518,
+    "frame": 187
+  },
+  {
+    "word": "plates",
+    "start": 6.518,
+    "end": 6.714,
+    "frame": 196
+  },
+  {
+    "word": "that",
+    "start": 6.714,
+    "end": 6.929,
+    "frame": 201
+  },
+  {
+    "word": "physically",
+    "start": 6.929,
+    "end": 7.25,
+    "frame": 208
+  },
+  {
+    "word": "engrave",
+    "start": 7.25,
+    "end": 7.643,
+    "frame": 218
+  },
+  {
+    "word": "sharp",
+    "start": 7.643,
+    "end": 7.804,
+    "frame": 229
+  },
+  {
+    "word": "3D",
+    "start": 7.804,
+    "end": 8.196,
+    "frame": 234
+  },
+  {
+    "word": "ridges.",
+    "start": 8.196,
+    "end": 8.518,
+    "frame": 246
+  },
+  {
+    "word": "The",
+    "start": 9.482,
+    "end": 9.536,
+    "frame": 284
+  },
+  {
+    "word": "problem.",
+    "start": 9.536,
+    "end": 9.839,
+    "frame": 286
+  },
+  {
+    "word": "Ordinary",
+    "start": 10.446,
+    "end": 10.911,
+    "frame": 313
+  },
+  {
+    "word": "wood",
+    "start": 10.911,
+    "end": 11.089,
+    "frame": 327
+  },
+  {
+    "word": "paper",
+    "start": 11.089,
+    "end": 11.321,
+    "frame": 333
+  },
+  {
+    "word": "under",
+    "start": 11.321,
+    "end": 11.536,
+    "frame": 340
+  },
+  {
+    "word": "20",
+    "start": 11.536,
+    "end": 11.821,
+    "frame": 346
+  },
+  {
+    "word": "tons",
+    "start": 11.821,
+    "end": 12.036,
+    "frame": 355
+  },
+  {
+    "word": "of",
+    "start": 12.036,
+    "end": 12.179,
+    "frame": 361
+  },
+  {
+    "word": "force",
+    "start": 12.179,
+    "end": 12.321,
+    "frame": 365
+  },
+  {
+    "word": "disintegrates",
+    "start": 12.321,
+    "end": 12.911,
+    "frame": 370
+  },
+  {
+    "word": "into",
+    "start": 12.911,
+    "end": 13.089,
+    "frame": 387
+  },
+  {
+    "word": "wet",
+    "start": 13.089,
+    "end": 13.25,
+    "frame": 393
+  },
+  {
+    "word": "oatmeal.",
+    "start": 13.25,
+    "end": 13.518,
+    "frame": 398
+  },
+  {
+    "word": "The",
+    "start": 14.464,
+    "end": 14.625,
+    "frame": 434
+  },
+  {
+    "word": "solution,",
+    "start": 14.625,
+    "end": 14.929,
+    "frame": 439
+  },
+  {
+    "word": "cash",
+    "start": 15.214,
+    "end": 15.429,
+    "frame": 456
+  },
+  {
+    "word": "isn't",
+    "start": 15.429,
+    "end": 15.661,
+    "frame": 463
+  },
+  {
+    "word": "paper.",
+    "start": 15.661,
+    "end": 15.857,
+    "frame": 470
+  },
+  {
+    "word": "It's",
+    "start": 16.446,
+    "end": 16.786,
+    "frame": 493
+  },
+  {
+    "word": "a",
+    "start": 16.786,
+    "end": 16.839,
+    "frame": 504
+  },
+  {
+    "word": "secret",
+    "start": 16.839,
+    "end": 17.089,
+    "frame": 505
+  },
+  {
+    "word": "cotton",
+    "start": 17.089,
+    "end": 17.339,
+    "frame": 513
+  },
+  {
+    "word": "linen",
+    "start": 17.339,
+    "end": 17.518,
+    "frame": 520
+  },
+  {
+    "word": "cloth",
+    "start": 17.518,
+    "end": 17.75,
+    "frame": 526
+  },
+  {
+    "word": "that",
+    "start": 17.75,
+    "end": 18.0,
+    "frame": 532
+  },
+  {
+    "word": "survives",
+    "start": 18.0,
+    "end": 18.286,
+    "frame": 540
+  },
+  {
+    "word": "4",
+    "start": 18.286,
+    "end": 18.643,
+    "frame": 549
+  },
+  {
+    "word": ",000",
+    "start": 18.643,
+    "end": 18.946,
+    "frame": 559
+  },
+  {
+    "word": "double",
+    "start": 18.946,
+    "end": 19.143,
+    "frame": 568
+  },
+  {
+    "word": "folds.",
+    "start": 19.143,
+    "end": 19.357,
+    "frame": 574
+  },
+  {
+    "word": "The",
+    "start": 20.339,
+    "end": 20.5,
+    "frame": 610
+  },
+  {
+    "word": "problem.",
+    "start": 20.5,
+    "end": 20.804,
+    "frame": 615
+  },
+  {
+    "word": "Counterfeiters",
+    "start": 21.571,
+    "end": 22.036,
+    "frame": 647
+  },
+  {
+    "word": "can",
+    "start": 22.036,
+    "end": 22.143,
+    "frame": 661
+  },
+  {
+    "word": "buy",
+    "start": 22.143,
+    "end": 22.268,
+    "frame": 664
+  },
+  {
+    "word": "cotton",
+    "start": 22.268,
+    "end": 22.536,
+    "frame": 668
+  },
+  {
+    "word": "and",
+    "start": 22.536,
+    "end": 22.696,
+    "frame": 676
+  },
+  {
+    "word": "copy",
+    "start": 22.696,
+    "end": 22.875,
+    "frame": 681
+  },
+  {
+    "word": "the",
+    "start": 22.875,
+    "end": 23.054,
+    "frame": 686
+  },
+  {
+    "word": "green",
+    "start": 23.054,
+    "end": 23.196,
+    "frame": 692
+  },
+  {
+    "word": "ink.",
+    "start": 23.196,
+    "end": 23.357,
+    "frame": 696
+  },
+  {
+    "word": "The",
+    "start": 24.25,
+    "end": 24.446,
+    "frame": 728
+  },
+  {
+    "word": "solution",
+    "start": 24.446,
+    "end": 24.732,
+    "frame": 733
+  },
+  {
+    "word": "is",
+    "start": 24.732,
+    "end": 24.946,
+    "frame": 742
+  },
+  {
+    "word": "quantum",
+    "start": 24.946,
+    "end": 25.179,
+    "frame": 748
+  },
+  {
+    "word": "optics.",
+    "start": 25.179,
+    "end": 25.5,
+    "frame": 755
+  },
+  {
+    "word": "The",
+    "start": 26.205,
+    "end": 26.464,
+    "frame": 786
+  },
+  {
+    "word": "numerals",
+    "start": 26.464,
+    "end": 26.804,
+    "frame": 794
+  },
+  {
+    "word": "use",
+    "start": 26.804,
+    "end": 26.982,
+    "frame": 804
+  },
+  {
+    "word": "magnetic",
+    "start": 26.982,
+    "end": 27.321,
+    "frame": 809
+  },
+  {
+    "word": "ink",
+    "start": 27.321,
+    "end": 27.554,
+    "frame": 820
+  },
+  {
+    "word": "that",
+    "start": 27.554,
+    "end": 27.714,
+    "frame": 827
+  },
+  {
+    "word": "flips",
+    "start": 27.714,
+    "end": 27.857,
+    "frame": 831
+  },
+  {
+    "word": "from",
+    "start": 27.857,
+    "end": 28.107,
+    "frame": 836
+  },
+  {
+    "word": "copper",
+    "start": 28.107,
+    "end": 28.286,
+    "frame": 843
+  },
+  {
+    "word": "to",
+    "start": 28.286,
+    "end": 28.518,
+    "frame": 849
+  },
+  {
+    "word": "emerald",
+    "start": 28.518,
+    "end": 28.732,
+    "frame": 856
+  },
+  {
+    "word": "when",
+    "start": 28.732,
+    "end": 28.893,
+    "frame": 862
+  },
+  {
+    "word": "tilted",
+    "start": 28.893,
+    "end": 29.071,
+    "frame": 867
+  },
+  {
+    "word": "3",
+    "start": 29.071,
+    "end": 29.375,
+    "frame": 872
+  },
+  {
+    "word": "degrees.",
+    "start": 29.375,
+    "end": 29.571,
+    "frame": 881
+  },
+  {
+    "word": "The",
+    "start": 30.643,
+    "end": 30.75,
+    "frame": 919
+  },
+  {
+    "word": "problem.",
+    "start": 30.75,
+    "end": 31.036,
+    "frame": 922
+  },
+  {
+    "word": "High",
+    "start": 31.839,
+    "end": 31.964,
+    "frame": 955
+  },
+  {
+    "word": "-res",
+    "start": 31.964,
+    "end": 32.107,
+    "frame": 959
+  },
+  {
+    "word": "digital",
+    "start": 32.107,
+    "end": 32.464,
+    "frame": 963
+  },
+  {
+    "word": "scanners",
+    "start": 32.464,
+    "end": 32.768,
+    "frame": 974
+  },
+  {
+    "word": "don't",
+    "start": 32.768,
+    "end": 33.071,
+    "frame": 983
+  },
+  {
+    "word": "tilt.",
+    "start": 33.071,
+    "end": 33.25,
+    "frame": 992
+  },
+  {
+    "word": "They",
+    "start": 33.893,
+    "end": 34.125,
+    "frame": 1017
+  },
+  {
+    "word": "copy",
+    "start": 34.125,
+    "end": 34.393,
+    "frame": 1024
+  },
+  {
+    "word": "every",
+    "start": 34.393,
+    "end": 34.661,
+    "frame": 1032
+  },
+  {
+    "word": "pixel",
+    "start": 34.661,
+    "end": 34.929,
+    "frame": 1040
+  },
+  {
+    "word": "flat.",
+    "start": 34.929,
+    "end": 35.196,
+    "frame": 1048
+  },
+  {
+    "word": "The",
+    "start": 36.161,
+    "end": 36.286,
+    "frame": 1085
+  },
+  {
+    "word": "solution,",
+    "start": 36.286,
+    "end": 36.589,
+    "frame": 1089
+  },
+  {
+    "word": "the",
+    "start": 36.875,
+    "end": 37.0,
+    "frame": 1106
+  },
+  {
+    "word": "EURI",
+    "start": 37.0,
+    "end": 37.321,
+    "frame": 1110
+  },
+  {
+    "word": "in",
+    "start": 37.321,
+    "end": 37.429,
+    "frame": 1120
+  },
+  {
+    "word": "constellation.",
+    "start": 37.429,
+    "end": 37.893,
+    "frame": 1123
+  },
+  {
+    "word": "A",
+    "start": 38.643,
+    "end": 38.839,
+    "frame": 1159
+  },
+  {
+    "word": "five",
+    "start": 38.839,
+    "end": 39.054,
+    "frame": 1165
+  },
+  {
+    "word": "ring",
+    "start": 39.054,
+    "end": 39.232,
+    "frame": 1172
+  },
+  {
+    "word": "pattern",
+    "start": 39.232,
+    "end": 39.5,
+    "frame": 1177
+  },
+  {
+    "word": "hidden",
+    "start": 39.5,
+    "end": 39.732,
+    "frame": 1185
+  },
+  {
+    "word": "on",
+    "start": 39.732,
+    "end": 39.875,
+    "frame": 1192
+  },
+  {
+    "word": "the",
+    "start": 39.875,
+    "end": 39.982,
+    "frame": 1196
+  },
+  {
+    "word": "bill",
+    "start": 39.982,
+    "end": 40.107,
+    "frame": 1199
+  },
+  {
+    "word": "that",
+    "start": 40.107,
+    "end": 40.304,
+    "frame": 1203
+  },
+  {
+    "word": "forces",
+    "start": 40.304,
+    "end": 40.571,
+    "frame": 1209
+  },
+  {
+    "word": "scanner",
+    "start": 40.571,
+    "end": 40.893,
+    "frame": 1217
+  },
+  {
+    "word": "hardware",
+    "start": 40.893,
+    "end": 41.196,
+    "frame": 1227
+  },
+  {
+    "word": "to",
+    "start": 41.196,
+    "end": 41.411,
+    "frame": 1236
+  },
+  {
+    "word": "instantly",
+    "start": 41.411,
+    "end": 41.75,
+    "frame": 1242
+  },
+  {
+    "word": "freeze.",
+    "start": 41.75,
+    "end": 41.946,
+    "frame": 1252
+  },
+  {
+    "word": "The",
+    "start": 42.964,
+    "end": 43.107,
+    "frame": 1289
+  },
+  {
+    "word": "problem.",
+    "start": 43.107,
+    "end": 43.393,
+    "frame": 1293
+  },
+  {
+    "word": "What",
+    "start": 44.018,
+    "end": 44.286,
+    "frame": 1321
+  },
+  {
+    "word": "stops",
+    "start": 44.286,
+    "end": 44.554,
+    "frame": 1329
+  },
+  {
+    "word": "a",
+    "start": 44.554,
+    "end": 44.679,
+    "frame": 1337
+  },
+  {
+    "word": "world",
+    "start": 44.679,
+    "end": 44.804,
+    "frame": 1340
+  },
+  {
+    "word": "government",
+    "start": 44.804,
+    "end": 45.125,
+    "frame": 1344
+  },
+  {
+    "word": "printer",
+    "start": 45.125,
+    "end": 45.375,
+    "frame": 1354
+  },
+  {
+    "word": "from",
+    "start": 45.375,
+    "end": 45.554,
+    "frame": 1361
+  },
+  {
+    "word": "running",
+    "start": 45.554,
+    "end": 45.732,
+    "frame": 1367
+  },
+  {
+    "word": "extra",
+    "start": 45.732,
+    "end": 46.036,
+    "frame": 1372
+  },
+  {
+    "word": "sheets",
+    "start": 46.036,
+    "end": 46.196,
+    "frame": 1381
+  },
+  {
+    "word": "at",
+    "start": 46.196,
+    "end": 46.375,
+    "frame": 1386
+  },
+  {
+    "word": "midnight?",
+    "start": 46.375,
+    "end": 46.625,
+    "frame": 1391
+  },
+  {
+    "word": "The",
+    "start": 47.446,
+    "end": 47.696,
+    "frame": 1423
+  },
+  {
+    "word": "solution,",
+    "start": 47.696,
+    "end": 48.018,
+    "frame": 1431
+  },
+  {
+    "word": "robotic",
+    "start": 48.304,
+    "end": 48.589,
+    "frame": 1449
+  },
+  {
+    "word": "camera",
+    "start": 48.589,
+    "end": 48.875,
+    "frame": 1458
+  },
+  {
+    "word": "scanning",
+    "start": 48.875,
+    "end": 49.161,
+    "frame": 1466
+  },
+  {
+    "word": "10",
+    "start": 49.161,
+    "end": 49.5,
+    "frame": 1475
+  },
+  {
+    "word": ",000",
+    "start": 49.5,
+    "end": 49.786,
+    "frame": 1485
+  },
+  {
+    "word": "sheets",
+    "start": 49.786,
+    "end": 49.982,
+    "frame": 1494
+  },
+  {
+    "word": "an",
+    "start": 49.982,
+    "end": 50.161,
+    "frame": 1499
+  },
+  {
+    "word": "hour.",
+    "start": 50.161,
+    "end": 50.357,
+    "frame": 1505
+  },
+  {
+    "word": "If",
+    "start": 50.991,
+    "end": 51.214,
+    "frame": 1530
+  },
+  {
+    "word": "one",
+    "start": 51.214,
+    "end": 51.393,
+    "frame": 1536
+  },
+  {
+    "word": "millimeter",
+    "start": 51.393,
+    "end": 51.696,
+    "frame": 1542
+  },
+  {
+    "word": "is",
+    "start": 51.696,
+    "end": 51.893,
+    "frame": 1551
+  },
+  {
+    "word": "off,",
+    "start": 51.893,
+    "end": 52.089,
+    "frame": 1557
+  },
+  {
+    "word": "it",
+    "start": 52.321,
+    "end": 52.411,
+    "frame": 1570
+  },
+  {
+    "word": "gets",
+    "start": 52.411,
+    "end": 52.554,
+    "frame": 1572
+  },
+  {
+    "word": "laser",
+    "start": 52.554,
+    "end": 52.714,
+    "frame": 1577
+  },
+  {
+    "word": "shredded",
+    "start": 52.714,
+    "end": 53.018,
+    "frame": 1581
+  },
+  {
+    "word": "into",
+    "start": 53.018,
+    "end": 53.25,
+    "frame": 1591
+  },
+  {
+    "word": "brackets.",
+    "start": 53.25,
+    "end": 53.5,
+    "frame": 1598
+  },
+  {
+    "word": "Which",
+    "start": 54.268,
+    "end": 54.714,
+    "frame": 1628
+  },
+  {
+    "word": "means",
+    "start": 54.714,
+    "end": 54.893,
+    "frame": 1641
+  },
+  {
+    "word": "that",
+    "start": 54.893,
+    "end": 55.089,
+    "frame": 1647
+  },
+  {
+    "word": "dollar",
+    "start": 55.089,
+    "end": 55.304,
+    "frame": 1653
+  },
+  {
+    "word": "in",
+    "start": 55.304,
+    "end": 55.446,
+    "frame": 1659
+  },
+  {
+    "word": "your",
+    "start": 55.446,
+    "end": 55.518,
+    "frame": 1663
+  },
+  {
+    "word": "pocket",
+    "start": 55.518,
+    "end": 55.768,
+    "frame": 1666
+  },
+  {
+    "word": "isn't",
+    "start": 55.768,
+    "end": 56.036,
+    "frame": 1673
+  },
+  {
+    "word": "paper.",
+    "start": 56.036,
+    "end": 56.232,
+    "frame": 1681
+  },
+  {
+    "word": "It's",
+    "start": 56.857,
+    "end": 57.196,
+    "frame": 1706
+  },
+  {
+    "word": "high",
+    "start": 57.196,
+    "end": 57.321,
+    "frame": 1716
+  },
+  {
+    "word": "-tech",
+    "start": 57.321,
+    "end": 57.446,
+    "frame": 1720
+  },
+  {
+    "word": "armor",
+    "start": 57.446,
+    "end": 57.696,
+    "frame": 1723
+  },
+  {
+    "word": "disguised",
+    "start": 57.696,
+    "end": 58.196,
+    "frame": 1731
+  },
+  {
+    "word": "as",
+    "start": 58.196,
+    "end": 58.286,
+    "frame": 1746
+  },
+  {
+    "word": "pocket",
+    "start": 58.286,
+    "end": 58.482,
+    "frame": 1749
+  },
+  {
+    "word": "change.",
+    "start": 58.482,
+    "end": 58.786,
+    "frame": 1754
+  }
+]
