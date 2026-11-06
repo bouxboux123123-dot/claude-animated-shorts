@@ -5,19 +5,27 @@ import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
 import { EffectComposer } from "@react-three/postprocessing";
 import { BlendFunction, BloomEffect, ToneMappingEffect, ToneMappingMode } from "postprocessing";
+
 import { World } from "./world";
-import { InkPass, noInkFallback } from "./ink";
-import { LensBlur } from "./lensblur";
-import { GradeEffect, GRADES, GRADE_STRENGTH, gradeFor } from "./grade";
-import { TOTAL, FLASH_AT, shotAt, dofAt } from "./story";
-import { KineticCaptions } from "./KineticCaptions";
+import {
+  InkPass,
+  noInkFallback,
+  LensBlur,
+  GradeEffect,
+  GRADES,
+  GRADE_STRENGTH,
+  gradeFor,
+  KineticCaptions,
+} from "../../engine";
+import { TOTAL, FLASH_AT, shotAt } from "./story";
+import wordsData from "./words.json";
 
 export const MONEY_FRAMES = TOTAL;
 
 const makeBloom = () => {
   return new BloomEffect({
     blendFunction: BlendFunction.ADD,
-    intensity: 0.45,
+    intensity: 0.35,
     luminanceThreshold: 0.95,
     luminanceSmoothing: 0.25,
     mipmapBlur: true,
@@ -40,10 +48,10 @@ const Inner: React.FC = () => {
   const fx = useMemo(
     () => ({
       ink: new InkPass(scene, camera as THREE.PerspectiveCamera),
-      lens: new LensBlur({ maxCoC: 18, nearScale: 1.1 }),
+      lens: new LensBlur({ maxCoC: 16, nearScale: 1.1 }),
       bloom: makeBloom(),
       tone: new ToneMappingEffect({ mode: ToneMappingMode.NEUTRAL }),
-      grade: new GradeEffect(GRADES.day, GRADE_STRENGTH.day),
+      grade: new GradeEffect(GRADES.workshop, GRADE_STRENGTH.workshop),
     }),
     [camera, scene]
   );
@@ -54,15 +62,13 @@ const Inner: React.FC = () => {
   target.copy(world.update(s.id, f, cam, scene));
   noInkFallback(world.root);
 
-  // Autofocus depth of field
-  const d = dofAt(f);
+  // Autofocus depth of field on focal target
   cam.getWorldDirection(fwd);
-  if (d.focus) fpt.set(...d.focus(f));
-  else fpt.copy(target);
-  fx.lens.focus = Math.max(0.3, fpt.sub(cam.position).dot(fwd));
-  fx.lens.cInf = d.cInf;
+  fpt.copy(target);
+  fx.lens.focus = Math.max(0.5, fpt.sub(cam.position).dot(fwd));
+  fx.lens.cInf = s.dofCoC ?? 8;
 
-  // Dynamic color management: switch grade per narrative beat
+  // Grade preset per light mode
   gradeFor(fx.grade, s.light);
 
   return (
@@ -82,52 +88,38 @@ const Inner: React.FC = () => {
 
 export const MoneyShort: React.FC = () => {
   const f = useCurrentFrame();
-  const s = shotAt(f);
-
-  // 4-frame white flash after hook (frame 91 to 94)
-  const isFlash = f >= FLASH_AT && f < FLASH_AT + 4;
-  const flashAlpha = isFlash ? 1 - (f - FLASH_AT) / 4 : 0;
-
-  const bgCol =
-    s.light === "midnight"
-      ? "#080c14"
-      : s.light === "alert"
-      ? "#1a0808"
-      : "#0f172a";
+  const flash = f >= FLASH_AT && f < FLASH_AT + 3;
 
   return (
-    <AbsoluteFill style={{ backgroundColor: bgCol }}>
+    <AbsoluteFill style={{ backgroundColor: "#000000" }}>
       <ThreeCanvas
         width={1080}
         height={1920}
-        shadows
+        camera={{ fov: 38, near: 0.1, far: 200, position: [0, 1.4, 3.8] }}
         gl={{
-          antialias: false,
-          stencil: false,
-          powerPreference: "high-performance",
-          toneMappingExposure: 1.0,
+          antialias: true,
+          toneMapping: THREE.NoToneMapping,
         }}
-        camera={{ fov: 40, near: 0.2, far: 500 }}
       >
         <Inner />
       </ThreeCanvas>
 
-      {/* Kinetic Subtitles positioned at y = 0.67 H */}
-      <KineticCaptions />
+      {/* Standardized kinetic word-pop subtitles locked to y = 0.67 H */}
+      <KineticCaptions words={wordsData} yPercent={0.67} fontSize={56} strokeWidth={6} />
 
-      {/* Hook transition flash */}
-      {isFlash ? (
+      {/* Master Soundtrack */}
+      <Audio src={staticFile("mix.wav")} />
+
+      {/* Dramatic narrative flash */}
+      {flash && (
         <AbsoluteFill
           style={{
             backgroundColor: "#ffffff",
-            opacity: flashAlpha,
+            opacity: 0.9,
             pointerEvents: "none",
           }}
         />
-      ) : null}
-
-      {/* Master Audio Track (Voice + Ducked March Bed + SFX) */}
-      <Audio src={staticFile("mix.wav")} />
+      )}
     </AbsoluteFill>
   );
 };
