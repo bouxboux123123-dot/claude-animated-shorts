@@ -51,29 +51,29 @@ export const CAMERA_SHOTS: CameraShot[] = [
     fov: 38,
     roll: -1.5,
   },
-  // Shot 2: Mix table downward tilt (CU: distance 2.4m -> 2.0m)
+  // Shot 2: Mix table downward tilt (CU: distance 2.2m -> 1.85m)
   {
     id: "shot_02",
     startFrame: 102,
     endFrame: 214,
     type: "CU",
-    target: [0.0, 0.95, 0.0],
-    posStart: [0.1, 1.75, 2.4],
-    posEnd: [0.0, 1.45, 1.95],
+    target: [0.1, 1.15, 0.0],
+    posStart: [0.2, 1.6, 2.2],
+    posEnd: [0.05, 1.45, 1.85],
     fov: 38,
-    roll: 2.0,
+    roll: 1.5,
   },
-  // Shot 3: Wrong shade repaint lateral track (MS: distance 3.2m)
+  // Shot 3: Wrong shade repaint lateral track (MS: distance 2.6m -> 2.2m)
   {
     id: "shot_03",
     startFrame: 215,
     endFrame: 332,
     type: "MS",
-    target: [0.1, 1.25, 0.0],
-    posStart: [-0.7, 1.35, 3.2],
-    posEnd: [0.5, 1.3, 2.8],
+    target: [0.05, 1.25, -0.1],
+    posStart: [-0.3, 1.3, 2.6],
+    posEnd: [0.2, 1.28, 2.2],
     fov: 38,
-    roll: -1.8,
+    roll: -1.2,
   },
   // Shot 4: Guards smirk push-in (MS: distance 3.2m -> 2.7m)
   {
@@ -135,17 +135,17 @@ export const CAMERA_SHOTS: CameraShot[] = [
     fov: 38,
     roll: -1.0,
   },
-  // Shot 9: Arm wrestle slam (MS: distance 3.0m -> 2.3m with impact shake on frame 1040)
+  // Shot 9: Arm wrestle slam (MS: distance 2.7m -> 2.1m with impact shake on frame 1040)
   {
     id: "shot_09",
     startFrame: 915,
     endFrame: 1082,
     type: "MS",
-    target: [0.0, 0.95, 0.0],
-    posStart: [0.15, 1.3, 3.1],
-    posEnd: [0.0, 1.1, 2.3],
+    target: [0.0, 1.05, 0.0],
+    posStart: [0.05, 1.25, 2.7],
+    posEnd: [0.0, 1.1, 2.1],
     fov: 38,
-    roll: 2.5,
+    roll: 2.0,
   },
   // Shot 10: Wait what? reaction (CU: distance 2.4m hold)
   {
@@ -183,27 +183,27 @@ export const CAMERA_SHOTS: CameraShot[] = [
     fov: 38,
     roll: -2.0,
   },
-  // Shot 13: 15m sitting quietly (CU: distance 2.6m -> 2.2m)
+  // Shot 13: 15m sitting quietly (CU: distance 2.4m -> 1.9m)
   {
     id: "shot_13",
     startFrame: 1375,
     endFrame: 1436,
     type: "CU",
-    target: [0.0, 1.05, 0.0],
-    posStart: [0.1, 1.25, 2.7],
-    posEnd: [0.0, 1.15, 2.2],
+    target: [0.35, 1.1, 0.4],
+    posStart: [0.35, 1.25, 2.4],
+    posEnd: [0.35, 1.18, 1.9],
     fov: 37,
     roll: 1.0,
   },
-  // Shot 14: 20 pacing lateral tracking (MS: distance 3.0m)
+  // Shot 14: 20 pacing lateral tracking (MS: distance 2.8m)
   {
     id: "shot_14",
     startFrame: 1437,
     endFrame: 1476,
     type: "MS",
     target: [0.0, 1.15, 0.0],
-    posStart: [-0.6, 1.25, 3.0],
-    posEnd: [0.6, 1.25, 3.0],
+    posStart: [-0.5, 1.25, 2.8],
+    posEnd: [0.5, 1.25, 2.8],
     fov: 38,
     roll: -1.5,
   },
@@ -213,9 +213,9 @@ export const CAMERA_SHOTS: CameraShot[] = [
     startFrame: 1477,
     endFrame: 1580,
     type: "MS",
-    target: [0.0, 1.15, 0.0],
-    posStart: [-0.3, 0.72, 2.6],
-    posEnd: [-0.15, 0.85, 2.1],
+    target: [0.35, 1.15, 0.4],
+    posStart: [0.2, 0.85, 2.3],
+    posEnd: [0.35, 0.95, 1.8],
     fov: 40,
     roll: -5.5, // Dutch tilt
   },

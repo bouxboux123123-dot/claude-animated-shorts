@@ -525,6 +525,7 @@ export function buildPinkCell(
   // Front cell bars
   const frontBars = buildPrisonBars(w, h, 0.16);
   frontBars.position.set(0, 0, d / 2);
+  frontBars.name = "frontBars";
   group.add(frontBars);
 
   // Steel bunk bed frame with mattress
