@@ -10,6 +10,7 @@ import { InkPass, noInkFallback } from "./ink";
 import { LensBlur } from "./lensblur";
 import { GradeEffect, GRADES, GRADE_STRENGTH, gradeFor } from "./grade";
 import { TOTAL, FLASH_AT, shotAt, dofAt } from "./story";
+import { KineticCaptions } from "./KineticCaptions";
 
 export const MONEY_FRAMES = TOTAL;
 
@@ -25,7 +26,8 @@ const makeBloom = () => {
   });
 };
 
-const fwd = new THREE.Vector3(), fpt = new THREE.Vector3();
+const fwd = new THREE.Vector3(),
+  fpt = new THREE.Vector3();
 
 const Inner: React.FC = () => {
   const f = useCurrentFrame();
@@ -35,13 +37,16 @@ const Inner: React.FC = () => {
   const world = useMemo(() => new World(), []);
   const target = useMemo(() => new THREE.Vector3(), []);
 
-  const fx = useMemo(() => ({
-    ink: new InkPass(scene, camera as THREE.PerspectiveCamera),
-    lens: new LensBlur({ maxCoC: 18, nearScale: 1.1 }),
-    bloom: makeBloom(),
-    tone: new ToneMappingEffect({ mode: ToneMappingMode.NEUTRAL }),
-    grade: new GradeEffect(GRADES.day, GRADE_STRENGTH.day),
-  }), [camera, scene]);
+  const fx = useMemo(
+    () => ({
+      ink: new InkPass(scene, camera as THREE.PerspectiveCamera),
+      lens: new LensBlur({ maxCoC: 18, nearScale: 1.1 }),
+      bloom: makeBloom(),
+      tone: new ToneMappingEffect({ mode: ToneMappingMode.NEUTRAL }),
+      grade: new GradeEffect(GRADES.day, GRADE_STRENGTH.day),
+    }),
+    [camera, scene]
+  );
 
   useEffect(() => () => fx.ink.dispose(), [fx]);
 
@@ -83,7 +88,12 @@ export const MoneyShort: React.FC = () => {
   const isFlash = f >= FLASH_AT && f < FLASH_AT + 4;
   const flashAlpha = isFlash ? 1 - (f - FLASH_AT) / 4 : 0;
 
-  const bgCol = s.light === "midnight" ? "#080c14" : s.light === "alert" ? "#1a0808" : "#0f172a";
+  const bgCol =
+    s.light === "midnight"
+      ? "#080c14"
+      : s.light === "alert"
+      ? "#1a0808"
+      : "#0f172a";
 
   return (
     <AbsoluteFill style={{ backgroundColor: bgCol }}>
@@ -91,15 +101,33 @@ export const MoneyShort: React.FC = () => {
         width={1080}
         height={1920}
         shadows
-        gl={{ antialias: false, stencil: false, powerPreference: "high-performance", toneMappingExposure: 1.0 }}
+        gl={{
+          antialias: false,
+          stencil: false,
+          powerPreference: "high-performance",
+          toneMappingExposure: 1.0,
+        }}
         camera={{ fov: 40, near: 0.2, far: 500 }}
       >
         <Inner />
       </ThreeCanvas>
+
+      {/* Kinetic Subtitles positioned at y = 0.67 H */}
+      <KineticCaptions />
+
+      {/* Hook transition flash */}
       {isFlash ? (
-        <AbsoluteFill style={{ backgroundColor: "#ffffff", opacity: flashAlpha, pointerEvents: "none" }} />
+        <AbsoluteFill
+          style={{
+            backgroundColor: "#ffffff",
+            opacity: flashAlpha,
+            pointerEvents: "none",
+          }}
+        />
       ) : null}
-      <Audio src={staticFile("voice.wav")} />
+
+      {/* Master Audio Track (Voice + Ducked March Bed + SFX) */}
+      <Audio src={staticFile("mix.wav")} />
     </AbsoluteFill>
   );
 };

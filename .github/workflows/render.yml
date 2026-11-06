@@ -86,7 +86,9 @@ jobs:
           ffmpeg -f concat -safe 0 -i concat_list.txt -c copy final/stitched_video.mp4
           
           # Mux with master soundtrack
-          if [ -f "public/voice.wav" ]; then
+          if [ -f "public/mix.wav" ]; then
+            ffmpeg -y -i final/stitched_video.mp4 -i public/mix.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 192k final/final_reel_20x.mp4
+          elif [ -f "public/voice.wav" ]; then
             ffmpeg -y -i final/stitched_video.mp4 -i public/voice.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 192k final/final_reel_20x.mp4
           else
             mv final/stitched_video.mp4 final/final_reel_20x.mp4
