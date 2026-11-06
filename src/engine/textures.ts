@@ -333,6 +333,122 @@ export const grass = (key = "grass_std") =>
     }
   });
 
+/**
+ * 10. CINDERBLOCK WALL (Institutional prison hallway)
+ */
+export const cinderblock = (key = "cinderblock_slate", baseTone = "#4a6075", mortarCol = "#2d3a47") =>
+  ctex(key, 512, 512, (g, r) => {
+    g.fillStyle = mortarCol;
+    g.fillRect(0, 0, 512, 512);
+    const blockH = 64;
+    const blockW = 128;
+    for (let y = 0; y < 512; y += blockH) {
+      const row = Math.floor(y / blockH);
+      const offset = (row % 2) * (blockW / 2);
+      for (let x = -blockW / 2 + offset; x < 512 + blockW; x += blockW) {
+        g.fillStyle = jit(r, baseTone, 0.07, 3, 0.1);
+        g.fillRect(x + 2, y + 2, blockW - 4, blockH - 4);
+
+        // Concrete grain stipple
+        for (let k = 0; k < 12; k++) {
+          g.fillStyle = r() > 0.5 ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.08)";
+          g.fillRect(x + 4 + r() * (blockW - 12), y + 4 + r() * (blockH - 12), 2 + r() * 3, 2 + r() * 2);
+        }
+      }
+    }
+  });
+
+/**
+ * 11. BAKER-MILLER PINK WALL (Saturated painted cell wall)
+ */
+export const pinkCellWall = (key = "pink_cell_wall", baseTone = "#e66b97", mortarCol = "#c8527e") =>
+  ctex(key, 512, 512, (g, r) => {
+    g.fillStyle = baseTone;
+    g.fillRect(0, 0, 512, 512);
+
+    // Subtle painted-over cinderblock mortar lines
+    g.strokeStyle = mortarCol;
+    g.lineWidth = 3;
+    const blockH = 64;
+    const blockW = 128;
+    for (let y = 0; y <= 512; y += blockH) {
+      g.beginPath();
+      g.moveTo(0, y);
+      g.lineTo(512, y);
+      g.stroke();
+      const row = Math.floor(y / blockH);
+      const offset = (row % 2) * (blockW / 2);
+      for (let x = offset; x <= 512; x += blockW) {
+        g.beginPath();
+        g.moveTo(x, y);
+        g.lineTo(x, y + blockH);
+        g.stroke();
+      }
+    }
+
+    // Soft painted roller stipple
+    for (let i = 0; i < 300; i++) {
+      const x = r() * 512, y = r() * 512;
+      g.fillStyle = r() > 0.5 ? "rgba(233, 126, 187, 0.16)" : "rgba(209, 97, 139, 0.14)";
+      g.beginPath();
+      g.arc(x, y, 4 + r() * 10, 0, Math.PI * 2);
+      g.fill();
+    }
+  });
+
+/**
+ * 12. BLACKBOARD SCIENTIFIC CHART (Explanation curve)
+ */
+export const blackboardChart = (key = "blackboard_chart") =>
+  ctex(key, 512, 512, (g) => {
+    // Slate chalkboard
+    g.fillStyle = "#1e2925";
+    g.fillRect(0, 0, 512, 512);
+
+    // Subtle chalk dust smudges
+    g.fillStyle = "rgba(255,255,255,0.03)";
+    g.fillRect(10, 10, 492, 492);
+
+    // Chalk axes
+    g.strokeStyle = "rgba(255, 255, 255, 0.5)";
+    g.lineWidth = 4;
+    g.beginPath();
+    g.moveTo(60, 440);
+    g.lineTo(460, 440); // X axis (Time)
+    g.moveTo(60, 440);
+    g.lineTo(60, 80);  // Y axis (Aggression/Strength)
+    g.stroke();
+
+    // Dotted guide line at 15m
+    g.strokeStyle = "rgba(244, 114, 182, 0.4)";
+    g.setLineDash([8, 6]);
+    g.beginPath();
+    g.moveTo(220, 440);
+    g.lineTo(220, 120);
+    g.stroke();
+    g.setLineDash([]);
+
+    // Curve: Starts high, dips dramatically at 15m, then shoots to stratosphere
+    g.strokeStyle = "#f472b6"; // Pink chalk curve
+    g.lineWidth = 6;
+    g.beginPath();
+    g.moveTo(70, 200);
+    g.bezierCurveTo(140, 220, 180, 400, 220, 410); // drops to bottom at 15 min
+    g.bezierCurveTo(260, 420, 320, 360, 380, 180);
+    g.bezierCurveTo(410, 90, 430, 70, 460, 60);   // sky high at 30 min+
+    g.stroke();
+
+    // Chalk text annotations
+    g.fillStyle = "#ffffff";
+    g.font = "bold 22px sans-serif";
+    g.fillText("MUSCLE STRENGTH", 80, 60);
+    g.font = "bold 18px sans-serif";
+    g.fillStyle = "#f472b6";
+    g.fillText("15 MIN (CALM)", 160, 470);
+    g.fillStyle = "#ef4444";
+    g.fillText("30 MIN (RAGE!)", 340, 100);
+  });
+
 // ---------------- MATERIAL CACHE & WRAPPERS ----------------
 
 const matCache = new Map<string, THREE.MeshLambertMaterial>();

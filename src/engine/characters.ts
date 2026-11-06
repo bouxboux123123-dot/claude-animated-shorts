@@ -152,8 +152,16 @@ export function headPoints(
 // ---------------- CHARACTER OUTFITS & ROLES ----------------
 
 export type HairStyle = "comb_over" | "side_part" | "curly" | "bald_fringe" | "none";
-export type Headwear = "cap" | "striped_cap" | "bowler" | "tophat" | "hard_hat" | "none";
-export type OutfitType = "artisan_vest" | "banker_suit" | "inspector_coat" | "overalls" | "simple";
+export type Headwear = "cap" | "striped_cap" | "guard_peaked" | "bowler" | "tophat" | "hard_hat" | "none";
+export type OutfitType =
+  | "artisan_vest"
+  | "banker_suit"
+  | "inspector_coat"
+  | "lab_coat"
+  | "guard"
+  | "inmate_orange"
+  | "overalls"
+  | "simple";
 export type Expression =
   | "neutral"
   | "smile"
@@ -162,7 +170,8 @@ export type Expression =
   | "shocked"
   | "deadpan"
   | "suspicious"
-  | "speaking";
+  | "speaking"
+  | "angry";
 
 export type CharacterSpec = {
   skin?: string;
@@ -173,6 +182,9 @@ export type CharacterSpec = {
   beard?: boolean;
   beardCol?: string;
   moustache?: boolean;
+  glasses?: boolean;
+  tattoos?: boolean;
+  build?: "adult" | "stout" | "skinny";
   outfit?: OutfitType;
   coatCol?: string;
   vestCol?: string;
@@ -180,8 +192,8 @@ export type CharacterSpec = {
   pantsCol?: string;
   expression?: Expression;
   facing?: "left" | "right" | "front";
-  holdingProp?: "magnifying_glass" | "bill" | "tool" | "none";
-  pose?: "standing" | "sitting" | "working" | "speaking";
+  holdingProp?: "magnifying_glass" | "bill" | "stopwatch" | "paint_roller" | "clipboard" | "tool" | "none";
+  pose?: "standing" | "sitting" | "working" | "speaking" | "arm_wrestle" | "pacing" | "raging";
 };
 
 /**
@@ -255,17 +267,20 @@ export function drawCharacter(p: Pen, spec: CharacterSpec = {}) {
   }
 
   // Torso shape (bean torso: y ~ 370 to 680)
+  const isStout = spec.build === "stout";
+  const isSkinny = spec.build === "skinny";
+  const torsoW = isStout ? 180 : isSkinny ? 90 : 120;
   const torsoPts: P2[] = [
-    [240, 390],
-    [360, 390],
-    [380, 520],
-    [360, 680],
-    [240, 680],
-    [220, 520],
+    [300 - torsoW / 2, 390],
+    [300 + torsoW / 2, 390],
+    [300 + torsoW / 2 + (isStout ? 30 : 20), 520],
+    [300 + torsoW / 2, 680],
+    [300 - torsoW / 2, 680],
+    [300 - torsoW / 2 - (isStout ? 30 : 20), 520],
   ];
-  p.poly(torsoPts, shirtCol, 12);
+  p.poly(torsoPts, shirtCol, isStout ? 16 : 12);
 
-  // OUTFIT DETAILS: Vest / Suit / Overalls
+  // OUTFIT DETAILS: Vest / Suit / Lab Coat / Guard / Inmate
   if (outfit === "artisan_vest" || outfit === "banker_suit") {
     // Vest front
     const vestPts: P2[] = [
@@ -302,6 +317,26 @@ export function drawCharacter(p: Pen, spec: CharacterSpec = {}) {
     for (const by of [530, 580, 630]) {
       p.ell(280, by, 5, 5, "#facc15", 4);
     }
+  } else if (outfit === "lab_coat") {
+    // White lab coat with lapels and black buttons
+    p.poly([[230, 390], [370, 390], [390, 720], [210, 720]], "#ffffff", 12);
+    p.line([[300, 420], [300, 720]], INK, 4, false);
+    p.rect(245, 460, 20, 8, "#2563eb", 2); // Blue pen clip
+    for (const by of [470, 530, 590]) p.ell(310, by, 5, 5, INK, 3);
+  } else if (outfit === "guard") {
+    // Slate-navy police / guard uniform
+    const guardNavy = spec.coatCol ?? "#3b5170";
+    p.poly([[230, 390], [370, 390], [380, 680], [220, 680]], guardNavy, 12);
+    // Gold badge on breast
+    p.poly([[250, 450], [265, 440], [280, 450], [275, 475], [265, 485], [255, 475]], "#eab308", 4);
+    // Black utility belt with brass buckle
+    p.rect(220, 640, 160, 35, "#181a20", 8);
+    p.rect(285, 640, 30, 35, "#eab308", 4);
+  } else if (outfit === "inmate_orange") {
+    // Institutional prison orange jumpsuit
+    const orange = "#e25822";
+    p.poly([[300 - torsoW / 2, 390], [300 + torsoW / 2, 390], [300 + torsoW / 2 + 15, 680], [300 - torsoW / 2 - 15, 680]], orange, 14);
+    p.rect(260, 470, 80, 24, "rgba(0,0,0,0.18)", 0); // Stencil patch
   } else if (outfit === "inspector_coat") {
     // Long coat
     p.poly(
@@ -397,6 +432,11 @@ export function drawCharacter(p: Pen, spec: CharacterSpec = {}) {
         );
       }
     }
+  } else if (headwear === "guard_peaked") {
+    // Peaked guard cap with black visor & gold shield badge
+    p.poly([[160, 240], [440, 240], [420, 260], [180, 260]], "#181a20", 10); // Visor
+    p.poly([[185, 240], [205, 150], [395, 150], [415, 240]], "#3b5170", 10); // Cap dome
+    p.poly([[285, 185], [300, 170], [315, 185], [310, 210], [300, 220], [290, 210]], "#eab308", 4); // Gold badge
   } else if (headwear === "bowler") {
     // Bowler hat
     p.poly(
@@ -505,6 +545,13 @@ export function drawCharacter(p: Pen, spec: CharacterSpec = {}) {
     );
   }
 
+  // Glasses (if enabled)
+  if (spec.glasses) {
+    p.ell(leftEyeX, eyeY, 18, 18, "rgba(224,242,254,0.3)", 5, 0, 360, 0, INK);
+    p.ell(rightEyeX, eyeY, 18, 18, "rgba(224,242,254,0.3)", 5, 0, 360, 0, INK);
+    p.line([[leftEyeX + 16, eyeY - 2], [rightEyeX - 16, eyeY - 2]], INK, 5, false); // Bridge
+  }
+
   // 5. MOUTH
   const mouthY = 325;
   if (expr === "speaking") {
@@ -599,6 +646,32 @@ export function drawCharacter(p: Pen, spec: CharacterSpec = {}) {
     p.ell(335, 510, 12, 12, skin, 6);
     // Currency note held flat between hands
     p.rect(260, 490, 80, 45, "#86efac", 6);
+  } else if (prop === "stopwatch") {
+    p.line([[230, 420], [215, 550], [220, 610]], shirtCol, 12, true);
+    p.ell(220, 615, 12, 12, skin, 6);
+    // Right arm holding stopwatch
+    p.line([[370, 420], [410, 480], [360, 440]], shirtCol, 12, true);
+    p.ell(360, 440, 12, 12, skin, 6);
+    // Stopwatch dial
+    p.ell(340, 430, 20, 20, "#e2e8f0", 6, 0, 360, 0, "#64748b");
+    p.line([[340, 430], [340, 416]], INK, 3, false);
+  } else if (prop === "clipboard") {
+    // Left arm holding clipboard, right arm down
+    p.line([[230, 420], [260, 490]], shirtCol, 12, true);
+    p.ell(260, 490, 12, 12, skin, 6);
+    p.rect(240, 440, 75, 100, "#854d0e", 6); // Board
+    p.rect(248, 450, 59, 80, "#ffffff", 2); // Paper
+    p.line([[370, 420], [385, 550], [380, 610]], shirtCol, 12, true);
+    p.ell(380, 615, 12, 12, skin, 6);
+  } else if (prop === "paint_roller") {
+    // Both arms holding paint roller
+    p.line([[230, 420], [260, 510]], shirtCol, 12, true);
+    p.ell(260, 510, 12, 12, skin, 6);
+    p.line([[370, 420], [420, 460], [430, 380]], shirtCol, 12, true);
+    p.ell(430, 380, 12, 12, skin, 6);
+    // Roller stick and sponge
+    p.line([[260, 510], [460, 180]], "#a8743f", 8, true);
+    p.rect(440, 160, 70, 26, "#e66b97", 6); // Pink roller!
   } else {
     // Natural standing arms
     p.line(

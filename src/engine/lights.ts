@@ -12,7 +12,7 @@ export type LightPreset = {
   bias: number; normalBias: number;
 };
 
-export type LightMode = "day" | "golden" | "workshop" | "night";
+export type LightMode = "day" | "golden" | "workshop" | "night" | "prison" | "pink";
 
 export const LIGHTS: Record<LightMode, LightPreset> = {
   day: {
@@ -53,6 +53,26 @@ export const LIGHTS: Record<LightMode, LightPreset> = {
     sunCol: "#93c5fd", sunI: 2.2, sky: "#1e293b", ground: "#0f172a", hemiI: 0.35,
     bias: -0.0004, normalBias: 0.02,
   },
+  prison: {
+    // Cold institutional fluorescent dayroom / corridor
+    az: 70, el: 65,
+    lit: [1.52, 1.55, 1.62], shade: [0.28, 0.32, 0.42], lift: [0.06, 0.07, 0.12], lambert: 0.36, sideK: 0.82, term: 0.18,
+    charTint: [0.96, 0.96, 1.0], charShade: 0.85, charGrad: 0.08, bodyGrad: 0.22, sideTint: [0.85, 0.88, 0.96],
+    blob: [0.52, 0.52, 0.56], actorShadow: true,
+    top: "#1e293b", hor: "#4a6075", skyCurve: [0.0, 0.4, 0.7], fog: "#4a6075", fogNear: 20, fogFar: 140, sunDisc: "#ffffff",
+    sunCol: "#dcecf8", sunI: 3.0, sky: "#9bb8d9", ground: "#2b3038", hemiI: 0.6,
+    bias: -0.0003, normalBias: 0.02,
+  },
+  pink: {
+    // Baker-Miller Pink cell with vibrant magenta bounce
+    az: 60, el: 55,
+    lit: [1.62, 1.38, 1.48], shade: [0.55, 0.28, 0.42], lift: [0.12, 0.06, 0.10], lambert: 0.35, sideK: 0.85, term: 0.2,
+    charTint: [1.02, 0.88, 0.95], charShade: 0.84, charGrad: 0.08, bodyGrad: 0.22, sideTint: [0.98, 0.82, 0.92],
+    blob: [0.55, 0.45, 0.50], actorShadow: true,
+    top: "#831843", hor: "#e66b97", skyCurve: [0.0, 0.5, 0.8], fog: "#e66b97", fogNear: 15, fogFar: 100, sunDisc: "#f472b6",
+    sunCol: "#fff1f2", sunI: 3.2, sky: "#e97ebb", ground: "#8c3b5d", hemiI: 0.7,
+    bias: -0.0003, normalBias: 0.02,
+  },
 };
 
 export type WorldLook = {
@@ -91,5 +111,19 @@ export const LOOK: Record<LightMode, WorldLook> = {
     cloud: { lit: "#334155", mid: "#1e293b", shade: "#0f172a" },
     bounce: [0.02, 0.02, 0.04],
     sat: 1.05,
+  },
+  prison: {
+    sky: { c: ["#1e293b", "#334155", "#475569", "#64748b", "#94a3b8"], e: [0, 5, 12, 25, 50] },
+    water: { near: "#22a7b6", mid: "#167fb2", far: "#1a5596", crest: "#7ddfe8", trough: "#0e4a80", glint: "#ffffff", shade: [0.5, 0.56, 0.72] },
+    cloud: { lit: "#f1f5f9", mid: "#cbd5e1", shade: "#64748b" },
+    bounce: [0.01, 0.02, 0.04],
+    sat: 1.04,
+  },
+  pink: {
+    sky: { c: ["#831843", "#9d174d", "#be185d", "#db2777", "#f472b6"], e: [0, 6, 14, 28, 55] },
+    water: { near: "#ec4899", mid: "#db2777", far: "#9d174d", crest: "#fbcfe8", trough: "#831843", glint: "#ffffff", shade: [0.6, 0.3, 0.45] },
+    cloud: { lit: "#fdf2f8", mid: "#fbcfe8", shade: "#f472b6" },
+    bounce: [0.12, 0.03, 0.08],
+    sat: 1.18,
   },
 };

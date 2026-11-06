@@ -104,6 +104,20 @@ export const GRADE_NIGHT: GradeParams = {
   vig: [0.25, 0.35],
 };
 
+export const GRADE_PRISON: GradeParams = {
+  ky: [0, 0.09, 0.26, 0.56, 0.81, 0.93, 1],
+  sat: [0.96, 1.04, 1.02],
+  tintS: [0.025, -0.008], tintM: [0.005, -0.002], tintH: [-0.004, 0.002],
+  vig: [0.18, 0.40],
+};
+
+export const GRADE_PINK: GradeParams = {
+  ky: [0, 0.10, 0.29, 0.60, 0.84, 0.95, 1],
+  sat: [1.12, 1.18, 1.10],
+  tintS: [-0.02, 0.035], tintM: [-0.005, 0.015], tintH: [-0.002, 0.008],
+  vig: [0.14, 0.45],
+};
+
 export class GradeEffect extends Effect {
   constructor(p: GradeParams, amount = 1) {
     super("GradeEffect", frag, {
@@ -146,6 +160,8 @@ export const GRADES: Record<LightMode, GradeParams> = {
   golden: GRADE_GOLDEN,
   workshop: GRADE_WORKSHOP,
   night: GRADE_NIGHT,
+  prison: GRADE_PRISON,
+  pink: GRADE_PINK,
 };
 
 export const GRADE_STRENGTH: Record<LightMode, number> = {
@@ -153,6 +169,8 @@ export const GRADE_STRENGTH: Record<LightMode, number> = {
   golden: 1,
   workshop: 1,
   night: 1,
+  prison: 1,
+  pink: 1,
 };
 
 export function gradeFor(fx: GradeEffect, light: LightMode) {

@@ -9,11 +9,11 @@ on:
       composition:
         description: "Remotion Composition ID"
         required: true
-        default: "MoneyShort"
+        default: "PinkPrisonShort"
       total_frames:
         description: "Total frames to render"
         required: true
-        default: "1788"
+        default: "1958"
 
 jobs:
   render-chunk:
@@ -37,7 +37,8 @@ jobs:
 
       - name: Calculate Frame Range & Render Slice
         run: |
-          TOTAL=${{ github.event.inputs.total_frames || 1788 }}
+          COMP="${{ github.event.inputs.composition || 'PinkPrisonShort' }}"
+          TOTAL=${{ github.event.inputs.total_frames || 1958 }}
           CHUNKS=20
           IDX=${{ matrix.chunk }}
           CHUNK_SIZE=$(( (TOTAL + CHUNKS - 1) / CHUNKS ))
@@ -46,9 +47,9 @@ jobs:
           if [ $END -ge $TOTAL ]; then
             END=$(( TOTAL - 1 ))
           fi
-          echo "Rendering chunk $IDX: frames $START to $END..."
+          echo "Rendering chunk $IDX: frames $START to $END of $COMP..."
           mkdir -p out
-          npx remotion render src/index.ts MoneyShort "out/chunk_${IDX}.mp4" --frames="${START}-${END}" --gl=swangle --concurrency=1 --scale=1.0
+          npx remotion render src/index.ts "$COMP" "out/chunk_${IDX}.mp4" --frames="${START}-${END}" --gl=swangle --concurrency=1 --scale=1.0
 
       - name: Upload Chunk Artifact
         uses: actions/upload-artifact@v4
@@ -86,7 +87,9 @@ jobs:
           ffmpeg -f concat -safe 0 -i concat_list.txt -c copy final/stitched_video.mp4
           
           # Mux with master soundtrack
-          if [ -f "public/mix.wav" ]; then
+          if [ -f "public/pink_prison.wav" ]; then
+            ffmpeg -y -i final/stitched_video.mp4 -i public/pink_prison.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 192k final/final_reel_20x.mp4
+          elif [ -f "public/mix.wav" ]; then
             ffmpeg -y -i final/stitched_video.mp4 -i public/mix.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 192k final/final_reel_20x.mp4
           elif [ -f "public/voice.wav" ]; then
             ffmpeg -y -i final/stitched_video.mp4 -i public/voice.wav -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 192k final/final_reel_20x.mp4
