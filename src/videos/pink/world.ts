@@ -18,14 +18,6 @@ import {
   buildImpactCrater,
   buildKnittingScarf,
 } from "./detailed_props";
-import {
-  getPaintingGuardTexture,
-  getScientistWorkshopTexture,
-  getScientistSwatchTexture,
-  getInmate300LandingTexture,
-  getInmate300KnittingTexture,
-  getInmate300RageTexture,
-} from "./detailed_actors";
 
 export class PinkWorld {
   root: THREE.Group;
@@ -63,10 +55,10 @@ export class PinkWorld {
     // 2. BAKER-MILLER PINK CELL STAGE (origin x=0, z=0)
     this.pinkCellGroup = buildPinkCell(this.root, 0, 0, 0, 3.6, 3.6, 3.0);
 
-    // 3. SCIENTIFIC MIX BENCH WORKSHOP STAGE (authentic craftsman oak bench, digital scale, 1-gal WHITE can, memo, sunbeams)
+    // 3. SCIENTIFIC MIX BENCH WORKSHOP STAGE
     this.mixBenchGroup = buildPaintShopWorkshop(this.root, 0, 0, 0);
 
-    // 4. DAYROOM / CAFETERIA POD C STAGE (two-tier cell block, blue picnic table, lunch trays, catwalk)
+    // 4. DAYROOM / CAFETERIA POD C STAGE
     this.armWrestleGroup = buildCafeteriaPodC(this.root, 0, 0, 0);
 
     // 5. BLACKBOARD EXPLANATION STAGE
@@ -75,14 +67,14 @@ export class PinkWorld {
     // 6. WALL CLOCK (inside corridor / station)
     this.clockGroup = buildWallClock(this.root, 0, 2.3, -4.5);
 
-    // 7. HERO DETAILED PROPS
+    // 7. HERO STAGE PROPS
     this.impactCrater = buildImpactCrater(1.2);
     this.root.add(this.impactCrater);
 
     this.knittingScarf = buildKnittingScarf();
     this.root.add(this.knittingScarf);
 
-    // 8. ACTORS
+    // 8. ACTORS (Universal 3.5 HH character rig)
     this.scientist = new Actor(this.root);
     this.guard1 = new Actor(this.root);
     this.guard2 = new Actor(this.root);
@@ -218,37 +210,68 @@ export class PinkWorld {
       }
 
       case "mix_bench": {
-        // Detailed Scientific Paint Shop Workshop
         this.mixBenchGroup.visible = true;
 
         this.scientist.mesh.visible = true;
         this.scientist.blobMesh.visible = true;
         this.scientist.setPosition(0.35, 0, -0.4);
-        this.scientist.mat.map = getScientistWorkshopTexture();
-        this.scientist.mat.needsUpdate = true;
-        this.currentSpecKeys["sci"] = "sci_workshop_custom";
+        this.setActorSpec(
+          this.scientist,
+          "sci",
+          {
+            build: "adult",
+            skin: "#ffe0b4",
+            outfit: "lab_coat",
+            glasses: true,
+            hair: "comb_over",
+            hairCol: "#94a3b8",
+            expression: "scheming",
+          },
+          "sci_mix"
+        );
 
         focusPoint.set(0, 1.15, 0);
         break;
       }
 
       case "paint_wall": {
-        // Inside Pink Cell repainting with roller & Pantone swatch
         this.pinkCellGroup.visible = true;
 
         this.guard1.mesh.visible = true;
         this.guard1.blobMesh.visible = true;
         this.guard1.setPosition(-0.5, 0, -0.3);
-        this.guard1.mat.map = getPaintingGuardTexture();
-        this.guard1.mat.needsUpdate = true;
-        this.currentSpecKeys["g1"] = "g1_painting_custom";
+        this.setActorSpec(
+          this.guard1,
+          "g1",
+          {
+            build: "adult",
+            skin: "#f6b988",
+            outfit: "guard",
+            headwear: "guard_peaked",
+            holdingProp: "paint_roller",
+            expression: "deadpan",
+          },
+          "g1_roller"
+        );
 
         this.scientist.mesh.visible = true;
         this.scientist.blobMesh.visible = true;
         this.scientist.setPosition(0.6, 0, 0.0);
-        this.scientist.mat.map = getScientistSwatchTexture();
-        this.scientist.mat.needsUpdate = true;
-        this.currentSpecKeys["sci"] = "sci_swatch_custom";
+        this.setActorSpec(
+          this.scientist,
+          "sci",
+          {
+            build: "adult",
+            skin: "#ffe0b4",
+            outfit: "lab_coat",
+            glasses: true,
+            hair: "comb_over",
+            hairCol: "#94a3b8",
+            holdingProp: "clipboard",
+            expression: "scheming",
+          },
+          "sci_clip_wall"
+        );
 
         focusPoint.set(0.05, 1.25, -0.1);
         break;
@@ -321,7 +344,6 @@ export class PinkWorld {
       }
 
       case "pink_cell_inmate": {
-        // Inmate entry with impact crater & laughing expression
         this.pinkCellGroup.visible = true;
         this.impactCrater.visible = true;
         this.impactCrater.position.set(0, 0.015, 0);
@@ -329,9 +351,19 @@ export class PinkWorld {
         this.inmate.mesh.visible = true;
         this.inmate.blobMesh.visible = true;
         this.inmate.setPosition(0, 0, 0);
-        this.inmate.mat.map = getInmate300LandingTexture();
-        this.inmate.mat.needsUpdate = true;
-        this.currentSpecKeys["inm"] = "inm_landing_custom";
+        this.setActorSpec(
+          this.inmate,
+          "inm",
+          {
+            build: "stout",
+            skin: "#e9c8ae",
+            outfit: "inmate_orange",
+            tattoos: true,
+            hair: null,
+            expression: "smile",
+          },
+          "inm_laugh"
+        );
 
         focusPoint.set(0, 1.45, 0);
         break;
@@ -362,7 +394,6 @@ export class PinkWorld {
       }
 
       case "arm_wrestle": {
-        // Cafeteria POD C multi-tier prison block
         this.armWrestleGroup.visible = true;
 
         this.guard2.mesh.visible = true;
@@ -448,9 +479,19 @@ export class PinkWorld {
         this.guard1.mesh.visible = true;
         this.guard1.blobMesh.visible = true;
         this.guard1.setPosition(0, 0, 0);
-        this.guard1.mat.map = getPaintingGuardTexture();
-        this.guard1.mat.needsUpdate = true;
-        this.currentSpecKeys["g1"] = "g1_painting_custom";
+        this.setActorSpec(
+          this.guard1,
+          "g1",
+          {
+            build: "adult",
+            skin: "#f6b988",
+            outfit: "guard",
+            headwear: "guard_peaked",
+            holdingProp: "paint_roller",
+            expression: "smile",
+          },
+          "g1_rolling_many"
+        );
 
         focusPoint.set(0, 1.2, 0);
         break;
@@ -482,7 +523,6 @@ export class PinkWorld {
       }
 
       case "night_quiet": {
-        // Inmate sitting quietly knitting pink scarf
         this.pinkCellGroup.visible = true;
         this.knittingScarf.visible = true;
         this.knittingScarf.position.set(0.35, 0, 0.4);
@@ -490,9 +530,19 @@ export class PinkWorld {
         this.inmate.mesh.visible = true;
         this.inmate.blobMesh.visible = true;
         this.inmate.setPosition(0.35, 0.25, 0.4);
-        this.inmate.mat.map = getInmate300KnittingTexture();
-        this.inmate.mat.needsUpdate = true;
-        this.currentSpecKeys["inm"] = "inm_knitting_custom";
+        this.setActorSpec(
+          this.inmate,
+          "inm",
+          {
+            build: "stout",
+            skin: "#e9c8ae",
+            outfit: "inmate_orange",
+            tattoos: true,
+            hair: null,
+            expression: "deadpan",
+          },
+          "inm_sitting_still"
+        );
 
         focusPoint.set(0.35, 1.1, 0.4);
         break;
@@ -524,7 +574,6 @@ export class PinkWorld {
       }
 
       case "bench_rage": {
-        // Gripping welded bench, violent rage & snapped needles
         this.pinkCellGroup.visible = true;
         this.knittingScarf.visible = true;
         this.knittingScarf.position.set(0.35, 0, 0.4);
@@ -532,9 +581,19 @@ export class PinkWorld {
         this.inmate.mesh.visible = true;
         this.inmate.blobMesh.visible = true;
         this.inmate.setPosition(0.35, 0, 0.4);
-        this.inmate.mat.map = getInmate300RageTexture();
-        this.inmate.mat.needsUpdate = true;
-        this.currentSpecKeys["inm"] = "inm_rage_custom";
+        this.setActorSpec(
+          this.inmate,
+          "inm",
+          {
+            build: "stout",
+            skin: "#e9c8ae",
+            outfit: "inmate_orange",
+            tattoos: true,
+            hair: null,
+            expression: "shocked",
+          },
+          "inm_bench_rage"
+        );
 
         focusPoint.set(0.35, 1.15, 0.4);
         break;
@@ -568,15 +627,24 @@ export class PinkWorld {
       }
 
       case "rage_payoff": {
-        // Finale: glowing red eyes, red lightning fury aura, snapped needles
         this.pinkCellGroup.visible = true;
 
         this.inmate.mesh.visible = true;
         this.inmate.blobMesh.visible = true;
         this.inmate.setPosition(0, 0, 0);
-        this.inmate.mat.map = getInmate300RageTexture();
-        this.inmate.mat.needsUpdate = true;
-        this.currentSpecKeys["inm"] = "inm_rage_payoff_custom";
+        this.setActorSpec(
+          this.inmate,
+          "inm",
+          {
+            build: "stout",
+            skin: "#e9c8ae",
+            outfit: "inmate_orange",
+            tattoos: true,
+            hair: null,
+            expression: "shocked",
+          },
+          "inm_rage_payoff"
+        );
 
         focusPoint.set(0, 1.35, 0);
         break;
