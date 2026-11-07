@@ -1,0 +1,1066 @@
+[
+  {
+    "id": "s01",
+    "beat": 1,
+    "f_in": 0,
+    "f_out": 95,
+    "set": "canyon_track",
+    "text": " He sought gaps into a railroad every 39 feet.",
+    "camera": [
+      {
+        "pos": [
+          -0.85,
+          -1.2,
+          0.45
+        ],
+        "target": [
+          -0.15,
+          0.0,
+          0.18
+        ],
+        "lens": 35,
+        "roll_deg": -18.0
+      },
+      {
+        "pos": [
+          -0.75,
+          -0.6,
+          0.38
+        ],
+        "target": [
+          -0.05,
+          0.2,
+          0.18
+        ],
+        "lens": 35,
+        "roll_deg": -18.0
+      }
+    ]
+  },
+  {
+    "id": "s02",
+    "beat": 2,
+    "f_in": 102,
+    "f_out": 174,
+    "set": "canyon_chasm",
+    "text": " You see, two companies are racing to build a railroad",
+    "camera": [
+      {
+        "pos": [
+          0.0,
+          -18.0,
+          14.0
+        ],
+        "target": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "lens": 28,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          0.0,
+          -12.0,
+          4.0
+        ],
+        "target": [
+          0.0,
+          0.0,
+          -2.0
+        ],
+        "lens": 28,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s03",
+    "beat": 3,
+    "f_in": 174,
+    "f_out": 253,
+    "set": "canyon_chasm",
+    "text": " along a canyon so deep you can't see the bottom,",
+    "camera": [
+      {
+        "pos": [
+          0.0,
+          -18.0,
+          14.0
+        ],
+        "target": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "lens": 28,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          0.0,
+          -12.0,
+          4.0
+        ],
+        "target": [
+          0.0,
+          0.0,
+          -2.0
+        ],
+        "lens": 28,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s04",
+    "beat": 4,
+    "f_in": 259,
+    "f_out": 343,
+    "set": "finish_line",
+    "text": " and whoever finishes first gets the whole country's business.",
+    "camera": [
+      {
+        "pos": [
+          0.0,
+          -8.0,
+          2.5
+        ],
+        "target": [
+          0.0,
+          0.0,
+          1.2
+        ],
+        "lens": 35,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          0.0,
+          -4.5,
+          1.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          1.2
+        ],
+        "lens": 35,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s05",
+    "beat": 5,
+    "f_in": 350,
+    "f_out": 397,
+    "set": "canyon_track",
+    "text": " He's the youngest engineer on the job,",
+    "camera": [
+      {
+        "pos": [
+          -0.55,
+          -2.2,
+          1.15
+        ],
+        "target": [
+          -0.55,
+          0.0,
+          1.2
+        ],
+        "lens": 50,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          -0.55,
+          -1.8,
+          1.15
+        ],
+        "target": [
+          -0.55,
+          0.0,
+          1.2
+        ],
+        "lens": 50,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s06",
+    "beat": 6,
+    "f_in": 404,
+    "f_out": 458,
+    "set": "canyon_track",
+    "text": " and when his boss sees a finger wide gap",
+    "camera": [
+      {
+        "pos": [
+          0.15,
+          -0.65,
+          0.45
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.18
+        ],
+        "lens": 65,
+        "roll_deg": 12.0
+      },
+      {
+        "pos": [
+          0.1,
+          -0.5,
+          0.38
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.18
+        ],
+        "lens": 65,
+        "roll_deg": 12.0
+      }
+    ]
+  },
+  {
+    "id": "s07",
+    "beat": 7,
+    "f_in": 458,
+    "f_out": 538,
+    "set": "canyon_track",
+    "text": " between every single rail, his face goes purple.",
+    "camera": [
+      {
+        "pos": [
+          0.65,
+          -1.6,
+          1.25
+        ],
+        "target": [
+          0.65,
+          0.3,
+          1.35
+        ],
+        "lens": 55,
+        "roll_deg": -8.0
+      },
+      {
+        "pos": [
+          0.65,
+          -1.3,
+          1.25
+        ],
+        "target": [
+          0.65,
+          0.3,
+          1.35
+        ],
+        "lens": 55,
+        "roll_deg": -8.0
+      }
+    ]
+  },
+  {
+    "id": "s08",
+    "beat": 8,
+    "f_in": 545,
+    "f_out": 644,
+    "set": "canyon_track",
+    "text": " You're wrecking my railroad, but he won't close a single one.",
+    "camera": [
+      {
+        "pos": [
+          0.0,
+          -3.2,
+          1.2
+        ],
+        "target": [
+          0.0,
+          1.2,
+          1.0
+        ],
+        "lens": 40,
+        "roll_deg": -10.0
+      },
+      {
+        "pos": [
+          0.0,
+          -2.6,
+          1.15
+        ],
+        "target": [
+          0.0,
+          1.2,
+          1.0
+        ],
+        "lens": 40,
+        "roll_deg": -10.0
+      }
+    ]
+  },
+  {
+    "id": "s09",
+    "beat": 9,
+    "f_in": 650,
+    "f_out": 713,
+    "set": "desert_buckle",
+    "text": " The other company lays their rails end to end,",
+    "camera": [
+      {
+        "pos": [
+          0.0,
+          -8.5,
+          2.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.3
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          0.0,
+          -4.5,
+          1.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s10",
+    "beat": 10,
+    "f_in": 719,
+    "f_out": 773,
+    "set": "desert_buckle",
+    "text": " perfectly smooth, and finishes first.",
+    "camera": [
+      {
+        "pos": [
+          0.0,
+          -8.5,
+          2.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.3
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          0.0,
+          -4.5,
+          1.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s11",
+    "beat": 11,
+    "f_in": 783,
+    "f_out": 857,
+    "set": "desert_buckle",
+    "text": " Their trains glide across the canyon without a sound.",
+    "camera": [
+      {
+        "pos": [
+          0.0,
+          -8.5,
+          2.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.3
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          0.0,
+          -4.5,
+          1.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s12",
+    "beat": 12,
+    "f_in": 857,
+    "f_out": 930,
+    "set": "desert_buckle",
+    "text": " While his go clickety-clack over every gap,",
+    "camera": [
+      {
+        "pos": [
+          0.0,
+          -8.5,
+          2.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.3
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          0.0,
+          -4.5,
+          1.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s13",
+    "beat": 13,
+    "f_in": 938,
+    "f_out": 1009,
+    "set": "desert_buckle",
+    "text": " the newspaper start calling it the clickety-clack line,",
+    "camera": [
+      {
+        "pos": [
+          0.0,
+          -8.5,
+          2.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.3
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          0.0,
+          -4.5,
+          1.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s14",
+    "beat": 14,
+    "f_in": 1014,
+    "f_out": 1072,
+    "set": "desert_buckle",
+    "text": " and everyone switches to the quiet trains.",
+    "camera": [
+      {
+        "pos": [
+          0.0,
+          -8.5,
+          2.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.3
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          0.0,
+          -4.5,
+          1.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s15",
+    "beat": 15,
+    "f_in": 1079,
+    "f_out": 1155,
+    "set": "desert_buckle",
+    "text": " Then summer comes, and something weird happens.",
+    "camera": [
+      {
+        "pos": [
+          1.8,
+          -4.2,
+          0.9
+        ],
+        "target": [
+          1.8,
+          -2.0,
+          0.9
+        ],
+        "lens": 60,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          1.8,
+          -3.4,
+          1.1
+        ],
+        "target": [
+          1.8,
+          -2.0,
+          1.1
+        ],
+        "lens": 60,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s16",
+    "beat": 16,
+    "f_in": 1163,
+    "f_out": 1199,
+    "set": "canyon_track",
+    "text": " His gaps start shrinking.",
+    "camera": [
+      {
+        "pos": [
+          0.2,
+          -0.8,
+          0.55
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      },
+      {
+        "pos": [
+          0.1,
+          -0.55,
+          0.42
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      }
+    ]
+  },
+  {
+    "id": "s17",
+    "beat": 17,
+    "f_in": 1209,
+    "f_out": 1256,
+    "set": "canyon_track",
+    "text": " In May, you can fit a coin in them.",
+    "camera": [
+      {
+        "pos": [
+          0.2,
+          -0.8,
+          0.55
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      },
+      {
+        "pos": [
+          0.1,
+          -0.55,
+          0.42
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      }
+    ]
+  },
+  {
+    "id": "s18",
+    "beat": 18,
+    "f_in": 1262,
+    "f_out": 1361,
+    "set": "canyon_track",
+    "text": " By July, barely a sheet of paper, and his boss is thrilled.",
+    "camera": [
+      {
+        "pos": [
+          0.2,
+          -0.8,
+          0.55
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      },
+      {
+        "pos": [
+          0.1,
+          -0.55,
+          0.42
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      }
+    ]
+  },
+  {
+    "id": "s19",
+    "beat": 19,
+    "f_in": 1370,
+    "f_out": 1429,
+    "set": "canyon_track",
+    "text": " See? Even your gaps know you were wrong.",
+    "camera": [
+      {
+        "pos": [
+          0.2,
+          -0.8,
+          0.55
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      },
+      {
+        "pos": [
+          0.1,
+          -0.55,
+          0.42
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      }
+    ]
+  },
+  {
+    "id": "s20",
+    "beat": 20,
+    "f_in": 1438,
+    "f_out": 1482,
+    "set": "canyon_track",
+    "text": " Meanwhile, on the perfect railroad,",
+    "camera": [
+      {
+        "pos": [
+          0.2,
+          -0.8,
+          0.55
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      },
+      {
+        "pos": [
+          0.1,
+          -0.55,
+          0.42
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      }
+    ]
+  },
+  {
+    "id": "s21",
+    "beat": 21,
+    "f_in": 1492,
+    "f_out": 1560,
+    "set": "canyon_track",
+    "text": " the rails have started groaning in the afternoon sun,",
+    "camera": [
+      {
+        "pos": [
+          0.2,
+          -0.8,
+          0.55
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      },
+      {
+        "pos": [
+          0.1,
+          -0.55,
+          0.42
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      }
+    ]
+  },
+  {
+    "id": "s22",
+    "beat": 22,
+    "f_in": 1567,
+    "f_out": 1625,
+    "set": "canyon_track",
+    "text": " pushing against each other like they want to get out.",
+    "camera": [
+      {
+        "pos": [
+          0.2,
+          -0.8,
+          0.55
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      },
+      {
+        "pos": [
+          0.1,
+          -0.55,
+          0.42
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      }
+    ]
+  },
+  {
+    "id": "s23",
+    "beat": 23,
+    "f_in": 1632,
+    "f_out": 1690,
+    "set": "desert_buckle",
+    "text": " On the hottest day, anyone can remember",
+    "camera": [
+      {
+        "pos": [
+          1.8,
+          -4.2,
+          0.9
+        ],
+        "target": [
+          1.8,
+          -2.0,
+          0.9
+        ],
+        "lens": 60,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          1.8,
+          -3.4,
+          1.1
+        ],
+        "target": [
+          1.8,
+          -2.0,
+          1.1
+        ],
+        "lens": 60,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s24",
+    "beat": 24,
+    "f_in": 1690,
+    "f_out": 1735,
+    "set": "canyon_track",
+    "text": " his gaps finally close.",
+    "camera": [
+      {
+        "pos": [
+          0.2,
+          -0.8,
+          0.55
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      },
+      {
+        "pos": [
+          0.1,
+          -0.55,
+          0.42
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      }
+    ]
+  },
+  {
+    "id": "s25",
+    "beat": 25,
+    "f_in": 1746,
+    "f_out": 1774,
+    "set": "canyon_track",
+    "text": " Rail touching rail.",
+    "camera": [
+      {
+        "pos": [
+          0.2,
+          -0.8,
+          0.55
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      },
+      {
+        "pos": [
+          0.1,
+          -0.55,
+          0.42
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.22
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      }
+    ]
+  },
+  {
+    "id": "s26",
+    "beat": 26,
+    "f_in": 1782,
+    "f_out": 1816,
+    "set": "desert_buckle",
+    "text": " And halfway across the canyon,",
+    "camera": [
+      {
+        "pos": [
+          0.0,
+          -8.5,
+          2.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.3
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          0.0,
+          -4.5,
+          1.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s27",
+    "beat": 27,
+    "f_in": 1821,
+    "f_out": 1894,
+    "set": "desert_buckle",
+    "text": " the perfect railroad kicks sideways like a snake,",
+    "camera": [
+      {
+        "pos": [
+          0.0,
+          -8.5,
+          2.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.3
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          0.0,
+          -4.5,
+          1.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s28",
+    "beat": 28,
+    "f_in": 1901,
+    "f_out": 1958,
+    "set": "desert_buckle",
+    "text": " right as a train rolls onto it.",
+    "camera": [
+      {
+        "pos": [
+          0.0,
+          -8.5,
+          2.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.3
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          0.0,
+          -4.5,
+          1.8
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "lens": 32,
+        "roll_deg": 0.0
+      }
+    ]
+  }
+]

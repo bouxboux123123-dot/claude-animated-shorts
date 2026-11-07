@@ -1,0 +1,103 @@
+[
+  {
+    "f_in": 0,
+    "f_out": 95,
+    "act": "hold",
+    "char": "engineer",
+    "hand": "right",
+    "prop": "hacksaw",
+    "socket": "hand"
+  },
+  {
+    "f_in": 0,
+    "f_out": 95,
+    "act": "operate",
+    "prop": "hacksaw",
+    "channel": "stroke",
+    "from": 0.0,
+    "to": 16.0
+  },
+  {
+    "f_in": 0,
+    "f_out": 95,
+    "act": "operate",
+    "prop": "rail_joint",
+    "channel": "gap_closure",
+    "from": 0.0,
+    "to": 0.0
+  },
+  {
+    "f_in": 458,
+    "f_out": 538,
+    "act": "emotion",
+    "char": "boss",
+    "color": [
+      0.55,
+      0.18,
+      0.38
+    ]
+  },
+  {
+    "f_in": 538,
+    "f_out": 644,
+    "act": "hold",
+    "char": "boss",
+    "hand": "right",
+    "prop": "blueprint",
+    "socket": "hand"
+  },
+  {
+    "f_in": 538,
+    "f_out": 644,
+    "act": "operate",
+    "prop": "blueprint",
+    "channel": "wave",
+    "from": 0.0,
+    "to": 8.0
+  },
+  {
+    "f_in": 538,
+    "f_out": 644,
+    "act": "hold",
+    "char": "engineer",
+    "hand": "right",
+    "prop": "wrench",
+    "socket": "hand"
+  },
+  {
+    "f_in": 538,
+    "f_out": 644,
+    "act": "operate",
+    "prop": "wrench",
+    "channel": "tap",
+    "from": 0.0,
+    "to": 6.0
+  },
+  {
+    "f_in": 1322,
+    "f_out": 1431,
+    "act": "operate",
+    "prop": "thermometer",
+    "channel": "temperature",
+    "from": 0.15,
+    "to": 0.95
+  },
+  {
+    "f_in": 1431,
+    "f_out": 1689,
+    "act": "operate",
+    "prop": "rail_joint",
+    "channel": "gap_closure",
+    "from": 0.0,
+    "to": 1.0
+  },
+  {
+    "f_in": 1689,
+    "f_out": 1958,
+    "act": "operate",
+    "prop": "buckling_track",
+    "channel": "buckle_progress",
+    "from": 0.0,
+    "to": 1.0
+  }
+]
