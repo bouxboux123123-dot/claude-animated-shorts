@@ -1,0 +1,11 @@
+[
+  {"frame": 0, "char": "builder", "verb": "hold", "target": "sledgehammer", "socket": "grip_main"},
+  {"frame": 336, "char": "dummy", "verb": "impact", "target": "test_dummy", "channel": "crush_progress", "value": 1.0},
+  {"frame": 456, "char": "builder", "verb": "operate", "target": "sledgehammer", "socket": "grip_twohand", "channel": "swing_stroke", "value": 1.0},
+  {"frame": 516, "char": "builder", "verb": "impact", "target": "loop_track", "channel": "bend_bottom", "value": 1.0},
+  {"frame": 693, "char": "rival", "verb": "operate", "target": "turnbuckle", "socket": "handle", "channel": "crank_angle", "value": 6.28},
+  {"frame": 789, "char": "rival", "verb": "impact", "target": "loop_track", "channel": "squeeze_sides", "value": 1.0},
+  {"frame": 1059, "char": "builder", "verb": "hold", "target": "coaster_cart", "socket": "seat"},
+  {"frame": 1725, "char": "builder", "verb": "operate", "target": "coaster_cart", "channel": "track_progress", "value": 0.5},
+  {"frame": 1794, "char": "rival", "verb": "operate", "target": "coaster_cart_rival", "channel": "track_progress", "value": 1.0}
+]

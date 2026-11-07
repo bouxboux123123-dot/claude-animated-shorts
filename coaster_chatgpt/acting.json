@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "grammar": {
+    "hold": "Drive one IK hand target to a named prop socket for the event interval.",
+    "clasp": "Second-hand grip or bracing action; also drives an IK target to a named socket.",
+    "operate": "Interpolate a PropSpec channel and then evaluate its geometry/transform.",
+    "emotion": "Set a character performance state (head pose and mouth shape keys).",
+    "impact": "Trigger a deterministic short-lived visual/physical beat at a socket."
+  },
+  "easing": {
+    "linear": "linear",
+    "ease_in_out": "smoothstep",
+    "ease_out": "cubic ease out"
+  },
+  "events": [
+    {
+      "id": "dummy_crush",
+      "verb": "operate",
+      "actor": "builder",
+      "prop": "test_dummy",
+      "channel": "crush_progress",
+      "start_frame": 337,
+      "end_frame": 417,
+      "from": 0.0,
+      "to": 1.0,
+      "easing": "ease_in_out",
+      "note": "Accordion compression after the dummy returns from the circular test loop."
+    },
+    {
+      "id": "builder_hammer_right_grip",
+      "verb": "hold",
+      "actor": "builder",
+      "prop": "sledgehammer",
+      "hand": "R",
+      "socket": "grip_main",
+      "start_frame": 457,
+      "end_frame": 576
+    },
+    {
+      "id": "builder_hammer_left_grip",
+      "verb": "clasp",
+      "actor": "builder",
+      "prop": "sledgehammer",
+      "hand": "L",
+      "socket": "grip_twohand",
+      "start_frame": 457,
+      "end_frame": 576
+    },
+    {
+      "id": "hammer_swing",
+      "verb": "operate",
+      "actor": "builder",
+      "prop": "sledgehammer",
+      "channel": "swing_stroke",
+      "start_frame": 465,
+      "end_frame": 552,
+      "from": 0.0,
+      "to": 1.0,
+      "easing": "ease_in_out"
+    },
+    {
+      "id": "hero_loop_bend",
+      "verb": "operate",
+      "actor": "builder",
+      "prop": "hero_loop",
+      "channel": "bend_bottom",
+      "start_frame": 500,
+      "end_frame": 576,
+      "from": 0.0,
+      "to": 1.0,
+      "easing": "ease_out",
+      "note": "Broadens lower curvature into a long lazy clothoid-inspired curve."
+    },
+    {
+      "id": "hammer_impact_sparks",
+      "verb": "impact",
+      "actor": "builder",
+      "prop": "hero_loop",
+      "socket": "hammer_target",
+      "start_frame": 540,
+      "end_frame": 562,
+      "effect": "sparks"
+    },
+    {
+      "id": "builder_uncertain",
+      "verb": "emotion",
+      "actor": "builder",
+      "emotion": "worried",
+      "start_frame": 577,
+      "end_frame": 630
+    },
+    {
+      "id": "rival_smug",
+      "verb": "emotion",
+      "actor": "rival",
+      "emotion": "smug",
+      "start_frame": 631,
+      "end_frame": 693
+    },
+    {
+      "id": "rival_crank_right_grip",
+      "verb": "hold",
+      "actor": "rival",
+      "prop": "turnbuckle",
+      "hand": "R",
+      "socket": "grip_crank",
+      "start_frame": 694,
+      "end_frame": 789
+    },
+    {
+      "id": "rival_crank_left_grip",
+      "verb": "clasp",
+      "actor": "rival",
+      "prop": "turnbuckle",
+      "hand": "L",
+      "socket": "grip_brace",
+      "start_frame": 694,
+      "end_frame": 789
+    },
+    {
+      "id": "rival_operates_crank",
+      "verb": "operate",
+      "actor": "rival",
+      "prop": "turnbuckle",
+      "channel": "crank_angle",
+      "start_frame": 694,
+      "end_frame": 789,
+      "from": 0.0,
+      "to": 1.0,
+      "easing": "ease_in_out"
+    },
+    {
+      "id": "rival_loop_squeeze",
+      "verb": "operate",
+      "actor": "rival",
+      "prop": "rival_loop",
+      "channel": "squeeze_sides",
+      "start_frame": 694,
+      "end_frame": 789,
+      "from": 0.0,
+      "to": 1.0,
+      "easing": "ease_in_out",
+      "note": "Crank turns two side jaws inward; loop becomes tall and skinny."
+    },
+    {
+      "id": "rival_proud",
+      "verb": "emotion",
+      "actor": "rival",
+      "emotion": "smug",
+      "start_frame": 790,
+      "end_frame": 1017
+    },
+    {
+      "id": "rival_showoff",
+      "verb": "emotion",
+      "actor": "rival",
+      "emotion": "joy",
+      "start_frame": 958,
+      "end_frame": 1017
+    },
+    {
+      "id": "builder_boarding",
+      "verb": "emotion",
+      "actor": "builder",
+      "emotion": "determined",
+      "start_frame": 1018,
+      "end_frame": 1059
+    },
+    {
+      "id": "builder_cart_right_grip",
+      "verb": "hold",
+      "actor": "builder",
+      "prop": "builder_cart",
+      "hand": "R",
+      "socket": "grip_right",
+      "start_frame": 1020,
+      "end_frame": 1794
+    },
+    {
+      "id": "builder_cart_left_grip",
+      "verb": "clasp",
+      "actor": "builder",
+      "prop": "builder_cart",
+      "hand": "L",
+      "socket": "grip_left",
+      "start_frame": 1020,
+      "end_frame": 1794
+    },
+    {
+      "id": "rival_cart_right_grip",
+      "verb": "hold",
+      "actor": "rival",
+      "prop": "rival_cart",
+      "hand": "R",
+      "socket": "grip_right",
+      "start_frame": 958,
+      "end_frame": 1887
+    },
+    {
+      "id": "rival_cart_left_grip",
+      "verb": "clasp",
+      "actor": "rival",
+      "prop": "rival_cart",
+      "hand": "L",
+      "socket": "grip_left",
+      "start_frame": 958,
+      "end_frame": 1887
+    },
+    {
+      "id": "builder_cart_ride",
+      "verb": "operate",
+      "actor": "builder",
+      "prop": "builder_cart",
+      "channel": "track_progress",
+      "start_frame": 1060,
+      "end_frame": 1794,
+      "from": 0.0,
+      "to": 0.58,
+      "easing": "ease_in_out"
+    },
+    {
+      "id": "rival_cart_ride",
+      "verb": "operate",
+      "actor": "rival",
+      "prop": "rival_cart",
+      "channel": "track_progress",
+      "start_frame": 1018,
+      "end_frame": 1887,
+      "from": 0.0,
+      "to": 0.155,
+      "easing": "linear"
+    },
+    {
+      "id": "builder_safe_float",
+      "verb": "emotion",
+      "actor": "builder",
+      "emotion": "joy",
+      "start_frame": 1726,
+      "end_frame": 1794
+    },
+    {
+      "id": "rival_bottom_impact",
+      "verb": "impact",
+      "actor": "rival",
+      "prop": "rival_cart",
+      "socket": "seat_rival",
+      "start_frame": 1855,
+      "end_frame": 1887,
+      "effect": "cart_shake"
+    }
+  ]
+}
