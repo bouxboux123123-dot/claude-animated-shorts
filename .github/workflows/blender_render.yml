@@ -49,12 +49,16 @@ jobs:
           export BLENDER="/opt/blender/blender"
           echo "Using Blender: $($BLENDER --version | head -n 2)"
           cd test_blender_short
+          rm -rf render
           mkdir -p render
-          $BLENDER -b -P scene.py -- frames "$(pwd)/render" ${{ github.event.inputs.start_frame }} ${{ github.event.inputs.end_frame }} 4
+          START="${{ github.event.inputs.start_frame || '0' }}"
+          END="${{ github.event.inputs.end_frame || '50' }}"
+          echo "Rendering frames $START to $END..."
+          $BLENDER -b -P scene.py -- frames "$(pwd)/render" "$START" "$END" 4
 
       - name: Upload Rendered Frames
         uses: actions/upload-artifact@v4
         with:
-          name: blender-frames-${{ github.event.inputs.start_frame }}-${{ github.event.inputs.end_frame }}
+          name: blender-frames
           path: test_blender_short/render/*.png
           retention-days: 3
