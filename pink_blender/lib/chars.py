@@ -86,11 +86,11 @@ SPEC = {
                     sash=(0.35, 0.22, 0.10), stache='stubble', stache_col=(0.25, 0.20, 0.15), head_r=0.30, neck=None),
     'guard': dict(coat=(0.12, 0.18, 0.35), hat='kepi2', hat_col=(0.10, 0.14, 0.28), body_w=0.20, trim=(0.95, 0.75, 0.12),
                   sash=None, stache='small', stache_col=(0.22, 0.15, 0.10), head_r=0.30, neck=(0.12, 0.18, 0.35)),
-    'scientist': dict(coat=(0.95, 0.95, 0.98), hat=None, hat_col=None, body_w=0.18, trim=None,
-                      sash=None, stache=None, stache_col=None, head_r=0.29, neck=(0.15, 0.25, 0.45)),
+    'scientist': dict(coat=(0.95, 0.95, 0.98), hat=None, hat_col=(0.2, 0.2, 0.2), body_w=0.18, trim=None,
+                      sash=None, stache=None, stache_col=(0.2, 0.2, 0.2), head_r=0.29, neck=(0.15, 0.25, 0.45)),
     'artisan': dict(coat=(0.70, 0.52, 0.35), hat='kepi', hat_col=(0.35, 0.35, 0.40), body_w=0.19, trim=None,
                     sash=None, apron=True, stache='big', stache_col=(0.25, 0.15, 0.08), head_r=0.30, neck=(0.7, 0.52, 0.35)),
-    'inmate': dict(coat=(0.92, 0.38, 0.08), hat=None, hat_col=None, body_w=0.28, trim=None,
+    'inmate': dict(coat=(0.92, 0.38, 0.08), hat=None, hat_col=(0.2, 0.2, 0.2), body_w=0.28, trim=None,
                    sash=None, stache='stubble', stache_col=(0.25, 0.20, 0.15), head_r=0.34, neck=(0.92, 0.38, 0.08)),
 }
 HEAD_SC = (1.0, 0.95, 0.92)
@@ -158,6 +158,17 @@ POSES = {
     'smug':        _p(L=(38, -6, 112), R=(38, -6, 112), head=(-8, 9, -6), lean=(-6, 4), lL=(0, 0), lR=(0, 0)),
     'walk':        None, 'march': None,
 }
+POSES['stand'] = POSES['idle']
+POSES['talk'] = POSES['point']
+POSES['laugh'] = POSES['recoil']
+POSES['react'] = POSES['shock']
+POSES['angry'] = POSES['smash_down']
+
+FACES['smile'] = FACES['smug']
+FACES['shocked'] = FACES['shock']
+FACES['angry'] = FACES['determined']
+FACES['laugh'] = FACES['smug']
+
 
 
 def _walk(t, march=False):
@@ -261,7 +272,8 @@ class Char:
         self._fix()
 
     def pose(self, f, name, dur=10):
-        if name not in POSES: raise KeyError(name)
+        if name not in POSES:
+            name = 'idle'
         self._trim('pose', f)
         cur = self._pose_at(f)
         if name in CYCLES:
@@ -399,7 +411,8 @@ def make_char(kind, name):
     sp = SPEC[kind]
     ch = Char(kind, name)
     mWhite, mBlack = _white('white'), look.toon_mat('CH_black', BLACK, ink=False)
-    mCoat = _white(kind + '_coat') if sp['coat'][0] > 0.9 else _tmat(kind + '_coat', sp['coat']); mHat = _white(kind + '_hat') if sp['hat_col'] == WHITE else _tmat(kind + '_hat', sp['hat_col'])
+    mCoat = _white(kind + '_coat') if sp['coat'][0] > 0.9 else _tmat(kind + '_coat', sp['coat']); h_col = sp.get('hat_col') or BLACK
+    mHat = _white(kind + '_hat') if h_col == WHITE else _tmat(kind + '_hat', h_col)
     root = empty(name, (0, 0, 0)); ch.root = root
     act = empty(name + '_act', (0, 0, 0), root)          # ACTING layer wrapper (squash/hop/lean about the feet)
     hips = empty(name + '_hips', (0, 0, HIP_Z), act)

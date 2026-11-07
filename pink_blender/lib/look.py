@@ -60,6 +60,7 @@ def _ramp(nt, loc):
 
 
 def toon_mat(name, rgb, tex=None, ink=True):
+    if rgb is None: rgb = (0.5, 0.5, 0.5)
     m = bpy.data.materials.get(name) or bpy.data.materials.new(name)
     m.use_nodes = True; nt = m.node_tree; nt.nodes.clear()
     out = _node(nt, 'ShaderNodeOutputMaterial', (1400, 0))
