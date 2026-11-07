@@ -1,0 +1,56 @@
+name: Blender 5 Headless Render
+
+on:
+  workflow_dispatch:
+    inputs:
+      start_frame:
+        description: "Start Frame"
+        required: true
+        default: "0"
+      end_frame:
+        description: "End Frame"
+        required: true
+        default: "100"
+
+jobs:
+  blender-render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Cache Blender 5.2 Linux Binary
+        id: cache-blender
+        uses: actions/cache@v4
+        with:
+          path: /opt/blender
+          key: blender-5.2-linux-x86_64
+
+      - name: Install Blender 5.2 (if not cached)
+        if: steps.cache-blender.outputs.cache-hit != 'true'
+        run: |
+          echo "Downloading Blender 5.2 candidate for Linux..."
+          curl -L -o /tmp/blender.tar.xz "https://cdn.builder.blender.org/download/daily/blender-5.2.4-candidate+v52.d81557c1dc57-linux.x86_64-release.tar.xz"
+          mkdir -p /opt/blender
+          tar -xvf /tmp/blender.tar.xz -C /opt/blender --strip-components=1
+          rm -f /tmp/blender.tar.xz
+
+      - name: Setup System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgl1-mesa-glx libegl1-mesa libxrender1 libxi6 libxkbcommon-x11-0
+
+      - name: Run Headless Blender Render
+        run: |
+          export BLENDER="/opt/blender/blender"
+          echo "Using Blender: $($BLENDER --version | head -n 2)"
+          cd test_blender_short
+          mkdir -p render
+          $BLENDER -b -P scene.py -- frames "$(pwd)/render" ${{ github.event.inputs.start_frame }} ${{ github.event.inputs.end_frame }} 4
+
+      - name: Upload Rendered Frames
+        uses: actions/upload-artifact@v4
+        with:
+          name: blender-frames-${{ github.event.inputs.start_frame }}-${{ github.event.inputs.end_frame }}
+          path: test_blender_short/render/*.png
+          retention-days: 3
