@@ -1,0 +1,475 @@
+{
+  "fps": 30.0,
+  "total_frames": 1887,
+  "actions": [
+    {
+      "f_in": 0,
+      "f_out": 75,
+      "act": "hold",
+      "char": "builder",
+      "hand": "right",
+      "prop": "hammer",
+      "socket": "grip_main"
+    },
+    {
+      "f_in": 0,
+      "f_out": 75,
+      "act": "operate",
+      "prop": "loop_track",
+      "channel": "bend_bottom",
+      "from": 0.2,
+      "to": 1.0
+    },
+    {
+      "f_in": 75,
+      "f_out": 162,
+      "act": "hold",
+      "char": "cart",
+      "hand": "right",
+      "prop": "cart",
+      "socket": "hand"
+    },
+    {
+      "f_in": 75,
+      "f_out": 162,
+      "act": "operate",
+      "prop": "cart",
+      "channel": "track_progress",
+      "from": 0.0,
+      "to": 0.5
+    },
+    {
+      "f_in": 162,
+      "f_out": 210,
+      "act": "hold",
+      "char": "dummy",
+      "hand": "right",
+      "prop": "dummy",
+      "socket": "hand"
+    },
+    {
+      "f_in": 162,
+      "f_out": 210,
+      "act": "operate",
+      "prop": "dummy",
+      "channel": "crush_progress",
+      "from": 0.0,
+      "to": 1.0
+    },
+    {
+      "f_in": 210,
+      "f_out": 291,
+      "act": "hold",
+      "char": "rival",
+      "hand": "right",
+      "prop": "turnbuckle",
+      "socket": "hand"
+    },
+    {
+      "f_in": 210,
+      "f_out": 291,
+      "act": "operate",
+      "prop": "turnbuckle",
+      "channel": "crank_angle",
+      "from": 0.0,
+      "to": 1.0
+    },
+    {
+      "f_in": 291,
+      "f_out": 336,
+      "act": "hold",
+      "char": "builder",
+      "hand": "right",
+      "prop": "hammer",
+      "socket": "grip_main"
+    },
+    {
+      "f_in": 336,
+      "f_out": 417,
+      "act": "hold",
+      "char": "dummy",
+      "hand": "right",
+      "prop": "dummy",
+      "socket": "hand"
+    },
+    {
+      "f_in": 336,
+      "f_out": 417,
+      "act": "operate",
+      "prop": "dummy",
+      "channel": "crush_progress",
+      "from": 0.0,
+      "to": 1.0
+    },
+    {
+      "f_in": 417,
+      "f_out": 456,
+      "act": "hold",
+      "char": "builder",
+      "hand": "right",
+      "prop": "hammer",
+      "socket": "grip_main"
+    },
+    {
+      "f_in": 456,
+      "f_out": 516,
+      "act": "hold",
+      "char": "builder",
+      "hand": "right",
+      "prop": "hammer",
+      "socket": "grip_main"
+    },
+    {
+      "f_in": 456,
+      "f_out": 516,
+      "act": "operate",
+      "prop": "hammer",
+      "channel": "swing_stroke",
+      "from": 0.0,
+      "to": 1.0
+    },
+    {
+      "f_in": 516,
+      "f_out": 576,
+      "act": "hold",
+      "char": "builder",
+      "hand": "right",
+      "prop": "hammer",
+      "socket": "grip_main"
+    },
+    {
+      "f_in": 516,
+      "f_out": 576,
+      "act": "operate",
+      "prop": "loop_track",
+      "channel": "bend_bottom",
+      "from": 1.0,
+      "to": 0.0
+    },
+    {
+      "f_in": 576,
+      "f_out": 630,
+      "act": "emotion",
+      "char": "builder",
+      "emotion": "shrug"
+    },
+    {
+      "f_in": 630,
+      "f_out": 693,
+      "act": "emotion",
+      "char": "rival",
+      "emotion": "laugh"
+    },
+    {
+      "f_in": 693,
+      "f_out": 789,
+      "act": "hold",
+      "char": "rival",
+      "hand": "right",
+      "prop": "turnbuckle",
+      "socket": "hand"
+    },
+    {
+      "f_in": 693,
+      "f_out": 789,
+      "act": "operate",
+      "prop": "loop_track",
+      "channel": "squeeze_sides",
+      "from": 0.0,
+      "to": 1.0
+    },
+    {
+      "f_in": 693,
+      "f_out": 789,
+      "act": "impact",
+      "prop": "loop_track",
+      "channel": "snap_force",
+      "from": 0.0,
+      "to": 1.0
+    },
+    {
+      "f_in": 789,
+      "f_out": 846,
+      "act": "operate",
+      "prop": "cart",
+      "channel": "track_progress",
+      "from": 0.0,
+      "to": 1.0
+    },
+    {
+      "f_in": 846,
+      "f_out": 957,
+      "act": "hold",
+      "char": "crowd",
+      "hand": "right",
+      "prop": "spectate",
+      "socket": "hand"
+    },
+    {
+      "f_in": 846,
+      "f_out": 957,
+      "act": "operate",
+      "prop": "loop_track",
+      "channel": "squeeze_sides",
+      "from": 1.0,
+      "to": 0.0
+    },
+    {
+      "f_in": 957,
+      "f_out": 1017,
+      "act": "hold",
+      "char": "rival",
+      "hand": "right",
+      "prop": "turnbuckle",
+      "socket": "hand"
+    },
+    {
+      "f_in": 957,
+      "f_out": 1017,
+      "act": "emotion",
+      "char": "rival",
+      "emotion": "smug"
+    },
+    {
+      "f_in": 1017,
+      "f_out": 1059,
+      "act": "hold",
+      "char": "owner",
+      "hand": "right",
+      "prop": "cart",
+      "socket": "hand"
+    },
+    {
+      "f_in": 1017,
+      "f_out": 1059,
+      "act": "operate",
+      "prop": "cart",
+      "channel": "track_progress",
+      "from": 0.0,
+      "to": 0.2
+    },
+    {
+      "f_in": 1059,
+      "f_out": 1116,
+      "act": "hold",
+      "char": "owner",
+      "hand": "right",
+      "prop": "cart",
+      "socket": "hand"
+    },
+    {
+      "f_in": 1059,
+      "f_out": 1116,
+      "act": "operate",
+      "prop": "cart",
+      "channel": "track_progress",
+      "from": 0.2,
+      "to": 0.6
+    },
+    {
+      "f_in": 1116,
+      "f_out": 1197,
+      "act": "hold",
+      "char": "owner",
+      "hand": "right",
+      "prop": "cart",
+      "socket": "hand"
+    },
+    {
+      "f_in": 1116,
+      "f_out": 1197,
+      "act": "operate",
+      "prop": "cart",
+      "channel": "track_progress",
+      "from": 0.6,
+      "to": 0.95
+    },
+    {
+      "f_in": 1197,
+      "f_out": 1233,
+      "act": "emotion",
+      "char": "owner",
+      "emotion": "shock"
+    },
+    {
+      "f_in": 1233,
+      "f_out": 1320,
+      "act": "hold",
+      "char": "owner",
+      "hand": "right",
+      "prop": "cart",
+      "socket": "hand"
+    },
+    {
+      "f_in": 1233,
+      "f_out": 1320,
+      "act": "operate",
+      "prop": "cart",
+      "channel": "track_progress",
+      "from": 0.0,
+      "to": 0.3
+    },
+    {
+      "f_in": 1320,
+      "f_out": 1380,
+      "act": "hold",
+      "char": "owner",
+      "hand": "right",
+      "prop": "cart",
+      "socket": "hand"
+    },
+    {
+      "f_in": 1320,
+      "f_out": 1380,
+      "act": "operate",
+      "prop": "cart",
+      "channel": "track_progress",
+      "from": 0.0,
+      "to": 0.7
+    },
+    {
+      "f_in": 1380,
+      "f_out": 1446,
+      "act": "hold",
+      "char": "owner",
+      "hand": "right",
+      "prop": "cart",
+      "socket": "hand"
+    },
+    {
+      "f_in": 1380,
+      "f_out": 1446,
+      "act": "operate",
+      "prop": "cart",
+      "channel": "track_progress",
+      "from": 0.0,
+      "to": 0.3
+    },
+    {
+      "f_in": 1446,
+      "f_out": 1521,
+      "act": "hold",
+      "char": "owner",
+      "hand": "right",
+      "prop": "cart",
+      "socket": "hand"
+    },
+    {
+      "f_in": 1446,
+      "f_out": 1521,
+      "act": "operate",
+      "prop": "cart",
+      "channel": "track_progress",
+      "from": 0.3,
+      "to": 0.9
+    },
+    {
+      "f_in": 1521,
+      "f_out": 1563,
+      "act": "hold",
+      "char": "dummy",
+      "hand": "right",
+      "prop": "dummy",
+      "socket": "hand"
+    },
+    {
+      "f_in": 1521,
+      "f_out": 1563,
+      "act": "operate",
+      "prop": "dummy",
+      "channel": "crush_progress",
+      "from": 0.0,
+      "to": 1.0
+    },
+    {
+      "f_in": 1563,
+      "f_out": 1614,
+      "act": "hold",
+      "char": "builder",
+      "hand": "right",
+      "prop": "hammer",
+      "socket": "grip_main"
+    },
+    {
+      "f_in": 1563,
+      "f_out": 1614,
+      "act": "operate",
+      "prop": "loop_track",
+      "channel": "bend_bottom",
+      "from": 0.0,
+      "to": 0.2
+    },
+    {
+      "f_in": 1614,
+      "f_out": 1695,
+      "act": "hold",
+      "char": "rival",
+      "hand": "right",
+      "prop": "turnbuckle",
+      "socket": "hand"
+    },
+    {
+      "f_in": 1614,
+      "f_out": 1695,
+      "act": "operate",
+      "prop": "loop_track",
+      "channel": "squeeze_sides",
+      "from": 0.0,
+      "to": 1.0
+    },
+    {
+      "f_in": 1695,
+      "f_out": 1725,
+      "act": "hold",
+      "char": "cart",
+      "hand": "right",
+      "prop": "cart",
+      "socket": "hand"
+    },
+    {
+      "f_in": 1695,
+      "f_out": 1725,
+      "act": "operate",
+      "prop": "cart",
+      "channel": "track_progress",
+      "from": 0.0,
+      "to": 0.05
+    },
+    {
+      "f_in": 1725,
+      "f_out": 1794,
+      "act": "hold",
+      "char": "cart",
+      "hand": "right",
+      "prop": "cart",
+      "socket": "hand"
+    },
+    {
+      "f_in": 1725,
+      "f_out": 1794,
+      "act": "operate",
+      "prop": "cart",
+      "channel": "track_progress",
+      "from": 0.05,
+      "to": 0.25
+    },
+    {
+      "f_in": 1794,
+      "f_out": 1887,
+      "act": "hold",
+      "char": "rival",
+      "hand": "right",
+      "prop": "cart",
+      "socket": "hand"
+    },
+    {
+      "f_in": 1794,
+      "f_out": 1887,
+      "act": "operate",
+      "prop": "cart",
+      "channel": "track_progress",
+      "from": 0.0,
+      "to": 0.0
+    }
+  ]
+}

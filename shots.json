@@ -1,0 +1,1104 @@
+[
+  {
+    "id": "s01",
+    "beat": 1,
+    "f_in": 0,
+    "f_out": 75,
+    "set": "workshop_night",
+    "text": "He bent the roller coaster's loop out of shape.",
+    "camera": [
+      {
+        "pos": [
+          -0.8,
+          -1.5,
+          1.2
+        ],
+        "target": [
+          0.5,
+          0,
+          0.8
+        ],
+        "lens": 35,
+        "roll_deg": -8.0
+      },
+      {
+        "pos": [
+          -0.6,
+          -1.2,
+          1.0
+        ],
+        "target": [
+          0.5,
+          0,
+          0.8
+        ],
+        "lens": 35,
+        "roll_deg": -8.0
+      }
+    ]
+  },
+  {
+    "id": "s02",
+    "beat": 2,
+    "f_in": 75,
+    "f_out": 162,
+    "set": "workshop_night",
+    "text": "You see, it's the first ride ever to go upside down,",
+    "camera": [
+      {
+        "pos": [
+          0.0,
+          -2.0,
+          1.5
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "lens": 28,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          0.0,
+          -1.5,
+          1.2
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "lens": 28,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s03",
+    "beat": 3,
+    "f_in": 162,
+    "f_out": 210,
+    "set": "workshop_night",
+    "text": "and it cost him everything.",
+    "camera": [
+      {
+        "pos": [
+          -0.5,
+          -1.8,
+          1.4
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.6
+        ],
+        "lens": 45,
+        "roll_deg": 5.0
+      },
+      {
+        "pos": [
+          -0.4,
+          -1.5,
+          1.3
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.6
+        ],
+        "lens": 45,
+        "roll_deg": 5.0
+      }
+    ]
+  },
+  {
+    "id": "s04",
+    "beat": 4,
+    "f_in": 210,
+    "f_out": 291,
+    "set": "workshop_night",
+    "text": "So of course, his rival copies it bolt for bolt.",
+    "camera": [
+      {
+        "pos": [
+          -1.0,
+          -2.2,
+          1.0
+        ],
+        "target": [
+          0.5,
+          0.0,
+          0.7
+        ],
+        "lens": 35,
+        "roll_deg": -5.0
+      },
+      {
+        "pos": [
+          -0.8,
+          -1.8,
+          0.9
+        ],
+        "target": [
+          0.5,
+          0.0,
+          0.7
+        ],
+        "lens": 35,
+        "roll_deg": -5.0
+      }
+    ]
+  },
+  {
+    "id": "s05",
+    "beat": 5,
+    "f_in": 291,
+    "f_out": 336,
+    "set": "workshop_night",
+    "text": "But the night before opening,",
+    "camera": [
+      {
+        "pos": [
+          -0.7,
+          -2.0,
+          1.3
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "lens": 40,
+        "roll_deg": -10.0
+      },
+      {
+        "pos": [
+          -0.5,
+          -1.6,
+          1.1
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.5
+        ],
+        "lens": 40,
+        "roll_deg": -10.0
+      }
+    ]
+  },
+  {
+    "id": "s06",
+    "beat": 6,
+    "f_in": 336,
+    "f_out": 417,
+    "set": "workshop_night",
+    "text": "his test dummy comes back crushed like a soda can,",
+    "camera": [
+      {
+        "pos": [
+          0.0,
+          -0.8,
+          0.6
+        ],
+        "target": [
+          1.5,
+          0.5,
+          0.0
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      },
+      {
+        "pos": [
+          0.1,
+          -0.6,
+          0.5
+        ],
+        "target": [
+          1.5,
+          0.5,
+          0.0
+        ],
+        "lens": 55,
+        "roll_deg": 15.0
+      }
+    ]
+  },
+  {
+    "id": "s07",
+    "beat": 7,
+    "f_in": 417,
+    "f_out": 456,
+    "set": "workshop_night",
+    "text": "but he can't miss the opening,",
+    "camera": [
+      {
+        "pos": [
+          -0.6,
+          -1.5,
+          1.2
+        ],
+        "target": [
+          0.5,
+          0.0,
+          0.8
+        ],
+        "lens": 35,
+        "roll_deg": -8.0
+      },
+      {
+        "pos": [
+          -0.5,
+          -1.2,
+          1.0
+        ],
+        "target": [
+          0.5,
+          0.0,
+          0.8
+        ],
+        "lens": 35,
+        "roll_deg": -8.0
+      }
+    ]
+  },
+  {
+    "id": "s08",
+    "beat": 8,
+    "f_in": 456,
+    "f_out": 516,
+    "set": "workshop_night",
+    "text": "so he grabs a hammer and beats the bottom",
+    "camera": [
+      {
+        "pos": [
+          -0.5,
+          -1.0,
+          1.0
+        ],
+        "target": [
+          0.5,
+          0.0,
+          0.8
+        ],
+        "lens": 50,
+        "roll_deg": 12.0
+      },
+      {
+        "pos": [
+          -0.4,
+          -0.8,
+          0.9
+        ],
+        "target": [
+          0.5,
+          0.0,
+          0.8
+        ],
+        "lens": 50,
+        "roll_deg": 12.0
+      }
+    ]
+  },
+  {
+    "id": "s09",
+    "beat": 9,
+    "f_in": 516,
+    "f_out": 576,
+    "set": "workshop_night",
+    "text": "into a long, lazy curve.",
+    "camera": [
+      {
+        "pos": [
+          -0.4,
+          -0.8,
+          0.9
+        ],
+        "target": [
+          0.5,
+          0.0,
+          0.8
+        ],
+        "lens": 50,
+        "roll_deg": 8.0
+      },
+      {
+        "pos": [
+          -0.3,
+          -0.6,
+          0.8
+        ],
+        "target": [
+          0.5,
+          0.0,
+          0.8
+        ],
+        "lens": 50,
+        "roll_deg": 8.0
+      }
+    ]
+  },
+  {
+    "id": "s10",
+    "beat": 10,
+    "f_in": 576,
+    "f_out": 630,
+    "set": "workshop_night",
+    "text": "Does he know what he's doing? Not really.",
+    "camera": [
+      {
+        "pos": [
+          -0.6,
+          -1.2,
+          1.1
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.6
+        ],
+        "lens": 40,
+        "roll_deg": -12.0
+      },
+      {
+        "pos": [
+          -0.5,
+          -1.0,
+          1.0
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.6
+        ],
+        "lens": 40,
+        "roll_deg": -12.0
+      }
+    ]
+  },
+  {
+    "id": "s11",
+    "beat": 11,
+    "f_in": 630,
+    "f_out": 693,
+    "set": "workshop_night",
+    "text": "His rival laughs, then sneaks in,",
+    "camera": [
+      {
+        "pos": [
+          2.0,
+          -1.2,
+          0.8
+        ],
+        "target": [
+          0.5,
+          0.0,
+          0.8
+        ],
+        "lens": 35,
+        "roll_deg": 8.0
+      },
+      {
+        "pos": [
+          1.5,
+          -1.0,
+          0.7
+        ],
+        "target": [
+          0.5,
+          0.0,
+          0.8
+        ],
+        "lens": 35,
+        "roll_deg": 8.0
+      }
+    ]
+  },
+  {
+    "id": "s12",
+    "beat": 12,
+    "f_in": 693,
+    "f_out": 789,
+    "set": "workshop_night",
+    "text": "and cranks the sides together until the loop is tall and skinny.",
+    "camera": [
+      {
+        "pos": [
+          1.8,
+          -1.0,
+          0.9
+        ],
+        "target": [
+          0.5,
+          0.0,
+          0.8
+        ],
+        "lens": 40,
+        "roll_deg": 10.0
+      },
+      {
+        "pos": [
+          1.5,
+          -0.8,
+          0.8
+        ],
+        "target": [
+          0.5,
+          0.0,
+          0.8
+        ],
+        "lens": 40,
+        "roll_deg": 10.0
+      }
+    ]
+  },
+  {
+    "id": "s13",
+    "beat": 13,
+    "f_in": 789,
+    "f_out": 846,
+    "set": "workshop_night",
+    "text": "So the first cart will snap like a twig.",
+    "camera": [
+      {
+        "pos": [
+          1.5,
+          -0.8,
+          1.0
+        ],
+        "target": [
+          0.5,
+          0.0,
+          0.8
+        ],
+        "lens": 45,
+        "roll_deg": 8.0
+      },
+      {
+        "pos": [
+          1.2,
+          -0.6,
+          0.9
+        ],
+        "target": [
+          0.5,
+          0.0,
+          0.8
+        ],
+        "lens": 45,
+        "roll_deg": 8.0
+      }
+    ]
+  },
+  {
+    "id": "s14",
+    "beat": 14,
+    "f_in": 846,
+    "f_out": 957,
+    "set": "fairground_dawn",
+    "text": "The next morning, the town lines up at the rival's perfect circle,",
+    "camera": [
+      {
+        "pos": [
+          -15.0,
+          -10.0,
+          6.0
+        ],
+        "target": [
+          0.0,
+          3.0,
+          2.0
+        ],
+        "lens": 28,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          -12.0,
+          -8.0,
+          5.0
+        ],
+        "target": [
+          0.0,
+          3.0,
+          2.0
+        ],
+        "lens": 28,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s15",
+    "beat": 15,
+    "f_in": 957,
+    "f_out": 1017,
+    "set": "fairground_dawn",
+    "text": "and the rival climbs in front to show off.",
+    "camera": [
+      {
+        "pos": [
+          8.0,
+          1.0,
+          3.0
+        ],
+        "target": [
+          5.0,
+          5.0,
+          0.0
+        ],
+        "lens": 35,
+        "roll_deg": -5.0
+      },
+      {
+        "pos": [
+          7.0,
+          0.5,
+          2.8
+        ],
+        "target": [
+          5.0,
+          5.0,
+          0.0
+        ],
+        "lens": 35,
+        "roll_deg": -5.0
+      }
+    ]
+  },
+  {
+    "id": "s16",
+    "beat": 16,
+    "f_in": 1017,
+    "f_out": 1059,
+    "set": "fairground_dawn",
+    "text": "The owner climbs into his,",
+    "camera": [
+      {
+        "pos": [
+          5.0,
+          4.0,
+          1.0
+        ],
+        "target": [
+          5.0,
+          4.5,
+          0.0
+        ],
+        "lens": 35,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          4.5,
+          3.8,
+          0.9
+        ],
+        "target": [
+          5.0,
+          4.5,
+          0.0
+        ],
+        "lens": 35,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s17",
+    "beat": 17,
+    "f_in": 1059,
+    "f_out": 1116,
+    "set": "fairground_dawn",
+    "text": "and as his cart tips over the first hill,",
+    "camera": [
+      {
+        "pos": [
+          -6.0,
+          2.0,
+          5.0
+        ],
+        "target": [
+          0.0,
+          6.0,
+          4.0
+        ],
+        "lens": 35,
+        "roll_deg": 8.0
+      },
+      {
+        "pos": [
+          -5.0,
+          1.5,
+          4.5
+        ],
+        "target": [
+          0.0,
+          6.0,
+          4.0
+        ],
+        "lens": 35,
+        "roll_deg": 8.0
+      }
+    ]
+  },
+  {
+    "id": "s18",
+    "beat": 18,
+    "f_in": 1116,
+    "f_out": 1197,
+    "set": "fairground_dawn",
+    "text": "he finally sees the tall, skinny loop ahead.",
+    "camera": [
+      {
+        "pos": [
+          3.5,
+          3.0,
+          2.0
+        ],
+        "target": [
+          4.0,
+          0.0,
+          3.0
+        ],
+        "lens": 30,
+        "roll_deg": 10.0
+      },
+      {
+        "pos": [
+          3.0,
+          2.5,
+          1.8
+        ],
+        "target": [
+          4.0,
+          0.0,
+          3.0
+        ],
+        "lens": 30,
+        "roll_deg": 10.0
+      }
+    ]
+  },
+  {
+    "id": "s19",
+    "beat": 19,
+    "f_in": 1197,
+    "f_out": 1233,
+    "set": "fairground_dawn",
+    "text": "But it's too late.",
+    "camera": [
+      {
+        "pos": [
+          3.5,
+          2.0,
+          1.5
+        ],
+        "target": [
+          4.0,
+          0.0,
+          2.0
+        ],
+        "lens": 40,
+        "roll_deg": 15.0
+      },
+      {
+        "pos": [
+          3.0,
+          1.8,
+          1.3
+        ],
+        "target": [
+          4.0,
+          0.0,
+          2.0
+        ],
+        "lens": 40,
+        "roll_deg": 15.0
+      }
+    ]
+  },
+  {
+    "id": "s20",
+    "beat": 20,
+    "f_in": 1233,
+    "f_out": 1320,
+    "set": "fairground_dawn",
+    "text": "You see, a car can creep around a hairpin turn at five,",
+    "camera": [
+      {
+        "pos": [
+          8.0,
+          1.0,
+          3.0
+        ],
+        "target": [
+          4.0,
+          0.0,
+          2.75
+        ],
+        "lens": 28,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          7.0,
+          0.5,
+          2.8
+        ],
+        "target": [
+          4.0,
+          0.0,
+          2.75
+        ],
+        "lens": 28,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s21",
+    "beat": 21,
+    "f_in": 1320,
+    "f_out": 1380,
+    "set": "coaster_climax",
+    "text": "but take it at 60, and it flips.",
+    "camera": [
+      {
+        "pos": [
+          4.0,
+          -1.0,
+          2.0
+        ],
+        "target": [
+          4.0,
+          0.0,
+          2.75
+        ],
+        "lens": 45,
+        "roll_deg": 20.0
+      },
+      {
+        "pos": [
+          4.0,
+          -0.5,
+          1.8
+        ],
+        "target": [
+          4.0,
+          0.0,
+          2.75
+        ],
+        "lens": 45,
+        "roll_deg": 20.0
+      }
+    ]
+  },
+  {
+    "id": "s22",
+    "beat": 22,
+    "f_in": 1380,
+    "f_out": 1446,
+    "set": "coaster_climax",
+    "text": "A cart is fastest at the bottom of a loop,",
+    "camera": [
+      {
+        "pos": [
+          4.0,
+          -0.8,
+          1.5
+        ],
+        "target": [
+          4.0,
+          0.0,
+          1.0
+        ],
+        "lens": 50,
+        "roll_deg": 25.0
+      },
+      {
+        "pos": [
+          4.0,
+          -0.4,
+          1.2
+        ],
+        "target": [
+          4.0,
+          0.0,
+          1.0
+        ],
+        "lens": 50,
+        "roll_deg": 25.0
+      }
+    ]
+  },
+  {
+    "id": "s23",
+    "beat": 23,
+    "f_in": 1446,
+    "f_out": 1521,
+    "set": "coaster_climax",
+    "text": "and a perfect circle puts a hairpin right there,",
+    "camera": [
+      {
+        "pos": [
+          4.0,
+          -0.5,
+          2.0
+        ],
+        "target": [
+          4.0,
+          0.0,
+          2.75
+        ],
+        "lens": 35,
+        "roll_deg": 10.0
+      },
+      {
+        "pos": [
+          4.0,
+          -0.2,
+          1.8
+        ],
+        "target": [
+          4.0,
+          0.0,
+          2.75
+        ],
+        "lens": 35,
+        "roll_deg": 10.0
+      }
+    ]
+  },
+  {
+    "id": "s24",
+    "beat": 24,
+    "f_in": 1521,
+    "f_out": 1563,
+    "set": "coaster_climax",
+    "text": "which is what crushed the dummy.",
+    "camera": [
+      {
+        "pos": [
+          4.0,
+          2.0,
+          0.5
+        ],
+        "target": [
+          4.0,
+          0.0,
+          0.3
+        ],
+        "lens": 55,
+        "roll_deg": 30.0
+      },
+      {
+        "pos": [
+          4.0,
+          1.5,
+          0.4
+        ],
+        "target": [
+          4.0,
+          0.0,
+          0.3
+        ],
+        "lens": 55,
+        "roll_deg": 30.0
+      }
+    ]
+  },
+  {
+    "id": "s25",
+    "beat": 25,
+    "f_in": 1563,
+    "f_out": 1614,
+    "set": "coaster_climax",
+    "text": "But his hammer made the bottom gentle,",
+    "camera": [
+      {
+        "pos": [
+          4.0,
+          0.0,
+          2.75
+        ],
+        "target": [
+          4.0,
+          0.0,
+          2.0
+        ],
+        "lens": 40,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          4.0,
+          0.2,
+          2.5
+        ],
+        "target": [
+          4.0,
+          0.0,
+          2.0
+        ],
+        "lens": 40,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s26",
+    "beat": 26,
+    "f_in": 1614,
+    "f_out": 1695,
+    "set": "coaster_climax",
+    "text": "and the rival's squeeze moved the hairpin up top,",
+    "camera": [
+      {
+        "pos": [
+          -4.0,
+          -1.0,
+          2.0
+        ],
+        "target": [
+          -4.0,
+          0.0,
+          2.75
+        ],
+        "lens": 35,
+        "roll_deg": -10.0
+      },
+      {
+        "pos": [
+          -4.0,
+          -0.5,
+          1.8
+        ],
+        "target": [
+          -4.0,
+          0.0,
+          2.75
+        ],
+        "lens": 35,
+        "roll_deg": -10.0
+      }
+    ]
+  },
+  {
+    "id": "s27",
+    "beat": 27,
+    "f_in": 1695,
+    "f_out": 1725,
+    "set": "coaster_climax",
+    "text": "where the cart is crawling.",
+    "camera": [
+      {
+        "pos": [
+          -4.0,
+          0.0,
+          2.75
+        ],
+        "target": [
+          -4.0,
+          0.0,
+          2.0
+        ],
+        "lens": 40,
+        "roll_deg": 0.0
+      },
+      {
+        "pos": [
+          -4.0,
+          0.2,
+          2.5
+        ],
+        "target": [
+          -4.0,
+          0.0,
+          2.0
+        ],
+        "lens": 40,
+        "roll_deg": 0.0
+      }
+    ]
+  },
+  {
+    "id": "s28",
+    "beat": 28,
+    "f_in": 1725,
+    "f_out": 1794,
+    "set": "coaster_climax",
+    "text": "So he floats over without a scratch.",
+    "camera": [
+      {
+        "pos": [
+          4.0,
+          -1.0,
+          2.0
+        ],
+        "target": [
+          4.0,
+          0.0,
+          2.75
+        ],
+        "lens": 35,
+        "roll_deg": -5.0
+      },
+      {
+        "pos": [
+          4.0,
+          -0.5,
+          1.8
+        ],
+        "target": [
+          4.0,
+          0.0,
+          2.75
+        ],
+        "lens": 35,
+        "roll_deg": -5.0
+      }
+    ]
+  },
+  {
+    "id": "s29",
+    "beat": 29,
+    "f_in": 1794,
+    "f_out": 1887,
+    "set": "coaster_climax",
+    "text": "Just as the rival's cart hits the bottom of that perfect circle.",
+    "camera": [
+      {
+        "pos": [
+          -4.0,
+          2.0,
+          0.5
+        ],
+        "target": [
+          -4.0,
+          0.0,
+          0.3
+        ],
+        "lens": 55,
+        "roll_deg": -30.0
+      },
+      {
+        "pos": [
+          -4.0,
+          1.5,
+          0.4
+        ],
+        "target": [
+          -4.0,
+          0.0,
+          0.3
+        ],
+        "lens": 55,
+        "roll_deg": -30.0
+      }
+    ]
+  }
+]
