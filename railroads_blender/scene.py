@@ -19,7 +19,7 @@ import chars
 # CLI Arguments
 args = sys.argv[sys.argv.index('--') + 1:] if '--' in sys.argv else ['frames', os.path.join(HERE, 'render'), '0', '10', '4']
 MODE = args[0]
-OUT = args[1]
+OUT = os.path.abspath(args[1])
 START = int(args[2])
 END = int(args[3])
 SAMPLES = int(args[4]) if len(args) > 4 else 4
@@ -38,7 +38,8 @@ sc.frame_end = TOTAL_FRAMES
 # Setup look & lighting
 look.setup_render(sc)
 sun_ob, fill_ob, rim_ob = look.setup_lighting(sc.collection)
-look.setup_compositor(sc)
+# Compositor is optional; disable for pure direct frame output
+sc.render.use_compositing = False
 
 # Build Sets
 S = sets.build_sets()

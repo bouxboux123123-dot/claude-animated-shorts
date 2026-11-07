@@ -134,11 +134,5 @@ def setup_lighting(c, time_of_day='noon'):
     return sun_ob, fill_ob, rim_ob
 
 def setup_compositor(sc):
-    try:
-        if hasattr(sc, 'compositing_node_group'):
-            nt = bpy.data.node_groups.new('RR_comp', 'CompositorNodeTree')
-            sc.compositing_node_group = nt
-            return nt
-    except Exception:
-        pass
+    sc.render.use_compositing = False
     return None
