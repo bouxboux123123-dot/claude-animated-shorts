@@ -1,9 +1,9 @@
-name: Blender 5 Pink Experiment 20x Parallel Render
+name: Blender 5 Pink Experiment (ChatGPT) 20x Parallel Render
 
 on:
   push:
     paths:
-      - 'pink_blender/**'
+      - 'pink_blender_chatgpt/**'
       - '.github/workflows/blender_render.yml'
   workflow_dispatch:
 
@@ -63,8 +63,8 @@ jobs:
           RENDER_DIR="$(pwd)/render_chunk_${CHUNK_IDX}"
           mkdir -p "$RENDER_DIR"
 
-          # Run headless Blender render
-          $BLENDER -b -P pink_blender/scene.py -- frames "$RENDER_DIR" "$START" "$END" 4
+          # Run headless Blender render for ChatGPT
+          $BLENDER -b -P pink_blender_chatgpt/scene.py -- frames "$RENDER_DIR" "$START" "$END" 4
 
           # Encode chunk to MP4
           mkdir -p chunks
@@ -127,17 +127,17 @@ jobs:
 
           echo "Muxing audio track public/pink_prison.wav..."
           ffmpeg -y -i merged_silent.mp4 -i public/pink_prison.wav \
-            -c:v copy -c:a aac -b:a 192k -shortest pink_experiment_blender_20x.mp4
+            -c:v copy -c:a aac -b:a 192k -shortest pink_experiment_chatgpt_20x.mp4
 
           echo "=============================================="
           echo "Final Video Generated:"
-          ls -lh pink_experiment_blender_20x.mp4
-          ffprobe -i pink_experiment_blender_20x.mp4 -show_entries format=duration -v quiet -of csv="p=0"
+          ls -lh pink_experiment_chatgpt_20x.mp4
+          ffprobe -i pink_experiment_chatgpt_20x.mp4 -show_entries format=duration -v quiet -of csv="p=0"
           echo "=============================================="
 
       - name: Upload Final Replicated Short
         uses: actions/upload-artifact@v4
         with:
-          name: pink_experiment_blender_20x
-          path: pink_experiment_blender_20x.mp4
+          name: pink_experiment_chatgpt_20x
+          path: pink_experiment_chatgpt_20x.mp4
           retention-days: 7

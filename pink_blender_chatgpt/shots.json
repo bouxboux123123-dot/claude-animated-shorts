@@ -1,0 +1,566 @@
+[
+  {
+    "id": "s01",
+    "set": "corridor",
+    "f_in": 0,
+    "f_out": 102,
+    "transition_in": "dissolve",
+    "mood": "prison",
+    "moodkey": "prison",
+    "size": "MS",
+    "words": "They painted the jail cell pink, and not just any pink.",
+    "camera": [
+      {
+        "f": 0,
+        "pos": [0.4, 3.8, 1.05],
+        "target": [0.0, 0.0, 1.25],
+        "lens": 55,
+        "roll_deg": -1.5
+      },
+      {
+        "f": 102,
+        "pos": [0.15, 2.9, 1.2],
+        "target": [0.0, 0.0, 1.25],
+        "lens": 55,
+        "roll_deg": -1.5
+      }
+    ],
+    "actions": [
+      {"f": 0, "char": "guard", "act": "place", "args": {"loc": [0.0, 0.0, 0.0], "rot_z": 0.0}},
+      {"f": 0, "char": "guard", "act": "pose", "args": {"name": "walk"}},
+      {"f": 0, "char": "guard", "act": "face", "args": {"name": "neutral"}}
+    ],
+    "props": []
+  },
+  {
+    "id": "s02",
+    "set": "mix_bench",
+    "f_in": 102,
+    "f_out": 215,
+    "transition_in": "cut",
+    "mood": "workshop",
+    "moodkey": "workshop",
+    "size": "CU",
+    "words": "A very specific shade, Baker-Miller Pink: one pint of red trim paint into a gallon of white.",
+    "camera": [
+      {
+        "f": 102,
+        "pos": [0.2, 2.2, 1.6],
+        "target": [0.1, 0.0, 1.15],
+        "lens": 65,
+        "roll_deg": 1.5
+      },
+      {
+        "f": 215,
+        "pos": [0.05, 1.85, 1.45],
+        "target": [0.1, 0.0, 1.15],
+        "lens": 65,
+        "roll_deg": 1.5
+      }
+    ],
+    "actions": [
+      {"f": 102, "char": "scientist", "act": "place", "args": {"loc": [-0.35, 0.1, 0.0], "rot_z": 0.2}},
+      {"f": 102, "char": "scientist", "act": "pose", "args": {"name": "stand"}},
+      {"f": 102, "char": "artisan", "act": "place", "args": {"loc": [0.4, 0.1, 0.0], "rot_z": -0.2}},
+      {"f": 102, "char": "artisan", "act": "pose", "args": {"name": "stand"}}
+    ],
+    "props": []
+  },
+  {
+    "id": "s03",
+    "set": "paint_wall",
+    "f_in": 215,
+    "f_out": 333,
+    "transition_in": "cut",
+    "mood": "pink",
+    "moodkey": "pink",
+    "size": "MS",
+    "words": "A color so soothing it could allegedly drain a man's aggression in fifteen minutes flat.",
+    "camera": [
+      {
+        "f": 215,
+        "pos": [-0.3, 2.6, 1.3],
+        "target": [0.05, -0.1, 1.25],
+        "lens": 55,
+        "roll_deg": -1.2
+      },
+      {
+        "f": 333,
+        "pos": [0.2, 2.2, 1.28],
+        "target": [0.05, -0.1, 1.25],
+        "lens": 55,
+        "roll_deg": -1.2
+      }
+    ],
+    "actions": [
+      {"f": 215, "char": "artisan", "act": "place", "args": {"loc": [0.0, 0.0, 0.0], "rot_z": 0.1}},
+      {"f": 215, "char": "artisan", "act": "pose", "args": {"name": "talk"}},
+      {"f": 215, "char": "artisan", "act": "face", "args": {"name": "smile"}}
+    ],
+    "props": []
+  },
+  {
+    "id": "s04",
+    "set": "corridor",
+    "f_in": 333,
+    "f_out": 429,
+    "transition_in": "cut",
+    "mood": "prison",
+    "moodkey": "prison",
+    "size": "MS",
+    "words": "The guards thought it was a joke. Barbie's dream house for violent offenders.",
+    "camera": [
+      {
+        "f": 333,
+        "pos": [0.1, 3.3, 1.38],
+        "target": [0.0, 0.0, 1.3],
+        "lens": 55,
+        "roll_deg": 1.2
+      },
+      {
+        "f": 429,
+        "pos": [0.0, 2.7, 1.35],
+        "target": [0.0, 0.0, 1.3],
+        "lens": 55,
+        "roll_deg": 1.2
+      }
+    ],
+    "actions": [
+      {"f": 333, "char": "guard", "act": "place", "args": {"loc": [-0.35, 0.0, 0.0], "rot_z": 0.15}},
+      {"f": 333, "char": "guard", "act": "pose", "args": {"name": "laugh"}},
+      {"f": 333, "char": "guard", "act": "face", "args": {"name": "smile"}}
+    ],
+    "props": []
+  },
+  {
+    "id": "s05",
+    "set": "corridor",
+    "f_in": 429,
+    "f_out": 496,
+    "transition_in": "cut",
+    "mood": "prison",
+    "moodkey": "prison",
+    "size": "CU",
+    "words": "Except it came with one very strange rule.",
+    "camera": [
+      {
+        "f": 429,
+        "pos": [0.35, 2.7, 1.45],
+        "target": [0.0, 0.0, 1.35],
+        "lens": 60,
+        "roll_deg": -2.0
+      },
+      {
+        "f": 496,
+        "pos": [0.1, 2.25, 1.38],
+        "target": [0.0, 0.0, 1.35],
+        "lens": 60,
+        "roll_deg": -2.0
+      }
+    ],
+    "actions": [
+      {"f": 429, "char": "guard", "act": "place", "args": {"loc": [0.0, 0.0, 0.0], "rot_z": 0.0}},
+      {"f": 429, "char": "guard", "act": "pose", "args": {"name": "stand"}},
+      {"f": 429, "char": "guard", "act": "face", "args": {"name": "shocked"}}
+    ],
+    "props": []
+  },
+  {
+    "id": "s06",
+    "set": "corridor",
+    "f_in": 496,
+    "f_out": 667,
+    "transition_in": "cut",
+    "mood": "prison",
+    "moodkey": "prison",
+    "size": "MS",
+    "words": "Put an inmate in for fifteen minutes. Never more, never less. Set a timer.",
+    "camera": [
+      {
+        "f": 496,
+        "pos": [0.35, 3.1, 1.6],
+        "target": [0.05, 0.0, 1.3],
+        "lens": 55,
+        "roll_deg": -2.2
+      },
+      {
+        "f": 667,
+        "pos": [0.1, 2.3, 1.25],
+        "target": [0.05, 0.0, 1.3],
+        "lens": 55,
+        "roll_deg": -2.2
+      }
+    ],
+    "actions": [
+      {"f": 496, "char": "guard", "act": "place", "args": {"loc": [0.0, 0.0, 0.0], "rot_z": 0.0}},
+      {"f": 496, "char": "guard", "act": "pose", "args": {"name": "stand"}}
+    ],
+    "props": []
+  },
+  {
+    "id": "s07",
+    "set": "pink_cell",
+    "f_in": 667,
+    "f_out": 847,
+    "transition_in": "cut",
+    "mood": "pink",
+    "moodkey": "pink",
+    "size": "MS",
+    "words": "So they locked a three-hundred-pound inmate inside. The kind who could bend bars for exercise.",
+    "camera": [
+      {
+        "f": 667,
+        "pos": [-0.1, 2.8, 0.65],
+        "target": [0.0, 0.0, 1.45],
+        "lens": 50,
+        "roll_deg": 4.5
+      },
+      {
+        "f": 847,
+        "pos": [0.1, 3.4, 0.9],
+        "target": [0.0, 0.0, 1.45],
+        "lens": 50,
+        "roll_deg": 4.5
+      }
+    ],
+    "actions": [
+      {"f": 667, "char": "inmate", "act": "place", "args": {"loc": [0.0, 0.0, 0.0], "rot_z": 0.0}},
+      {"f": 667, "char": "inmate", "act": "pose", "args": {"name": "laugh"}},
+      {"f": 667, "char": "inmate", "act": "face", "args": {"name": "angry"}}
+    ],
+    "props": []
+  },
+  {
+    "id": "s08",
+    "set": "corridor",
+    "f_in": 847,
+    "f_out": 915,
+    "transition_in": "cut",
+    "mood": "prison",
+    "moodkey": "prison",
+    "size": "MS",
+    "words": "Fifteen minutes ticked by. They pulled him out.",
+    "camera": [
+      {
+        "f": 847,
+        "pos": [0.0, 2.6, 1.38],
+        "target": [0.0, 0.0, 1.3],
+        "lens": 55,
+        "roll_deg": -1.0
+      },
+      {
+        "f": 915,
+        "pos": [0.0, 3.3, 1.32],
+        "target": [0.0, 0.0, 1.3],
+        "lens": 55,
+        "roll_deg": -1.0
+      }
+    ],
+    "actions": [
+      {"f": 847, "char": "guard", "act": "place", "args": {"loc": [-0.4, 0.0, 0.0], "rot_z": 0.2}},
+      {"f": 847, "char": "guard", "act": "pose", "args": {"name": "stand"}},
+      {"f": 847, "char": "inmate", "act": "place", "args": {"loc": [0.3, 0.0, 0.0], "rot_z": -0.2}},
+      {"f": 847, "char": "inmate", "act": "pose", "args": {"name": "idle"}}
+    ],
+    "props": []
+  },
+  {
+    "id": "s09",
+    "set": "arm_wrestle",
+    "f_in": 915,
+    "f_out": 1083,
+    "transition_in": "cut",
+    "mood": "prison",
+    "moodkey": "prison",
+    "size": "MS",
+    "words": "Put him in an arm-wrestling match against an average guard. The guard pinned him in two seconds.",
+    "camera": [
+      {
+        "f": 915,
+        "pos": [0.05, 2.7, 1.25],
+        "target": [0.0, 0.0, 1.05],
+        "lens": 55,
+        "roll_deg": 2.0
+      },
+      {
+        "f": 1083,
+        "pos": [0.0, 2.1, 1.1],
+        "target": [0.0, 0.0, 1.05],
+        "lens": 55,
+        "roll_deg": 2.0
+      }
+    ],
+    "actions": [
+      {"f": 915, "char": "guard", "act": "place", "args": {"loc": [-0.35, 0.0, 0.0], "rot_z": 0.4}},
+      {"f": 915, "char": "guard", "act": "pose", "args": {"name": "sit"}},
+      {"f": 915, "char": "inmate", "act": "place", "args": {"loc": [0.35, 0.0, 0.0], "rot_z": -0.4}},
+      {"f": 915, "char": "inmate", "act": "pose", "args": {"name": "sit"}}
+    ],
+    "props": []
+  },
+  {
+    "id": "s10",
+    "set": "arm_wrestle",
+    "f_in": 1083,
+    "f_out": 1157,
+    "transition_in": "cut",
+    "mood": "prison",
+    "moodkey": "prison",
+    "size": "CU",
+    "words": "His grip strength was gone. Nobody could explain it.",
+    "camera": [
+      {
+        "f": 1083,
+        "pos": [0.0, 2.4, 1.28],
+        "target": [0.0, 0.0, 1.25],
+        "lens": 60,
+        "roll_deg": -1.5
+      },
+      {
+        "f": 1157,
+        "pos": [0.0, 2.2, 1.26],
+        "target": [0.0, 0.0, 1.25],
+        "lens": 60,
+        "roll_deg": -1.5
+      }
+    ],
+    "actions": [
+      {"f": 1083, "char": "inmate", "act": "place", "args": {"loc": [0.0, 0.0, 0.0], "rot_z": 0.0}},
+      {"f": 1083, "char": "inmate", "act": "pose", "args": {"name": "react"}},
+      {"f": 1083, "char": "inmate", "act": "face", "args": {"name": "shocked"}}
+    ],
+    "props": []
+  },
+  {
+    "id": "s11",
+    "set": "paint_wall",
+    "f_in": 1157,
+    "f_out": 1283,
+    "transition_in": "cut",
+    "mood": "pink",
+    "moodkey": "pink",
+    "size": "WS",
+    "words": "Jails across America started buying pink paint by the truckload.",
+    "camera": [
+      {
+        "f": 1157,
+        "pos": [-0.9, 4.4, 2.1],
+        "target": [0.0, 0.0, 1.2],
+        "lens": 45,
+        "roll_deg": 3.0
+      },
+      {
+        "f": 1283,
+        "pos": [0.7, 3.3, 1.7],
+        "target": [0.0, 0.0, 1.2],
+        "lens": 45,
+        "roll_deg": 3.0
+      }
+    ],
+    "actions": [
+      {"f": 1157, "char": "artisan", "act": "place", "args": {"loc": [-0.6, 0.0, 0.0], "rot_z": 0.2}},
+      {"f": 1157, "char": "artisan", "act": "pose", "args": {"name": "walk"}},
+      {"f": 1157, "char": "guard", "act": "place", "args": {"loc": [0.6, 0.0, 0.0], "rot_z": -0.2}},
+      {"f": 1157, "char": "guard", "act": "pose", "args": {"name": "stand"}}
+    ],
+    "props": []
+  },
+  {
+    "id": "s12",
+    "set": "night_station",
+    "f_in": 1283,
+    "f_out": 1375,
+    "transition_in": "cut",
+    "mood": "night",
+    "moodkey": "night",
+    "size": "MS",
+    "words": "Until one night, a guard forgot to check the clock.",
+    "camera": [
+      {
+        "f": 1283,
+        "pos": [0.35, 3.3, 1.7],
+        "target": [0.0, 0.0, 1.9],
+        "lens": 55,
+        "roll_deg": -2.0
+      },
+      {
+        "f": 1375,
+        "pos": [0.1, 2.4, 1.85],
+        "target": [0.0, 0.0, 1.9],
+        "lens": 55,
+        "roll_deg": -2.0
+      }
+    ],
+    "actions": [
+      {"f": 1283, "char": "guard", "act": "place", "args": {"loc": [0.0, 0.0, 0.0], "rot_z": 0.0}},
+      {"f": 1283, "char": "guard", "act": "pose", "args": {"name": "sit"}},
+      {"f": 1283, "char": "guard", "act": "face", "args": {"name": "neutral"}}
+    ],
+    "props": []
+  },
+  {
+    "id": "s13",
+    "set": "pink_cell",
+    "f_in": 1375,
+    "f_out": 1437,
+    "transition_in": "cut",
+    "mood": "night",
+    "moodkey": "night",
+    "size": "CU",
+    "words": "At fifteen minutes, the prisoner was sitting quietly.",
+    "camera": [
+      {
+        "f": 1375,
+        "pos": [0.35, 2.4, 1.25],
+        "target": [0.35, 0.4, 1.1],
+        "lens": 60,
+        "roll_deg": 1.0
+      },
+      {
+        "f": 1437,
+        "pos": [0.35, 1.9, 1.18],
+        "target": [0.35, 0.4, 1.1],
+        "lens": 60,
+        "roll_deg": 1.0
+      }
+    ],
+    "actions": [
+      {"f": 1375, "char": "inmate", "act": "place", "args": {"loc": [0.35, 0.4, 0.0], "rot_z": 0.0}},
+      {"f": 1375, "char": "inmate", "act": "pose", "args": {"name": "sit"}},
+      {"f": 1375, "char": "inmate", "act": "face", "args": {"name": "neutral"}}
+    ],
+    "props": []
+  },
+  {
+    "id": "s14",
+    "set": "pink_cell",
+    "f_in": 1437,
+    "f_out": 1477,
+    "transition_in": "cut",
+    "mood": "pink",
+    "moodkey": "pink",
+    "size": "MS",
+    "words": "At twenty, he was pacing.",
+    "camera": [
+      {
+        "f": 1437,
+        "pos": [-0.5, 2.8, 1.25],
+        "target": [0.0, 0.0, 1.15],
+        "lens": 55,
+        "roll_deg": -1.5
+      },
+      {
+        "f": 1477,
+        "pos": [0.5, 2.8, 1.25],
+        "target": [0.0, 0.0, 1.15],
+        "lens": 55,
+        "roll_deg": -1.5
+      }
+    ],
+    "actions": [
+      {"f": 1437, "char": "inmate", "act": "place", "args": {"loc": [0.0, 0.0, 0.0], "rot_z": 0.0}},
+      {"f": 1437, "char": "inmate", "act": "pose", "args": {"name": "walk"}},
+      {"f": 1437, "char": "inmate", "act": "face", "args": {"name": "angry"}}
+    ],
+    "props": []
+  },
+  {
+    "id": "s15",
+    "set": "pink_cell",
+    "f_in": 1477,
+    "f_out": 1581,
+    "transition_in": "cut",
+    "mood": "pink",
+    "moodkey": "pink",
+    "size": "MS",
+    "words": "At thirty, he was screaming and ripping the welded steel bench out of the concrete floor.",
+    "camera": [
+      {
+        "f": 1477,
+        "pos": [0.2, 2.3, 0.85],
+        "target": [0.35, 0.4, 1.15],
+        "lens": 50,
+        "roll_deg": -5.5
+      },
+      {
+        "f": 1581,
+        "pos": [0.35, 1.8, 0.95],
+        "target": [0.35, 0.4, 1.15],
+        "lens": 50,
+        "roll_deg": -5.5
+      }
+    ],
+    "actions": [
+      {"f": 1477, "char": "inmate", "act": "place", "args": {"loc": [0.35, 0.4, 0.0], "rot_z": 0.0}},
+      {"f": 1477, "char": "inmate", "act": "pose", "args": {"name": "react"}},
+      {"f": 1477, "char": "inmate", "act": "face", "args": {"name": "angry"}}
+    ],
+    "props": []
+  },
+  {
+    "id": "s16",
+    "set": "blackboard",
+    "f_in": 1581,
+    "f_out": 1801,
+    "transition_in": "cut",
+    "mood": "workshop",
+    "moodkey": "workshop",
+    "size": "MS",
+    "words": "The scientist who invented the color swore it drained a person's fight. But follow-up studies found the exact opposite.",
+    "camera": [
+      {
+        "f": 1581,
+        "pos": [0.8, 3.2, 1.5],
+        "target": [0.0, 0.0, 1.45],
+        "lens": 55,
+        "roll_deg": 1.8
+      },
+      {
+        "f": 1801,
+        "pos": [-0.5, 2.7, 1.42],
+        "target": [0.0, 0.0, 1.45],
+        "lens": 55,
+        "roll_deg": 1.8
+      }
+    ],
+    "actions": [
+      {"f": 1581, "char": "scientist", "act": "place", "args": {"loc": [-0.3, 0.0, 0.0], "rot_z": 0.2}},
+      {"f": 1581, "char": "scientist", "act": "pose", "args": {"name": "talk"}},
+      {"f": 1581, "char": "scientist", "act": "face", "args": {"name": "neutral"}}
+    ],
+    "props": []
+  },
+  {
+    "id": "s17",
+    "set": "pink_cell",
+    "f_in": 1801,
+    "f_out": 1958,
+    "transition_in": "cut",
+    "mood": "pink",
+    "moodkey": "pink",
+    "size": "CU",
+    "words": "Pink didn't calm violent prisoners down. It just gave them fifteen minutes to reload.",
+    "camera": [
+      {
+        "f": 1801,
+        "pos": [0.0, 2.8, 1.32],
+        "target": [0.0, 0.0, 1.35],
+        "lens": 60,
+        "roll_deg": -3.0
+      },
+      {
+        "f": 1958,
+        "pos": [0.0, 1.85, 1.38],
+        "target": [0.0, 0.0, 1.35],
+        "lens": 60,
+        "roll_deg": -3.0
+      }
+    ],
+    "actions": [
+      {"f": 1801, "char": "inmate", "act": "place", "args": {"loc": [0.0, 0.0, 0.0], "rot_z": 0.0}},
+      {"f": 1801, "char": "inmate", "act": "pose", "args": {"name": "stand"}},
+      {"f": 1801, "char": "inmate", "act": "face", "args": {"name": "angry"}}
+    ],
+    "props": []
+  }
+]
