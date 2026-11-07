@@ -88,7 +88,7 @@ def _configure_scene(scene):
     scene.frame_end = FRAME_END
     scene.render.filepath = '//frames/'
     if hasattr(scene, 'eevee'):
-        scene.eevee.taa_render_samples = 64
+        scene.eevee.taa_render_samples = 4
         if hasattr(scene.eevee, 'use_shadows'):
             scene.eevee.use_shadows = True
     scene.view_settings.view_transform = 'Standard'
@@ -378,12 +378,15 @@ def _parse_cli():
     parser.add_argument('--blend-output', default='//roller_coaster_story.blend', help='Saved Blender scene path.')
     parser.add_argument('--build-only', action='store_true', help='Build and save the .blend without rendering.')
     parser.add_argument('--no-save', action='store_true', help='Do not save the .blend file.')
+    parser.add_argument('--samples', type=int, default=4, help='Temporal AA render samples (default: 4).')
     return parser.parse_args(argv)
 
 
 def main():
     args = _parse_cli()
     scene = build_scene()
+    if hasattr(scene, 'eevee') and hasattr(args, 'samples'):
+        scene.eevee.taa_render_samples = args.samples
     output_dir = bpy.path.abspath(args.output)
     blend_path = bpy.path.abspath(args.blend_output)
     if not args.no_save:

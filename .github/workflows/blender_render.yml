@@ -64,7 +64,7 @@ jobs:
           mkdir -p "$RENDER_DIR"
 
           # Run headless Blender render for ChatGPT Roller Coaster
-          $BLENDER -b -P coaster_chatgpt/scene.py -- --start "$START" --end "$END" --output "$RENDER_DIR"
+          $BLENDER -b -P coaster_chatgpt/scene.py -- --start "$START" --end "$END" --output "$RENDER_DIR" --samples 4 --no-save
 
           # Encode chunk to MP4
           mkdir -p chunks
