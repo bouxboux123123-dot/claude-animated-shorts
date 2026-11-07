@@ -126,10 +126,7 @@ bpy.app.handlers.frame_change_pre.append(_vis)
 # ---------------------------------------------------------------------------
 # Dynamic Action & Prop Operation Execution
 # ---------------------------------------------------------------------------
-for f in range(START, END):
-    sc.frame_set(f)
-    
-    # Process actions active at this frame
+def apply_frame_actions(f):
     for a in ACTING:
         if a['f_in'] <= f <= a['f_out']:
             act = a['act']
@@ -160,7 +157,7 @@ for f in range(START, END):
 # Frame Rendering Execution
 # ---------------------------------------------------------------------------
 os.makedirs(OUT, exist_ok=True)
-sc.render.filepath = os.path.join(OUT, 'f')
+sc.render.image_settings.file_format = 'PNG'
 
 print(f"=====================================================")
 print(f"Rendering Railroads frames {START} to {END} (samples={SAMPLES})")
@@ -168,12 +165,10 @@ print(f"=====================================================")
 
 for f in range(START, END):
     sc.frame_set(f)
+    apply_frame_actions(f)
     out_file = os.path.join(OUT, f"f{f:04d}.png")
-    if not os.path.exists(out_file):
-        sc.render.filepath = os.path.join(OUT, f"f{f:04d}.png")
-        bpy.ops.render.render(write_still=True)
-        print(f"Rendered frame {f:04d} -> {out_file}")
-    else:
-        print(f"Frame {f:04d} already exists, skipping.")
+    sc.render.filepath = out_file
+    bpy.ops.render.render(write_still=True)
+    print(f"Rendered frame {f:04d} -> {out_file}")
 
 print("Slice render complete!")

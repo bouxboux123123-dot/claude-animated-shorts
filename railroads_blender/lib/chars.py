@@ -6,7 +6,10 @@ import bmesh
 import math
 from mathutils import Vector, Euler
 
-from . import look
+try:
+    from . import look
+except Exception:
+    import look
 
 class Char:
     def __init__(self, name, root, head_card, torso_card, l_hand, r_hand):

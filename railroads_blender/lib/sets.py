@@ -6,7 +6,10 @@ import bmesh
 import math
 from mathutils import Vector, Euler
 
-from . import look
+try:
+    from . import look
+except Exception:
+    import look
 
 ORIGIN = {
     'canyon_track': (0, 0, 0),

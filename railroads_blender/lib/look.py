@@ -83,7 +83,7 @@ def ink_hull(obj, width=0.015):
     return obj
 
 def setup_render(sc):
-    sc.render.engine = 'BLENDER_EEVEE_NEXT' if hasattr(bpy.types, 'RenderSettings') else 'BLENDER_EEVEE'
+    sc.render.engine = 'BLENDER_EEVEE'
     sc.render.resolution_x = 720
     sc.render.resolution_y = 1280
     sc.render.resolution_percentage = 100
@@ -134,11 +134,11 @@ def setup_lighting(c, time_of_day='noon'):
     return sun_ob, fill_ob, rim_ob
 
 def setup_compositor(sc):
-    sc.use_nodes = True
-    nt = sc.node_tree
-    nt.nodes.clear()
-    
-    rl = nt.nodes.new('CompositorNodeRLayers')
-    comp = nt.nodes.new('CompositorNodeComposite')
-    nt.links.new(rl.outputs['Image'], comp.inputs['Image'])
-    return nt
+    try:
+        if hasattr(sc, 'compositing_node_group'):
+            nt = bpy.data.node_groups.new('RR_comp', 'CompositorNodeTree')
+            sc.compositing_node_group = nt
+            return nt
+    except Exception:
+        pass
+    return None
