@@ -1,6 +1,10 @@
 name: Blender 5 Headless Render
 
 on:
+  push:
+    paths:
+      - 'test_blender_short/**'
+      - '.github/workflows/blender_render.yml'
   workflow_dispatch:
     inputs:
       start_frame:
