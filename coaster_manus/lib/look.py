@@ -149,7 +149,8 @@ def activate_mood(scene, mood):
 
 
 def configure_render(scene, width=1080, height=1920, fps=30, samples=4):
-    scene.render.engine = "BLENDER_EEVEE_NEXT"
+    ids = [i.identifier for i in bpy.types.RenderSettings.bl_rna.properties["engine"].enum_items]
+    scene.render.engine = "BLENDER_EEVEE_NEXT" if "BLENDER_EEVEE_NEXT" in ids else "BLENDER_EEVEE"
     scene.render.resolution_x = width
     scene.render.resolution_y = height
     scene.render.resolution_percentage = 100
