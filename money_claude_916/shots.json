@@ -1,0 +1,830 @@
+{
+ "fps": 30,
+ "total_frames": 1830,
+ "resolution": [
+  1080,
+  1920
+ ],
+ "sensor_fit": "HORIZONTAL",
+ "shots": [
+  {
+   "id": "b01",
+   "beat": 1,
+   "f0": 0,
+   "f1": 84,
+   "set": "island",
+   "mood": "noon_fair",
+   "angle": "push-in",
+   "ease": "inout",
+   "line": "Why don't we just print a billion dollars for everybody, and we all get rich?",
+   "from": {
+    "pos": [
+     -0.8,
+     -5.4,
+     1.6
+    ],
+    "look": [
+     -0.8,
+     0,
+     1.9
+    ],
+    "lens": 26,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     -0.8,
+     -4.2,
+     1.8
+    ],
+    "look": [
+     -0.8,
+     0,
+     2.0
+    ],
+    "lens": 30,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b02",
+   "beat": 2,
+   "f0": 84,
+   "f1": 168,
+   "set": "island",
+   "mood": "noon_fair",
+   "angle": "worms-eye tilt up at ferris wheel",
+   "ease": "inout",
+   "line": "It sounds like genius. Until you actually do it.",
+   "from": {
+    "pos": [
+     -0.8,
+     -4.6,
+     0.25
+    ],
+    "look": [
+     -1.5,
+     2,
+     3.4
+    ],
+    "lens": 22,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     -0.8,
+     -4.6,
+     0.6
+    ],
+    "look": [
+     -1.2,
+     2,
+     2.9
+    ],
+    "lens": 22,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b03",
+   "beat": 3,
+   "f0": 168,
+   "f1": 255,
+   "set": "island",
+   "mood": "noon_fair",
+   "angle": "high-angle stacked wide of ten islanders",
+   "ease": "inout",
+   "line": "Imagine there are only ten people on an island, and only ten loaves of bread.",
+   "from": {
+    "pos": [
+     0,
+     -8.5,
+     6.5
+    ],
+    "look": [
+     0,
+     3.2,
+     1.2
+    ],
+    "lens": 24,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     0,
+     -7,
+     3.5
+    ],
+    "look": [
+     0,
+     3.2,
+     1.5
+    ],
+    "lens": 24,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b04",
+   "beat": 4,
+   "f0": 255,
+   "f1": 336,
+   "set": "island",
+   "mood": "noon_fair",
+   "angle": "bread table slide",
+   "ease": "inout",
+   "line": "Everyone has one dollar, so a loaf costs one dollar. Simple.",
+   "from": {
+    "pos": [
+     1.4,
+     -4.6,
+     1.4
+    ],
+    "look": [
+     1.9,
+     1.2,
+     1.2
+    ],
+    "lens": 30,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     1.9,
+     -4.0,
+     1.3
+    ],
+    "look": [
+     2.2,
+     1.2,
+     1.2
+    ],
+    "lens": 32,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b05",
+   "beat": 5,
+   "f0": 336,
+   "f1": 420,
+   "set": "workshop",
+   "mood": "workshop_tungsten",
+   "angle": "worms-eye up at the press",
+   "ease": "inout",
+   "line": "Now, the government cranks the printing press all night long...",
+   "from": {
+    "pos": [
+     98.8,
+     -5.6,
+     0.3
+    ],
+    "look": [
+     100,
+     0.6,
+     3.4
+    ],
+    "lens": 22,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     99.2,
+     -5.0,
+     2.2
+    ],
+    "look": [
+     99.6,
+     0.6,
+     1.6
+    ],
+    "lens": 28,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b06",
+   "beat": 6,
+   "f0": 420,
+   "f1": 504,
+   "set": "island",
+   "mood": "golden_dusk",
+   "angle": "plunge: money drops on the doorstep",
+   "ease": "in",
+   "line": "...and drops a million dollars onto everyone's doorstep.",
+   "from": {
+    "pos": [
+     6,
+     -2.5,
+     15
+    ],
+    "look": [
+     6,
+     1.2,
+     0
+    ],
+    "lens": 28,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     6,
+     -2.0,
+     9.5
+    ],
+    "look": [
+     6,
+     1.2,
+     0.5
+    ],
+    "lens": 28,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b07",
+   "beat": 7,
+   "f0": 504,
+   "f1": 585,
+   "set": "bakery",
+   "mood": "bakery_warm",
+   "angle": "tracking sprint",
+   "ease": "linear",
+   "line": "You're a millionaire! You sprint to the bakery to buy breakfast.",
+   "from": {
+    "pos": [
+     192,
+     -5,
+     1.5
+    ],
+    "look": [
+     192,
+     0,
+     1.3
+    ],
+    "lens": 30,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     200,
+     -5,
+     1.5
+    ],
+    "look": [
+     200.5,
+     0,
+     1.3
+    ],
+    "lens": 30,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b08",
+   "beat": 8,
+   "f0": 585,
+   "f1": 672,
+   "set": "bakery",
+   "mood": "bakery_warm",
+   "angle": "queue reveal pan",
+   "ease": "inout",
+   "line": "Except... all nine other people are already standing in line,",
+   "from": {
+    "pos": [
+     201.6,
+     -5.2,
+     1.7
+    ],
+    "look": [
+     201,
+     0,
+     1.5
+    ],
+    "lens": 24,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     197,
+     -6,
+     2.2
+    ],
+    "look": [
+     196.5,
+     0,
+     1.5
+    ],
+    "lens": 24,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b09",
+   "beat": 9,
+   "f0": 672,
+   "f1": 750,
+   "set": "bakery",
+   "mood": "bakery_warm",
+   "angle": "worms-eye at the oven",
+   "ease": "inout",
+   "line": "and there are still only ten loaves of bread in the oven.",
+   "from": {
+    "pos": [
+     207.5,
+     -5,
+     0.4
+    ],
+    "look": [
+     210,
+     5.5,
+     2.5
+    ],
+    "lens": 24,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     208,
+     -4.6,
+     0.9
+    ],
+    "look": [
+     211,
+     5.5,
+     1.6
+    ],
+    "lens": 28,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b10",
+   "beat": 10,
+   "f0": 750,
+   "f1": 840,
+   "set": "bakery",
+   "mood": "bakery_warm",
+   "angle": "slam push-in",
+   "ease": "inout",
+   "line": "You slam down a thousand dollars: 'Give me that loaf!'",
+   "from": {
+    "pos": [
+     202.0,
+     -4,
+     1.6
+    ],
+    "look": [
+     202.3,
+     0,
+     1.3
+    ],
+    "lens": 32,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     202.2,
+     -3.6,
+     1.5
+    ],
+    "look": [
+     202.4,
+     0,
+     1.2
+    ],
+    "lens": 34,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b11",
+   "beat": 11,
+   "f0": 840,
+   "f1": 930,
+   "set": "bakery",
+   "mood": "bakery_warm",
+   "angle": "guy shouts",
+   "ease": "inout",
+   "line": "The guy behind you shouts: 'I'll pay ten thousand!'",
+   "from": {
+    "pos": [
+     200.6,
+     -4.2,
+     1.7
+    ],
+    "look": [
+     200.6,
+     0,
+     1.7
+    ],
+    "lens": 32,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     200.3,
+     -3.8,
+     1.8
+    ],
+    "look": [
+     200.4,
+     0,
+     1.8
+    ],
+    "lens": 34,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b12",
+   "beat": 12,
+   "f0": 930,
+   "f1": 1026,
+   "set": "bakery",
+   "mood": "bakery_warm",
+   "angle": "lady far back",
+   "ease": "inout",
+   "line": "The lady in back yells: 'ONE HUNDRED THOUSAND!'",
+   "from": {
+    "pos": [
+     193.5,
+     -4.6,
+     1.8
+    ],
+    "look": [
+     191.8,
+     0,
+     1.7
+    ],
+    "lens": 30,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     192.8,
+     -4.0,
+     1.9
+    ],
+    "look": [
+     191.4,
+     0,
+     1.8
+    ],
+    "lens": 32,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b13",
+   "beat": 13,
+   "f0": 1026,
+   "f1": 1110,
+   "set": "bakery",
+   "mood": "bakery_warm",
+   "angle": "baker, then worms-eye up at price board",
+   "ease": "inout",
+   "line": "Within ten minutes, that single loaf of bread costs one million dollars.",
+   "from": {
+    "pos": [
+     204.2,
+     -4.5,
+     1.8
+    ],
+    "look": [
+     204.4,
+     0,
+     2.0
+    ],
+    "lens": 30,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     206.6,
+     -4.0,
+     0.4
+    ],
+    "look": [
+     207.2,
+     4.6,
+     3.3
+    ],
+    "lens": 26,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b14",
+   "beat": 14,
+   "f0": 1110,
+   "f1": 1200,
+   "set": "bakery",
+   "mood": "bakery_warm",
+   "angle": "worried close",
+   "ease": "inout",
+   "line": "You didn't get richer. The paper just got weaker.",
+   "from": {
+    "pos": [
+     201.8,
+     -4.2,
+     1.6
+    ],
+    "look": [
+     201.8,
+     0,
+     1.4
+    ],
+    "lens": 30,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     201.8,
+     -3.6,
+     1.7
+    ],
+    "look": [
+     201.8,
+     0,
+     1.3
+    ],
+    "lens": 32,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b15",
+   "beat": 15,
+   "f0": 1200,
+   "f1": 1290,
+   "set": "island",
+   "mood": "noon_fair",
+   "angle": "loaf medium",
+   "ease": "inout",
+   "line": "Because money isn't wealth. Goods and services are wealth.",
+   "from": {
+    "pos": [
+     1.0,
+     -4.6,
+     1.4
+    ],
+    "look": [
+     0.8,
+     0,
+     1.5
+    ],
+    "lens": 30,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     0.9,
+     -4.0,
+     1.5
+    ],
+    "look": [
+     0.8,
+     0,
+     1.4
+    ],
+    "lens": 32,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b16",
+   "beat": 16,
+   "f0": 1290,
+   "f1": 1386,
+   "set": "island",
+   "mood": "noon_fair",
+   "angle": "high-angle down on the loaf",
+   "ease": "inout",
+   "line": "If you double the money without doubling the bread, you just double the price.",
+   "from": {
+    "pos": [
+     1.0,
+     -5.0,
+     5.0
+    ],
+    "look": [
+     0.8,
+     0,
+     0.5
+    ],
+    "lens": 28,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     0.9,
+     -4.5,
+     2.6
+    ],
+    "look": [
+     0.8,
+     0,
+     1.2
+    ],
+    "lens": 28,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b17",
+   "beat": 17,
+   "f0": 1386,
+   "f1": 1470,
+   "set": "street",
+   "mood": "grey_1923",
+   "angle": "worms-eye up the 1923 facades",
+   "ease": "inout",
+   "line": "This happened in Germany in 1923,",
+   "from": {
+    "pos": [
+     300,
+     -7,
+     0.3
+    ],
+    "look": [
+     300,
+     2,
+     6
+    ],
+    "lens": 22,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     299.5,
+     -6,
+     1.5
+    ],
+    "look": [
+     299,
+     0,
+     3
+    ],
+    "lens": 24,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b18",
+   "beat": 18,
+   "f0": 1470,
+   "f1": 1560,
+   "set": "street",
+   "mood": "grey_1923",
+   "angle": "stove burn",
+   "ease": "inout",
+   "line": "where it was literally cheaper to burn banknotes than to buy firewood,",
+   "from": {
+    "pos": [
+     297.2,
+     -4,
+     1.4
+    ],
+    "look": [
+     297,
+     0.5,
+     1.5
+    ],
+    "lens": 30,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     297.0,
+     -3.7,
+     1.7
+    ],
+    "look": [
+     297,
+     0.5,
+     1.4
+    ],
+    "lens": 30,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b19",
+   "beat": 19,
+   "f0": 1560,
+   "f1": 1650,
+   "set": "street",
+   "mood": "grey_1923",
+   "angle": "cash castles",
+   "ease": "inout",
+   "line": "and children built play-castles out of stacks of cash in the streets.",
+   "from": {
+    "pos": [
+     303.5,
+     -5,
+     0.5
+    ],
+    "look": [
+     304,
+     0.5,
+     1.8
+    ],
+    "lens": 26,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     304,
+     -4.5,
+     1.2
+    ],
+    "look": [
+     304.2,
+     0.5,
+     1.0
+    ],
+    "lens": 28,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b20",
+   "beat": 20,
+   "f0": 1650,
+   "f1": 1740,
+   "set": "street",
+   "mood": "grey_1923",
+   "angle": "moral close",
+   "ease": "inout",
+   "line": "So printing money doesn't create wealth\u2014it just steals value from every dollar in your pocket.",
+   "from": {
+    "pos": [
+     301,
+     -4.6,
+     1.6
+    ],
+    "look": [
+     301,
+     0,
+     1.8
+    ],
+    "lens": 30,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     301,
+     -4.0,
+     1.8
+    ],
+    "look": [
+     301,
+     0,
+     2.0
+    ],
+    "lens": 30,
+    "roll": 0.0
+   }
+  },
+  {
+   "id": "b21",
+   "beat": 21,
+   "f0": 1740,
+   "f1": 1830,
+   "set": "bakery",
+   "mood": "bakery_warm",
+   "angle": "final offer push-in",
+   "ease": "inout",
+   "line": "Next time someone says 'just print more,' hand them a loaf of bread and ask for your million back.",
+   "from": {
+    "pos": [
+     201.9,
+     -4.6,
+     1.6
+    ],
+    "look": [
+     202.3,
+     0,
+     1.5
+    ],
+    "lens": 30,
+    "roll": 0.0
+   },
+   "to": {
+    "pos": [
+     202.0,
+     -3.4,
+     1.55
+    ],
+    "look": [
+     202.4,
+     0,
+     1.5
+    ],
+    "lens": 28,
+    "roll": 0.0
+   }
+  }
+ ]
+}

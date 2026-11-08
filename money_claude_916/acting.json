@@ -1,0 +1,782 @@
+{
+ "verbs": [
+  "operate",
+  "hold",
+  "clasp",
+  "emotion",
+  "impact",
+  "move"
+ ],
+ "actors": {
+  "you": {
+   "pos": [
+    -0.8,
+    0.0
+   ],
+   "facing": 1
+  },
+  "official": {
+   "pos": [
+    -500.0,
+    0.0
+   ],
+   "facing": 1
+  },
+  "baker": {
+   "pos": [
+    204.8,
+    1.8
+   ],
+   "facing": -1
+  },
+  "guy": {
+   "pos": [
+    -500.0,
+    0.0
+   ],
+   "facing": 1
+  },
+  "lady": {
+   "pos": [
+    -500.0,
+    0.0
+   ],
+   "facing": 1
+  },
+  "kid": {
+   "pos": [
+    -500.0,
+    0.0
+   ],
+   "facing": -1
+  }
+ },
+ "events": [
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 0,
+   "emotion": "determined"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 84,
+   "emotion": "smug"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 130,
+   "emotion": "worried"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 168,
+   "emotion": "neutral"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 255,
+   "emotion": "proud"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 420,
+   "emotion": "neutral"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 450,
+   "emotion": "shocked"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 504,
+   "emotion": "laugh"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 560,
+   "emotion": "determined"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 585,
+   "emotion": "neutral"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 600,
+   "emotion": "worried"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 672,
+   "emotion": "panic"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 750,
+   "emotion": "angry"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 790,
+   "emotion": "panic"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 930,
+   "emotion": "shocked"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 1026,
+   "emotion": "worried"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 1110,
+   "emotion": "worried"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 1200,
+   "emotion": "determined"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 1290,
+   "emotion": "smug"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 1386,
+   "emotion": "neutral"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 1650,
+   "emotion": "proud"
+  },
+  {
+   "verb": "emotion",
+   "actor": "you",
+   "f0": 1740,
+   "emotion": "smug"
+  },
+  {
+   "verb": "move",
+   "actor": "you",
+   "f0": 420,
+   "f1": 420,
+   "to": [
+    5.2,
+    0.8
+   ],
+   "facing": 1
+  },
+  {
+   "verb": "move",
+   "actor": "you",
+   "f0": 504,
+   "f1": 504,
+   "to": [
+    186.0,
+    -0.8
+   ],
+   "facing": 1
+  },
+  {
+   "verb": "move",
+   "actor": "you",
+   "f0": 504,
+   "f1": 570,
+   "to": [
+    201.6,
+    0.1
+   ],
+   "facing": 1
+  },
+  {
+   "verb": "move",
+   "actor": "you",
+   "f0": 1200,
+   "f1": 1200,
+   "to": [
+    0.2,
+    0.2
+   ],
+   "facing": 1
+  },
+  {
+   "verb": "move",
+   "actor": "you",
+   "f0": 1650,
+   "f1": 1650,
+   "to": [
+    301.0,
+    0.0
+   ],
+   "facing": 1
+  },
+  {
+   "verb": "move",
+   "actor": "you",
+   "f0": 1740,
+   "f1": 1740,
+   "to": [
+    201.6,
+    0.1
+   ],
+   "facing": 1
+  },
+  {
+   "verb": "move",
+   "actor": "official",
+   "f0": 336,
+   "f1": 336,
+   "to": [
+    98.45,
+    0.45
+   ],
+   "facing": 1
+  },
+  {
+   "verb": "move",
+   "actor": "official",
+   "f0": 420,
+   "f1": 420,
+   "to": [
+    -500.0,
+    0.0
+   ],
+   "facing": 1
+  },
+  {
+   "verb": "emotion",
+   "actor": "official",
+   "f0": 336,
+   "emotion": "determined"
+  },
+  {
+   "verb": "emotion",
+   "actor": "official",
+   "f0": 380,
+   "emotion": "laugh"
+  },
+  {
+   "verb": "emotion",
+   "actor": "official",
+   "f0": 410,
+   "emotion": "smug"
+  },
+  {
+   "verb": "hold",
+   "actor": "official",
+   "hand": "R",
+   "prop": "press",
+   "socket": "grip_main",
+   "f0": 336,
+   "f1": 419,
+   "carry": false,
+   "elbow": -1
+  },
+  {
+   "verb": "hold",
+   "actor": "official",
+   "hand": "L",
+   "prop": "lever",
+   "socket": "grip_main",
+   "f0": 336,
+   "f1": 400,
+   "carry": false,
+   "elbow": 1
+  },
+  {
+   "verb": "operate",
+   "prop": "press",
+   "channel": "crank",
+   "f0": 345,
+   "f1": 415,
+   "to": 1.0,
+   "ease": "linear",
+   "from": 0.0
+  },
+  {
+   "verb": "operate",
+   "prop": "lever",
+   "channel": "pull",
+   "f0": 345,
+   "f1": 395,
+   "to": 1.0,
+   "ease": "inout"
+  },
+  {
+   "verb": "emotion",
+   "actor": "baker",
+   "f0": 0,
+   "emotion": "neutral"
+  },
+  {
+   "verb": "emotion",
+   "actor": "baker",
+   "f0": 780,
+   "emotion": "shocked"
+  },
+  {
+   "verb": "emotion",
+   "actor": "baker",
+   "f0": 840,
+   "emotion": "neutral"
+  },
+  {
+   "verb": "emotion",
+   "actor": "baker",
+   "f0": 1026,
+   "emotion": "smug"
+  },
+  {
+   "verb": "emotion",
+   "actor": "baker",
+   "f0": 1070,
+   "emotion": "laugh"
+  },
+  {
+   "verb": "emotion",
+   "actor": "baker",
+   "f0": 1110,
+   "emotion": "smug"
+  },
+  {
+   "verb": "hold",
+   "actor": "baker",
+   "hand": "R",
+   "prop": "hammer",
+   "socket": "grip_main",
+   "f0": 0,
+   "f1": 1829,
+   "carry": true,
+   "at": [
+    0.3,
+    1.8
+   ],
+   "dy": -0.3
+  },
+  {
+   "verb": "operate",
+   "prop": "hammer",
+   "channel": "swing",
+   "f0": 1050,
+   "f1": 1062,
+   "to": 1.0,
+   "ease": "in"
+  },
+  {
+   "verb": "operate",
+   "prop": "hammer",
+   "channel": "swing",
+   "f0": 1070,
+   "f1": 1100,
+   "to": 0.0,
+   "ease": "inout"
+  },
+  {
+   "verb": "move",
+   "actor": "guy",
+   "f0": 504,
+   "f1": 504,
+   "to": [
+    200.45,
+    0.1
+   ],
+   "facing": 1
+  },
+  {
+   "verb": "move",
+   "actor": "guy",
+   "f0": 1200,
+   "f1": 1200,
+   "to": [
+    -500.0,
+    0.0
+   ],
+   "facing": 1
+  },
+  {
+   "verb": "emotion",
+   "actor": "guy",
+   "f0": 504,
+   "emotion": "neutral"
+  },
+  {
+   "verb": "emotion",
+   "actor": "guy",
+   "f0": 840,
+   "emotion": "angry"
+  },
+  {
+   "verb": "emotion",
+   "actor": "guy",
+   "f0": 900,
+   "emotion": "smug"
+  },
+  {
+   "verb": "emotion",
+   "actor": "guy",
+   "f0": 1026,
+   "emotion": "shocked"
+  },
+  {
+   "verb": "move",
+   "actor": "lady",
+   "f0": 504,
+   "f1": 504,
+   "to": [
+    191.25,
+    0.1
+   ],
+   "facing": 1
+  },
+  {
+   "verb": "move",
+   "actor": "lady",
+   "f0": 1470,
+   "f1": 1470,
+   "to": [
+    296.4,
+    0.4
+   ],
+   "facing": 1
+  },
+  {
+   "verb": "move",
+   "actor": "lady",
+   "f0": 1560,
+   "f1": 1560,
+   "to": [
+    -500.0,
+    0.0
+   ],
+   "facing": 1
+  },
+  {
+   "verb": "emotion",
+   "actor": "lady",
+   "f0": 504,
+   "emotion": "neutral"
+  },
+  {
+   "verb": "emotion",
+   "actor": "lady",
+   "f0": 930,
+   "emotion": "angry"
+  },
+  {
+   "verb": "emotion",
+   "actor": "lady",
+   "f0": 990,
+   "emotion": "angry"
+  },
+  {
+   "verb": "emotion",
+   "actor": "lady",
+   "f0": 1026,
+   "emotion": "shocked"
+  },
+  {
+   "verb": "emotion",
+   "actor": "lady",
+   "f0": 1470,
+   "emotion": "worried"
+  },
+  {
+   "verb": "emotion",
+   "actor": "lady",
+   "f0": 1530,
+   "emotion": "panic"
+  },
+  {
+   "verb": "move",
+   "actor": "kid",
+   "f0": 1560,
+   "f1": 1560,
+   "to": [
+    302.6,
+    0.2
+   ],
+   "facing": -1
+  },
+  {
+   "verb": "move",
+   "actor": "kid",
+   "f0": 1740,
+   "f1": 1740,
+   "to": [
+    -500.0,
+    0.0
+   ],
+   "facing": -1
+  },
+  {
+   "verb": "emotion",
+   "actor": "kid",
+   "f0": 1560,
+   "emotion": "laugh"
+  },
+  {
+   "verb": "emotion",
+   "actor": "kid",
+   "f0": 1650,
+   "emotion": "proud"
+  },
+  {
+   "verb": "clasp",
+   "actor": "you",
+   "prop": "cash",
+   "f0": 504,
+   "f1": 749,
+   "carry": true,
+   "at": [
+    0.55,
+    1.1
+   ],
+   "dy": -0.02
+  },
+  {
+   "verb": "hold",
+   "actor": "you",
+   "hand": "R",
+   "prop": "cash",
+   "socket": "grip_main",
+   "f0": 750,
+   "f1": 840,
+   "carry": true,
+   "at": [
+    0.65,
+    1.45
+   ],
+   "dy": 0.8
+  },
+  {
+   "verb": "operate",
+   "prop": "cash",
+   "channel": "slam",
+   "f0": 765,
+   "f1": 780,
+   "to": 1.0,
+   "ease": "in"
+  },
+  {
+   "verb": "operate",
+   "prop": "cash",
+   "channel": "wilt",
+   "f0": 1140,
+   "f1": 1190,
+   "to": 1.0,
+   "ease": "linear"
+  },
+  {
+   "verb": "clasp",
+   "actor": "lady",
+   "prop": "cash",
+   "f0": 1470,
+   "f1": 1559,
+   "carry": true,
+   "at": [
+    0.55,
+    1.7
+   ],
+   "dy": -0.02
+  },
+  {
+   "verb": "clasp",
+   "actor": "you",
+   "prop": "loaf",
+   "f0": 1200,
+   "f1": 1385,
+   "carry": true,
+   "at": [
+    0.55,
+    1.1
+   ],
+   "dy": -0.02
+  },
+  {
+   "verb": "operate",
+   "prop": "loaf",
+   "channel": "bounce",
+   "f0": 1210,
+   "f1": 1225,
+   "to": 1.0,
+   "ease": "out"
+  },
+  {
+   "verb": "operate",
+   "prop": "loaf",
+   "channel": "bounce",
+   "f0": 1225,
+   "f1": 1240,
+   "to": 0.0,
+   "ease": "in"
+  },
+  {
+   "verb": "hold",
+   "actor": "you",
+   "hand": "R",
+   "prop": "loaf",
+   "socket": "grip_main",
+   "f0": 1760,
+   "f1": 1829,
+   "carry": true,
+   "at": [
+    0.8,
+    1.45
+   ],
+   "dy": -0.6
+  },
+  {
+   "verb": "operate",
+   "prop": "rain",
+   "channel": "fall",
+   "f0": 420,
+   "f1": 504,
+   "to": 1.0,
+   "ease": "linear"
+  },
+  {
+   "verb": "operate",
+   "prop": "board",
+   "channel": "price",
+   "f0": 780,
+   "f1": 790,
+   "to": 0.25,
+   "ease": "out"
+  },
+  {
+   "verb": "operate",
+   "prop": "board",
+   "channel": "price",
+   "f0": 870,
+   "f1": 880,
+   "to": 0.5,
+   "ease": "out"
+  },
+  {
+   "verb": "operate",
+   "prop": "board",
+   "channel": "price",
+   "f0": 960,
+   "f1": 970,
+   "to": 0.75,
+   "ease": "out"
+  },
+  {
+   "verb": "operate",
+   "prop": "board",
+   "channel": "price",
+   "f0": 1062,
+   "f1": 1066,
+   "to": 1.0,
+   "ease": "out"
+  },
+  {
+   "verb": "operate",
+   "prop": "stove",
+   "channel": "burn",
+   "f0": 1480,
+   "f1": 1555,
+   "to": 1.0,
+   "ease": "linear"
+  },
+  {
+   "verb": "impact",
+   "f0": 462,
+   "dur": 20,
+   "target": "actor:you",
+   "strength": 0.5
+  },
+  {
+   "verb": "impact",
+   "f0": 480,
+   "dur": 20,
+   "target": "camera",
+   "strength": 0.5
+  },
+  {
+   "verb": "impact",
+   "f0": 780,
+   "dur": 24,
+   "target": "camera",
+   "strength": 0.7
+  },
+  {
+   "verb": "impact",
+   "f0": 780,
+   "dur": 24,
+   "target": "actor:baker",
+   "strength": 0.4
+  },
+  {
+   "verb": "impact",
+   "f0": 1062,
+   "dur": 28,
+   "target": "camera",
+   "strength": 1.0
+  },
+  {
+   "verb": "impact",
+   "f0": 1062,
+   "dur": 28,
+   "target": "actor:you",
+   "strength": 0.6
+  },
+  {
+   "verb": "impact",
+   "f0": 1062,
+   "dur": 20,
+   "target": "world",
+   "strength": 0.4
+  },
+  {
+   "verb": "impact",
+   "f0": 1530,
+   "dur": 20,
+   "target": "world",
+   "strength": 0.5
+  },
+  {
+   "verb": "impact",
+   "f0": 1800,
+   "dur": 16,
+   "target": "camera",
+   "strength": 0.3
+  },
+  {
+   "verb": "impact",
+   "f0": 1800,
+   "dur": 16,
+   "target": "actor:you",
+   "strength": 0.3
+  }
+ ]
+}
