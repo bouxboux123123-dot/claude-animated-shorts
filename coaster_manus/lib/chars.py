@@ -7,36 +7,68 @@ from .look import toon_material, add_outline
 
 
 def material(name, color):
-    return bpy.data.materials.get(name) or toon_material(name, color)
+    m = bpy.data.materials.get(name)
+    if m is not None:
+        try:
+            _ = m.name
+            return m
+        except Exception:
+            pass
+    return toon_material(name, color)
 
-INK = material("Character ink | dark plum", (0.035, 0.018, 0.04, 1))
-SKIN = material("Character | warm paper skin", (0.90, 0.64, 0.42, 1))
-BUILDER_COAT = material("Builder | russet work shirt", (0.57, 0.22, 0.12, 1))
-BUILDER_LEATHER = material("Builder | leather apron", (0.28, 0.13, 0.075, 1))
-RIVAL_SUIT = material("Rival | midnight suit", (0.09, 0.12, 0.19, 1))
-RIVAL_VEST = material("Rival | plum vest", (0.32, 0.12, 0.18, 1))
-PAPER = material("Character | cream shirt", (0.91, 0.84, 0.66, 1))
+class MatProxy:
+    def __init__(self, name, color):
+        self.name = name
+        self.color = color
+    def __call__(self):
+        return material(self.name, self.color)
+    def resolve(self):
+        return material(self.name, self.color)
 
+INK = MatProxy("Character ink | dark plum", (0.035, 0.018, 0.04, 1))
+SKIN = MatProxy("Character | warm paper skin", (0.90, 0.64, 0.42, 1))
+BUILDER_COAT = MatProxy("Builder | russet work shirt", (0.57, 0.22, 0.12, 1))
+BUILDER_LEATHER = MatProxy("Builder | leather apron", (0.28, 0.13, 0.075, 1))
+RIVAL_SUIT = MatProxy("Rival | midnight suit", (0.09, 0.12, 0.19, 1))
+RIVAL_VEST = MatProxy("Rival | plum vest", (0.32, 0.12, 0.18, 1))
+PAPER = MatProxy("Character | cream shirt", (0.91, 0.84, 0.66, 1))
 
-def ellipsoid(name, loc, scale, material, outline=True):
+def _resolve_mat(mat):
+    if mat is None:
+        return None
+    if isinstance(mat, MatProxy):
+        return mat.resolve()
+    if callable(mat):
+        return mat()
+    try:
+        _ = mat.name
+        return mat
+    except Exception:
+        pass
+    return None
+
+def ellipsoid(name, loc, scale, mat, outline=True):
     bpy.ops.mesh.primitive_uv_sphere_add(segments=16, ring_count=12, radius=1, location=loc)
     obj = bpy.context.object
     obj.name = name
     obj.scale = scale
-    if material:
-        obj.data.materials.append(material)
+    m = _resolve_mat(mat)
+    if m:
+        obj.data.materials.append(m)
     if outline:
         add_outline(obj, 0.025)
     return obj
 
 
-def flat_box(name, loc, scale, material, bevel=0.06):
+def flat_box(name, loc, scale, mat, bevel=0.06):
     bpy.ops.mesh.primitive_cube_add(size=1, location=loc)
     obj = bpy.context.object
     obj.name = name
     obj.dimensions = scale
     bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
-    obj.data.materials.append(material)
+    m = _resolve_mat(mat)
+    if m:
+        obj.data.materials.append(m)
     if bevel:
         mod = obj.modifiers.new("Card-stock rounded corner", "BEVEL")
         mod.width = bevel
@@ -45,7 +77,7 @@ def flat_box(name, loc, scale, material, bevel=0.06):
     return obj
 
 
-def line(name, points, material=INK, width=0.035):
+def line(name, points, mat=INK, width=0.035):
     data = bpy.data.curves.new(name, "CURVE")
     data.dimensions = "3D"
     data.bevel_depth = width
@@ -56,7 +88,9 @@ def line(name, points, material=INK, width=0.035):
         p.co = (*v, 1)
     obj = bpy.data.objects.new(name, data)
     bpy.context.collection.objects.link(obj)
-    data.materials.append(material)
+    m = _resolve_mat(mat)
+    if m:
+        data.materials.append(m)
     return obj
 
 

@@ -8,19 +8,49 @@ from .look import toon_material, add_outline
 
 
 def _mat(name, color):
-    return bpy.data.materials.get(name) or toon_material(name, color)
+    m = bpy.data.materials.get(name)
+    if m is not None:
+        try:
+            _ = m.name
+            return m
+        except Exception:
+            pass
+    return toon_material(name, color)
 
-WOOD = _mat("Paint | warm ochre wood", (0.55, 0.27, 0.10, 1))
-IRON = _mat("Paint | blue-black iron", (0.055, 0.08, 0.13, 1))
-BRASS = _mat("Paint | aged brass", (0.78, 0.49, 0.13, 1))
-RED = _mat("Paint | fairground red", (0.66, 0.13, 0.10, 1))
-CREAM = _mat("Paint | canvas cream", (0.88, 0.78, 0.58, 1))
+class MatProxy:
+    def __init__(self, name, color):
+        self.name = name
+        self.color = color
+    def __call__(self):
+        return _mat(self.name, self.color)
+    def resolve(self):
+        return _mat(self.name, self.color)
 
+WOOD = MatProxy("Paint | warm ochre wood", (0.55, 0.27, 0.10, 1))
+IRON = MatProxy("Paint | blue-black iron", (0.055, 0.08, 0.13, 1))
+BRASS = MatProxy("Paint | aged brass", (0.78, 0.49, 0.13, 1))
+RED = MatProxy("Paint | fairground red", (0.66, 0.13, 0.10, 1))
+CREAM = MatProxy("Paint | canvas cream", (0.88, 0.78, 0.58, 1))
+
+def _resolve_mat(material):
+    if material is None:
+        return None
+    if isinstance(material, MatProxy):
+        return material.resolve()
+    if callable(material):
+        return material()
+    try:
+        _ = material.name
+        return material
+    except Exception:
+        pass
+    return None
 
 def _finish(obj, name, material, outline=True):
     obj.name = name
-    if material:
-        obj.data.materials.append(material)
+    m = _resolve_mat(material)
+    if m:
+        obj.data.materials.append(m)
     if outline:
         add_outline(obj, 0.018)
     return obj
@@ -57,7 +87,9 @@ def _curve(name, points, material, bevel=0.06, cyclic=False):
     spline.use_cyclic_u = cyclic
     obj = bpy.data.objects.new(name, data)
     bpy.context.collection.objects.link(obj)
-    data.materials.append(material)
+    m = _resolve_mat(material)
+    if m:
+        data.materials.append(m)
     return obj
 
 

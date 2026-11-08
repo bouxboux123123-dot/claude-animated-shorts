@@ -10,8 +10,15 @@ ANCHORS = {}
 
 
 def mat(name, color):
-    if name not in MATERIALS:
-        MATERIALS[name] = toon_material(name, color)
+    m = MATERIALS.get(name) or bpy.data.materials.get(name)
+    if m is not None:
+        try:
+            _ = m.name
+            MATERIALS[name] = m
+            return m
+        except Exception:
+            pass
+    MATERIALS[name] = toon_material(name, color)
     return MATERIALS[name]
 
 
