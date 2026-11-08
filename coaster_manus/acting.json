@@ -1,0 +1,447 @@
+{
+  "schema_version": 1,
+  "verbs": [
+    "hold",
+    "operate",
+    "clasp",
+    "emotion",
+    "impact"
+  ],
+  "time_unit": "seconds from timeline start",
+  "actions": [
+    {
+      "start": 0.0,
+      "end": 2.5,
+      "actor": "builder_workshop_night",
+      "verb": "clasp",
+      "target": "loop_workshop",
+      "socket": "track_entry",
+      "hands": [
+        "left",
+        "right"
+      ],
+      "emotion": "strained",
+      "note": "Both hands brace the loop as the bend begins."
+    },
+    {
+      "start": 0.5,
+      "end": 2.5,
+      "actor": "builder_workshop_night",
+      "verb": "operate",
+      "target": "loop_workshop",
+      "channel": "bend_bottom",
+      "from": 0.0,
+      "to": 0.28,
+      "curve": "smoothstep"
+    },
+    {
+      "start": 2.5,
+      "end": 5.4,
+      "actor": "builder_workshop_night",
+      "verb": "hold",
+      "target": "loop_workshop",
+      "socket": "track_exit",
+      "hands": [
+        "right"
+      ],
+      "emotion": "wonder"
+    },
+    {
+      "start": 5.4,
+      "end": 7.0,
+      "actor": "builder_workshop_night",
+      "verb": "emotion",
+      "value": "deflated",
+      "lean": -0.08,
+      "note": "Shoulders dip; empty purse sits on bench."
+    },
+    {
+      "start": 7.0,
+      "end": 9.7,
+      "actor": "rival_workshop_night",
+      "verb": "hold",
+      "target": "loop_workshop",
+      "socket": "track_entry",
+      "hands": [
+        "left"
+      ],
+      "emotion": "smug"
+    },
+    {
+      "start": 8.1,
+      "end": 9.7,
+      "actor": "rival_workshop_night",
+      "verb": "operate",
+      "target": "crank_workshop",
+      "channel": "crank_angle",
+      "from": 0.0,
+      "to": 0.08,
+      "curve": "linear"
+    },
+    {
+      "start": 9.7,
+      "end": 11.2,
+      "actor": "rival_workshop_night",
+      "verb": "emotion",
+      "value": "suspicious",
+      "lean": 0.1
+    },
+    {
+      "start": 11.2,
+      "end": 13.9,
+      "actor": "test_dummy_workshop",
+      "verb": "impact",
+      "target": "test_dummy_workshop",
+      "channel": "crush_progress",
+      "from": 0.0,
+      "to": 1.0,
+      "peak": 0.72,
+      "note": "Dummy folds vertically in an accordion squash."
+    },
+    {
+      "start": 13.9,
+      "end": 15.2,
+      "actor": "builder_workshop_night",
+      "verb": "emotion",
+      "value": "urgent",
+      "lean": 0.12
+    },
+    {
+      "start": 15.2,
+      "end": 17.2,
+      "actor": "builder_workshop_night",
+      "verb": "clasp",
+      "target": "hammer_workshop",
+      "socket": "grip_main",
+      "hands": [
+        "left",
+        "right"
+      ],
+      "emotion": "determined"
+    },
+    {
+      "start": 15.35,
+      "end": 19.2,
+      "actor": "builder_workshop_night",
+      "verb": "operate",
+      "target": "hammer_workshop",
+      "channel": "swing_stroke",
+      "from": 0.0,
+      "to": 1.0,
+      "repeats": 3,
+      "impact_pulses": [
+        16.0,
+        16.55,
+        17.1
+      ]
+    },
+    {
+      "start": 15.2,
+      "end": 19.2,
+      "actor": "loop_workshop",
+      "verb": "operate",
+      "channel": "bend_bottom",
+      "from": 0.28,
+      "to": 1.0,
+      "curve": "ease_out"
+    },
+    {
+      "start": 17.2,
+      "end": 19.2,
+      "actor": "builder_workshop_night",
+      "verb": "hold",
+      "target": "loop_workshop",
+      "socket": "track_entry",
+      "hands": [
+        "left"
+      ],
+      "emotion": "doubtful"
+    },
+    {
+      "start": 19.2,
+      "end": 21.0,
+      "actor": "builder_workshop_night",
+      "verb": "emotion",
+      "value": "sheepish",
+      "lean": -0.06
+    },
+    {
+      "start": 21.0,
+      "end": 23.1,
+      "actor": "rival_workshop_night",
+      "verb": "emotion",
+      "value": "laugh_then_sneak",
+      "lean": 0.15
+    },
+    {
+      "start": 22.2,
+      "end": 23.1,
+      "actor": "rival_workshop_night",
+      "verb": "clasp",
+      "target": "crank_workshop",
+      "socket": "crank_grip",
+      "hands": [
+        "right"
+      ],
+      "emotion": "sly"
+    },
+    {
+      "start": 23.1,
+      "end": 26.3,
+      "actor": "rival_workshop_night",
+      "verb": "clasp",
+      "target": "crank_workshop",
+      "socket": "crank_grip",
+      "hands": [
+        "right",
+        "left"
+      ],
+      "emotion": "effort"
+    },
+    {
+      "start": 23.1,
+      "end": 26.3,
+      "actor": "rival_workshop_night",
+      "verb": "operate",
+      "target": "crank_workshop",
+      "channel": "crank_angle",
+      "from": 0.08,
+      "to": 1.0,
+      "curve": "linear"
+    },
+    {
+      "start": 23.1,
+      "end": 26.3,
+      "actor": "loop_workshop",
+      "verb": "operate",
+      "channel": "squeeze_sides",
+      "from": 0.0,
+      "to": 1.0,
+      "curve": "ease_in_out"
+    },
+    {
+      "start": 26.3,
+      "end": 28.2,
+      "actor": "rival_workshop_night",
+      "verb": "hold",
+      "target": "loop_workshop",
+      "socket": "track_exit",
+      "hands": [
+        "right"
+      ],
+      "emotion": "proud"
+    },
+    {
+      "start": 28.2,
+      "end": 31.9,
+      "actor": "fairground_crowd",
+      "verb": "hold",
+      "target": "loop_fairground",
+      "note": "Small group leans toward the ride; no visible text or signs."
+    },
+    {
+      "start": 31.9,
+      "end": 33.9,
+      "actor": "rival_fairground_dawn",
+      "verb": "clasp",
+      "target": "cart_rival",
+      "socket": "rider_seat",
+      "hands": [
+        "left",
+        "right"
+      ],
+      "emotion": "showoff"
+    },
+    {
+      "start": 33.9,
+      "end": 35.3,
+      "actor": "builder_fairground_dawn",
+      "verb": "clasp",
+      "target": "cart_builder",
+      "socket": "rider_seat",
+      "hands": [
+        "left",
+        "right"
+      ],
+      "emotion": "nervous"
+    },
+    {
+      "start": 35.3,
+      "end": 37.2,
+      "actor": "cart_builder",
+      "verb": "operate",
+      "channel": "track_progress",
+      "from": 0.0,
+      "to": 0.16,
+      "curve": "ease_in"
+    },
+    {
+      "start": 37.2,
+      "end": 39.9,
+      "actor": "cart_builder",
+      "verb": "operate",
+      "channel": "track_progress",
+      "from": 0.16,
+      "to": 0.42,
+      "curve": "ease_in"
+    },
+    {
+      "start": 37.2,
+      "end": 39.9,
+      "actor": "builder_coaster_climax",
+      "verb": "emotion",
+      "value": "alarm",
+      "lean": 0.16
+    },
+    {
+      "start": 39.9,
+      "end": 41.1,
+      "actor": "builder_coaster_climax",
+      "verb": "impact",
+      "target": "cart_builder",
+      "channel": "track_progress",
+      "from": 0.42,
+      "to": 0.48,
+      "peak": 0.46
+    },
+    {
+      "start": 41.1,
+      "end": 46.0,
+      "actor": "analogy_car",
+      "verb": "operate",
+      "target": "analogy_car",
+      "channel": "drive_progress",
+      "from": 0.0,
+      "to": 1.0,
+      "curve": "linear",
+      "note": "Toy roadster creeps along the hairpin before the speed contrast."
+    },
+    {
+      "start": 41.1,
+      "end": 44.0,
+      "actor": "cart_builder",
+      "verb": "operate",
+      "channel": "track_progress",
+      "from": 0.48,
+      "to": 0.58,
+      "curve": "linear"
+    },
+    {
+      "start": 44.0,
+      "end": 46.0,
+      "actor": "analogy_car",
+      "verb": "impact",
+      "target": "analogy_car",
+      "channel": "flip_progress",
+      "from": 0.0,
+      "to": 1.0,
+      "peak": 0.82,
+      "note": "The roadster flips once as a stylized physics analogy."
+    },
+    {
+      "start": 44.0,
+      "end": 46.0,
+      "actor": "cart_builder",
+      "verb": "impact",
+      "target": "cart_builder",
+      "channel": "track_progress",
+      "from": 0.58,
+      "to": 0.64,
+      "peak": 0.61,
+      "note": "Briefly animated model car flip used only as a visual comparison."
+    },
+    {
+      "start": 46.0,
+      "end": 48.2,
+      "actor": "cart_builder",
+      "verb": "operate",
+      "channel": "track_progress",
+      "from": 0.64,
+      "to": 0.73,
+      "curve": "ease_in"
+    },
+    {
+      "start": 48.2,
+      "end": 50.7,
+      "actor": "cart_rival",
+      "verb": "hold",
+      "target": "loop_rival",
+      "socket": "track_entry",
+      "hands": [
+        "left"
+      ],
+      "emotion": "confident"
+    },
+    {
+      "start": 50.7,
+      "end": 52.1,
+      "actor": "test_dummy_climax",
+      "verb": "impact",
+      "target": "test_dummy_climax",
+      "channel": "crush_progress",
+      "from": 0.0,
+      "to": 1.0,
+      "peak": 0.8
+    },
+    {
+      "start": 52.1,
+      "end": 53.8,
+      "actor": "loop_builder",
+      "verb": "operate",
+      "channel": "bend_bottom",
+      "from": 0.0,
+      "to": 1.0,
+      "curve": "smoothstep"
+    },
+    {
+      "start": 53.8,
+      "end": 56.5,
+      "actor": "loop_rival",
+      "verb": "operate",
+      "channel": "squeeze_sides",
+      "from": 0.0,
+      "to": 1.0,
+      "curve": "smoothstep"
+    },
+    {
+      "start": 56.5,
+      "end": 57.5,
+      "actor": "cart_builder",
+      "verb": "operate",
+      "channel": "track_progress",
+      "from": 0.83,
+      "to": 0.89,
+      "curve": "ease_out"
+    },
+    {
+      "start": 57.5,
+      "end": 59.8,
+      "actor": "cart_builder",
+      "verb": "operate",
+      "channel": "track_progress",
+      "from": 0.89,
+      "to": 1.0,
+      "curve": "ease_out"
+    },
+    {
+      "start": 57.5,
+      "end": 59.8,
+      "actor": "builder_coaster_climax",
+      "verb": "emotion",
+      "value": "relief",
+      "lean": -0.04
+    },
+    {
+      "start": 59.8,
+      "end": 62.9,
+      "actor": "cart_rival",
+      "verb": "impact",
+      "target": "loop_rival",
+      "channel": "track_progress",
+      "from": 0.64,
+      "to": 0.78,
+      "peak": 0.74,
+      "note": "End with a single impact beat; keep the final image legible."
+    }
+  ]
+}
