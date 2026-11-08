@@ -1,0 +1,1548 @@
+{
+ "fps": 30,
+ "total_frames": 1887,
+ "render": {
+  "res": [
+   1080,
+   1920
+  ],
+  "sensor_fit": "HORIZONTAL",
+  "min_occluder_clearance_m": 2.5
+ },
+ "shots": [
+  {
+   "id": "shot_01",
+   "beat": 1,
+   "line": "He bent the roller coaster's loop out of shape.",
+   "t0": 0.0,
+   "t1": 2.5,
+   "f0": 0,
+   "f1": 75,
+   "set": "workshop_night",
+   "mood": "night_workshop",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "ws.track_stand"
+     },
+     "hammer": {
+      "anchor": "ws.bench_hammer",
+      "rot_deg": 90
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "ws.builder_work"
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     -1,
+     -8,
+     10
+    ],
+    "look": [
+     -1,
+     0,
+     5.5
+    ],
+    "lens": 26,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     -1,
+     -9,
+     8
+    ],
+    "look2": [
+     -1,
+     -1.5,
+     1.0
+    ]
+   }
+  },
+  {
+   "id": "shot_02",
+   "beat": 2,
+   "line": "You see, it's the first ride ever to go upside down,",
+   "t0": 2.5,
+   "t1": 5.4,
+   "f0": 75,
+   "f1": 162,
+   "set": "workshop_night",
+   "mood": "night_workshop",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "ws.track_stand"
+     },
+     "hammer": {
+      "anchor": "ws.bench_hammer",
+      "rot_deg": 90
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "ws.builder_work"
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     -2,
+     -10.5,
+     6.5
+    ],
+    "look": [
+     -1.5,
+     0,
+     3.5
+    ],
+    "lens": 30,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     -1,
+     -8.5,
+     5
+    ],
+    "look2": [
+     0,
+     0,
+     3.8
+    ]
+   }
+  },
+  {
+   "id": "shot_03",
+   "beat": 3,
+   "line": "and it cost him everything.",
+   "t0": 5.4,
+   "t1": 7.0,
+   "f0": 162,
+   "f1": 210,
+   "set": "workshop_night",
+   "mood": "night_workshop",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "ws.track_stand"
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "ws.builder_idle"
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     -4.2,
+     -7,
+     3.0
+    ],
+    "look": [
+     -4.2,
+     -1.8,
+     2.5
+    ],
+    "lens": 40,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     -4.2,
+     -6.2,
+     3.2
+    ],
+    "look2": [
+     -4.2,
+     -1.8,
+     2.6
+    ]
+   }
+  },
+  {
+   "id": "shot_04",
+   "beat": 4,
+   "line": "So of course, his rival copies it bolt for bolt.",
+   "t0": 7.0,
+   "t1": 9.7,
+   "f0": 210,
+   "f1": 291,
+   "set": "fairground_dawn",
+   "mood": "morning_fair",
+   "stage": {
+    "props": {
+     "loop_rival": {
+      "anchor": "fg.rival_loop"
+     }
+    },
+    "chars": {
+     "rival": {
+      "anchor": "fg.rival_front"
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     -12,
+     -11,
+     3.5
+    ],
+    "look": [
+     -9,
+     3,
+     4.5
+    ],
+    "lens": 28,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     -11,
+     -10,
+     3.2
+    ],
+    "look2": [
+     -9,
+     3,
+     5.0
+    ]
+   }
+  },
+  {
+   "id": "shot_05",
+   "beat": 5,
+   "line": "But the night before opening,",
+   "t0": 9.7,
+   "t1": 11.2,
+   "f0": 291,
+   "f1": 336,
+   "set": "workshop_night",
+   "mood": "night_workshop",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "ws.track_stand"
+     },
+     "cart_owner": {
+      "anchor": "ws.cart_spot"
+     },
+     "dummy": {
+      "anchor": "ws.dummy_in_cart"
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "ws.builder_bench"
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     -2,
+     -14,
+     9
+    ],
+    "look": [
+     -2,
+     0,
+     2.5
+    ],
+    "lens": 24,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     -3,
+     -12,
+     7.5
+    ],
+    "look2": [
+     -4,
+     0,
+     2.2
+    ]
+   }
+  },
+  {
+   "id": "shot_06",
+   "beat": 6,
+   "line": "his test dummy comes back crushed like a soda can,",
+   "t0": 11.2,
+   "t1": 13.9,
+   "f0": 336,
+   "f1": 417,
+   "set": "workshop_night",
+   "mood": "night_workshop",
+   "stage": {
+    "props": {
+     "cart_owner": {
+      "anchor": "ws.cart_spot"
+     },
+     "dummy": {
+      "anchor": "ws.dummy_in_cart"
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "ws.builder_bench",
+      "offset": [
+       1.4,
+       0,
+       0
+      ]
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     -6.2,
+     -9,
+     6.5
+    ],
+    "look": [
+     -6.2,
+     -0.8,
+     1.2
+    ],
+    "lens": 30,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     -6.0,
+     -8,
+     5.5
+    ],
+    "look2": [
+     -6.0,
+     -0.8,
+     1.0
+    ]
+   }
+  },
+  {
+   "id": "shot_07",
+   "beat": 7,
+   "line": "but he can't miss the opening,",
+   "t0": 13.9,
+   "t1": 15.2,
+   "f0": 417,
+   "f1": 456,
+   "set": "workshop_night",
+   "mood": "night_workshop",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "ws.track_stand"
+     },
+     "cart_owner": {
+      "anchor": "ws.cart_spot"
+     },
+     "dummy": {
+      "anchor": "ws.dummy_in_cart"
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "ws.builder_idle"
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     -4.2,
+     -9,
+     5
+    ],
+    "look": [
+     -4.2,
+     -1.8,
+     2.0
+    ],
+    "lens": 35,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     -4.2,
+     -7.5,
+     4
+    ],
+    "look2": [
+     -4.2,
+     -1.8,
+     2.2
+    ]
+   }
+  },
+  {
+   "id": "shot_08",
+   "beat": 8,
+   "line": "so he grabs a hammer and beats the bottom",
+   "t0": 15.2,
+   "t1": 17.2,
+   "f0": 456,
+   "f1": 516,
+   "set": "workshop_night",
+   "mood": "night_workshop",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "ws.track_stand"
+     },
+     "hammer": {
+      "anchor": "ws.bench_hammer",
+      "rot_deg": 90
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "ws.builder_work"
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     0.5,
+     -8,
+     0.7
+    ],
+    "look": [
+     1.5,
+     0,
+     3.2
+    ],
+    "lens": 28,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     1.5,
+     -7.5,
+     0.7
+    ],
+    "look2": [
+     2.0,
+     0,
+     3.4
+    ]
+   }
+  },
+  {
+   "id": "shot_09",
+   "beat": 9,
+   "line": "into a long, lazy curve.",
+   "t0": 17.2,
+   "t1": 19.2,
+   "f0": 516,
+   "f1": 576,
+   "set": "workshop_night",
+   "mood": "night_workshop",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "ws.track_stand"
+     },
+     "hammer": {
+      "anchor": "ws.bench_hammer",
+      "rot_deg": 90
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "ws.builder_work"
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     0.2,
+     -8,
+     7
+    ],
+    "look": [
+     0.3,
+     0,
+     0.4
+    ],
+    "lens": 35,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     0.2,
+     -7.5,
+     5.5
+    ],
+    "look2": [
+     0.4,
+     0,
+     0.2
+    ]
+   }
+  },
+  {
+   "id": "shot_10",
+   "beat": 10,
+   "line": "Does he know what he's doing? Not really.",
+   "t0": 19.2,
+   "t1": 21.0,
+   "f0": 576,
+   "f1": 630,
+   "set": "workshop_night",
+   "mood": "night_workshop",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "ws.track_stand"
+     },
+     "hammer": {
+      "anchor": "ws.bench_hammer",
+      "rot_deg": 90
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "ws.builder_work"
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     -2.6,
+     -8,
+     5
+    ],
+    "look": [
+     -2.6,
+     -1.6,
+     2.2
+    ],
+    "lens": 35,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     -2.2,
+     -7,
+     4.2
+    ],
+    "look2": [
+     -2.4,
+     -1.6,
+     2.2
+    ]
+   }
+  },
+  {
+   "id": "shot_11",
+   "beat": 11,
+   "line": "His rival laughs, then sneaks in,",
+   "t0": 21.0,
+   "t1": 23.1,
+   "f0": 630,
+   "f1": 693,
+   "set": "workshop_night",
+   "mood": "night_workshop",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "ws.track_stand"
+     },
+     "turnbuckle": {
+      "anchor": "ws.crank"
+     }
+    },
+    "chars": {
+     "rival": {
+      "anchor": "ws.rival_door",
+      "face": -1,
+      "move": {
+       "to": "ws.rival_mid",
+       "t0": 22.0,
+       "t1": 23.0,
+       "hop": 0.12
+      }
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     9,
+     -10,
+     5.5
+    ],
+    "look": [
+     9.5,
+     0,
+     2
+    ],
+    "lens": 28,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     8,
+     -9,
+     4.5
+    ],
+    "look2": [
+     8.5,
+     0,
+     2.2
+    ]
+   }
+  },
+  {
+   "id": "shot_12",
+   "beat": 12,
+   "line": "and cranks the sides together until the loop is tall and skinny.",
+   "t0": 23.1,
+   "t1": 26.3,
+   "f0": 693,
+   "f1": 789,
+   "set": "workshop_night",
+   "mood": "night_workshop",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "ws.track_stand"
+     },
+     "turnbuckle": {
+      "anchor": "ws.crank"
+     }
+    },
+    "chars": {
+     "rival": {
+      "anchor": "ws.rival_crank",
+      "face": -1
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     3.5,
+     -8.5,
+     4
+    ],
+    "look": [
+     3.5,
+     0,
+     2.2
+    ],
+    "lens": 28,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     4,
+     -8,
+     3
+    ],
+    "look2": [
+     4,
+     0,
+     2.4
+    ]
+   }
+  },
+  {
+   "id": "shot_13",
+   "beat": 13,
+   "line": "So the first cart will snap like a twig.",
+   "t0": 26.3,
+   "t1": 28.2,
+   "f0": 789,
+   "f1": 846,
+   "set": "workshop_night",
+   "mood": "night_workshop",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "ws.track_stand"
+     },
+     "turnbuckle": {
+      "anchor": "ws.crank"
+     },
+     "cart_owner": {
+      "anchor": "ws.cart_spot"
+     }
+    },
+    "chars": {
+     "rival": {
+      "anchor": "ws.rival_crank",
+      "face": -1
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     1,
+     -8,
+     0.6
+    ],
+    "look": [
+     2.5,
+     0,
+     4.5
+    ],
+    "lens": 24,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     1,
+     -8,
+     0.6
+    ],
+    "look2": [
+     2.5,
+     0,
+     6.8
+    ]
+   }
+  },
+  {
+   "id": "shot_14",
+   "beat": 14,
+   "line": "The next morning, the town lines up at the rival's perfect circle,",
+   "t0": 28.2,
+   "t1": 31.9,
+   "f0": 846,
+   "f1": 957,
+   "set": "fairground_dawn",
+   "mood": "morning_fair",
+   "stage": {
+    "props": {
+     "loop_rival": {
+      "anchor": "fg.rival_loop"
+     },
+     "loop_owner": {
+      "anchor": "fg.owner_loop"
+     }
+    },
+    "chars": {
+     "rival": {
+      "anchor": "fg.rival_front"
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     -24,
+     -16,
+     9
+    ],
+    "look": [
+     -21,
+     0,
+     3
+    ],
+    "lens": 24,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     -12,
+     -16,
+     8
+    ],
+    "look2": [
+     -9,
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "id": "shot_15",
+   "beat": 15,
+   "line": "and the rival climbs in front to show off.",
+   "t0": 31.9,
+   "t1": 33.9,
+   "f0": 957,
+   "f1": 1017,
+   "set": "fairground_dawn",
+   "mood": "morning_fair",
+   "stage": {
+    "props": {
+     "loop_rival": {
+      "anchor": "fg.rival_loop"
+     },
+     "cart_rival": {
+      "track": "loop_rival"
+     }
+    },
+    "chars": {
+     "rival": {
+      "anchor": "fg.rival_stairs",
+      "scale": 0.7
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     -19,
+     -9,
+     5.5
+    ],
+    "look": [
+     -18.3,
+     3,
+     4.2
+    ],
+    "lens": 28,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     -18.5,
+     -8,
+     5.0
+    ],
+    "look2": [
+     -18.3,
+     3,
+     4.3
+    ]
+   }
+  },
+  {
+   "id": "shot_16",
+   "beat": 16,
+   "line": "The owner climbs into his,",
+   "t0": 33.9,
+   "t1": 35.3,
+   "f0": 1017,
+   "f1": 1059,
+   "set": "fairground_dawn",
+   "mood": "morning_fair",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "fg.owner_loop"
+     },
+     "cart_owner": {
+      "track": "loop_owner"
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "fg.owner_gate",
+      "scale": 0.7
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     1.5,
+     -9,
+     6
+    ],
+    "look": [
+     -0.3,
+     7,
+     4
+    ],
+    "lens": 28,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     1,
+     -8.5,
+     5.5
+    ],
+    "look2": [
+     -0.4,
+     7,
+     4.2
+    ]
+   }
+  },
+  {
+   "id": "shot_17",
+   "beat": 17,
+   "line": "and as his cart tips over the first hill,",
+   "t0": 35.3,
+   "t1": 37.2,
+   "f0": 1059,
+   "f1": 1116,
+   "set": "coaster_climax",
+   "mood": "morning_fair",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "cc.owner_loop"
+     },
+     "cart_owner": {
+      "track": "loop_owner"
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "cc.owner_bottom",
+      "scale": 0.7
+     }
+    }
+   },
+   "cam": {
+    "pos": {
+     "follow": "cart_owner",
+     "offset": [
+      -3,
+      -9,
+      1.5
+     ]
+    },
+    "look": {
+     "follow": "cart_owner",
+     "offset": [
+      1.5,
+      0,
+      0.3
+     ]
+    },
+    "lens": 28,
+    "ease": "inout",
+    "roll": 0
+   }
+  },
+  {
+   "id": "shot_18",
+   "beat": 18,
+   "line": "he finally sees the tall, skinny loop ahead.",
+   "t0": 37.2,
+   "t1": 39.9,
+   "f0": 1116,
+   "f1": 1197,
+   "set": "coaster_climax",
+   "mood": "morning_fair",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "cc.owner_loop"
+     },
+     "cart_owner": {
+      "track": "loop_owner"
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "cc.owner_bottom",
+      "scale": 0.7
+     }
+    }
+   },
+   "cam": {
+    "pos": {
+     "follow": "cart_owner",
+     "offset": [
+      -3,
+      -10,
+      3
+     ]
+    },
+    "look": {
+     "follow": "cart_owner",
+     "offset": [
+      5,
+      0,
+      -2
+     ]
+    },
+    "lens": 24,
+    "ease": "inout",
+    "roll": 0
+   }
+  },
+  {
+   "id": "shot_19",
+   "beat": 19,
+   "line": "But it's too late.",
+   "t0": 39.9,
+   "t1": 41.1,
+   "f0": 1197,
+   "f1": 1233,
+   "set": "coaster_climax",
+   "mood": "morning_fair",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "cc.owner_loop"
+     },
+     "cart_owner": {
+      "track": "loop_owner"
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "cc.owner_bottom",
+      "scale": 0.7
+     }
+    }
+   },
+   "cam": {
+    "pos": {
+     "follow": "cart_owner",
+     "offset": [
+      0.5,
+      -8,
+      1.2
+     ]
+    },
+    "look": {
+     "follow": "cart_owner",
+     "offset": [
+      0.5,
+      0,
+      0.7
+     ]
+    },
+    "lens": 36,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": {
+     "follow": "cart_owner",
+     "offset": [
+      0.5,
+      -7.2,
+      1.0
+     ]
+    },
+    "look2": {
+     "follow": "cart_owner",
+     "offset": [
+      0.5,
+      0,
+      0.7
+     ]
+    }
+   }
+  },
+  {
+   "id": "shot_20",
+   "beat": 20,
+   "line": "You see, a car can creep around a hairpin turn at five,",
+   "t0": 41.1,
+   "t1": 44.0,
+   "f0": 1233,
+   "f1": 1320,
+   "set": "coaster_climax",
+   "mood": "morning_fair",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "cc.owner_loop"
+     },
+     "cart_demo": {
+      "track": "loop_owner"
+     }
+    }
+   },
+   "cam": {
+    "pos": {
+     "follow": "cart_demo",
+     "offset": [
+      0,
+      -8,
+      -1.5
+     ]
+    },
+    "look": {
+     "follow": "cart_demo",
+     "offset": [
+      0,
+      0,
+      1.5
+     ]
+    },
+    "lens": 28,
+    "ease": "inout",
+    "roll": 0
+   }
+  },
+  {
+   "id": "shot_21",
+   "beat": 21,
+   "line": "but take it at 60, and it flips.",
+   "t0": 44.0,
+   "t1": 46.0,
+   "f0": 1320,
+   "f1": 1380,
+   "set": "coaster_climax",
+   "mood": "morning_fair",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "cc.owner_loop"
+     },
+     "cart_demo": {
+      "track": "loop_owner"
+     }
+    }
+   },
+   "cam": {
+    "pos": {
+     "follow": "cart_demo",
+     "offset": [
+      -1,
+      -8,
+      -1.5
+     ]
+    },
+    "look": {
+     "follow": "cart_demo",
+     "offset": [
+      1,
+      0,
+      1.5
+     ]
+    },
+    "lens": 26,
+    "ease": "inout",
+    "roll": 0
+   }
+  },
+  {
+   "id": "shot_22",
+   "beat": 22,
+   "line": "A cart is fastest at the bottom of a loop,",
+   "t0": 46.0,
+   "t1": 48.2,
+   "f0": 1380,
+   "f1": 1446,
+   "set": "coaster_climax",
+   "mood": "morning_fair",
+   "stage": {
+    "props": {
+     "loop_rival": {
+      "anchor": "cc.rival_loop"
+     },
+     "cart_demo": {
+      "track": "loop_rival"
+     }
+    }
+   },
+   "cam": {
+    "pos": {
+     "anchor": "cc.rival_loop",
+     "offset": [
+      0,
+      -8,
+      0.5
+     ]
+    },
+    "look": {
+     "anchor": "cc.rival_loop",
+     "offset": [
+      0,
+      0,
+      3.2
+     ]
+    },
+    "lens": 24,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": {
+     "anchor": "cc.rival_loop",
+     "offset": [
+      0,
+      -7,
+      0.5
+     ]
+    },
+    "look2": {
+     "anchor": "cc.rival_loop",
+     "offset": [
+      0,
+      0,
+      4.0
+     ]
+    }
+   }
+  },
+  {
+   "id": "shot_23",
+   "beat": 23,
+   "line": "and a perfect circle puts a hairpin right there,",
+   "t0": 48.2,
+   "t1": 50.7,
+   "f0": 1446,
+   "f1": 1521,
+   "set": "coaster_climax",
+   "mood": "morning_fair",
+   "stage": {
+    "props": {
+     "loop_rival": {
+      "anchor": "cc.rival_loop"
+     },
+     "cart_demo": {
+      "track": "loop_rival"
+     }
+    }
+   },
+   "cam": {
+    "pos": {
+     "anchor": "cc.rival_loop",
+     "offset": [
+      0.8,
+      -6,
+      0.6
+     ]
+    },
+    "look": {
+     "anchor": "cc.rival_loop",
+     "offset": [
+      0.8,
+      0,
+      1.5
+     ]
+    },
+    "lens": 28,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": {
+     "anchor": "cc.rival_loop",
+     "offset": [
+      0.8,
+      -5.5,
+      0.6
+     ]
+    },
+    "look2": {
+     "anchor": "cc.rival_loop",
+     "offset": [
+      0.8,
+      0,
+      1.3
+     ]
+    }
+   }
+  },
+  {
+   "id": "shot_24",
+   "beat": 24,
+   "line": "which is what crushed the dummy.",
+   "t0": 50.7,
+   "t1": 52.1,
+   "f0": 1521,
+   "f1": 1563,
+   "set": "workshop_night",
+   "mood": "night_workshop",
+   "stage": {
+    "props": {
+     "cart_owner": {
+      "anchor": "ws.cart_spot"
+     },
+     "dummy": {
+      "anchor": "ws.dummy_in_cart"
+     }
+    }
+   },
+   "cam": {
+    "pos": [
+     -5,
+     -8,
+     6.5
+    ],
+    "look": [
+     -5,
+     -0.8,
+     1.0
+    ],
+    "lens": 32,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": [
+     -5,
+     -7,
+     5.5
+    ],
+    "look2": [
+     -5,
+     -0.8,
+     1.0
+    ]
+   }
+  },
+  {
+   "id": "shot_25",
+   "beat": 25,
+   "line": "But his hammer made the bottom gentle,",
+   "t0": 52.1,
+   "t1": 53.8,
+   "f0": 1563,
+   "f1": 1614,
+   "set": "coaster_climax",
+   "mood": "morning_fair",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "cc.owner_loop"
+     },
+     "cart_owner": {
+      "track": "loop_owner"
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "cc.owner_bottom",
+      "scale": 0.7
+     }
+    }
+   },
+   "cam": {
+    "pos": {
+     "anchor": "cc.owner_loop",
+     "offset": [
+      3,
+      -9,
+      0.6
+     ]
+    },
+    "look": {
+     "anchor": "cc.owner_loop",
+     "offset": [
+      3,
+      0,
+      2.2
+     ]
+    },
+    "lens": 26,
+    "ease": "inout",
+    "roll": 0
+   }
+  },
+  {
+   "id": "shot_26",
+   "beat": 26,
+   "line": "and the rival's squeeze moved the hairpin up top,",
+   "t0": 53.8,
+   "t1": 56.5,
+   "f0": 1614,
+   "f1": 1695,
+   "set": "coaster_climax",
+   "mood": "morning_fair",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "cc.owner_loop"
+     },
+     "cart_owner": {
+      "track": "loop_owner"
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "cc.owner_bottom",
+      "scale": 0.7
+     }
+    }
+   },
+   "cam": {
+    "pos": {
+     "anchor": "cc.owner_loop",
+     "offset": [
+      2.5,
+      -9,
+      0.5
+     ]
+    },
+    "look": {
+     "anchor": "cc.owner_loop",
+     "offset": [
+      2.5,
+      0,
+      2.0
+     ]
+    },
+    "lens": 22,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": {
+     "anchor": "cc.owner_loop",
+     "offset": [
+      2.5,
+      -9,
+      0.5
+     ]
+    },
+    "look2": {
+     "anchor": "cc.owner_loop",
+     "offset": [
+      2.7,
+      0,
+      7.0
+     ]
+    }
+   }
+  },
+  {
+   "id": "shot_27",
+   "beat": 27,
+   "line": "where the cart is crawling.",
+   "t0": 56.5,
+   "t1": 57.5,
+   "f0": 1695,
+   "f1": 1725,
+   "set": "coaster_climax",
+   "mood": "morning_fair",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "cc.owner_loop"
+     },
+     "cart_owner": {
+      "track": "loop_owner"
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "cc.owner_bottom",
+      "scale": 0.7
+     }
+    }
+   },
+   "cam": {
+    "pos": {
+     "follow": "cart_owner",
+     "offset": [
+      0,
+      -10,
+      -0.5
+     ]
+    },
+    "look": {
+     "follow": "cart_owner",
+     "offset": [
+      0,
+      0,
+      -0.5
+     ]
+    },
+    "lens": 28,
+    "ease": "inout",
+    "roll": 0
+   }
+  },
+  {
+   "id": "shot_28",
+   "beat": 28,
+   "line": "So he floats over without a scratch.",
+   "t0": 57.5,
+   "t1": 59.8,
+   "f0": 1725,
+   "f1": 1794,
+   "set": "coaster_climax",
+   "mood": "morning_fair",
+   "stage": {
+    "props": {
+     "loop_owner": {
+      "anchor": "cc.owner_loop"
+     },
+     "cart_owner": {
+      "track": "loop_owner"
+     }
+    },
+    "chars": {
+     "builder": {
+      "anchor": "cc.owner_bottom",
+      "scale": 0.7
+     }
+    }
+   },
+   "cam": {
+    "pos": {
+     "follow": "cart_owner",
+     "offset": [
+      -3,
+      -10,
+      0
+     ]
+    },
+    "look": {
+     "follow": "cart_owner",
+     "offset": [
+      0.5,
+      0,
+      0
+     ]
+    },
+    "lens": 26,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": {
+     "follow": "cart_owner",
+     "offset": [
+      -2,
+      -9,
+      -0.5
+     ]
+    },
+    "look2": {
+     "follow": "cart_owner",
+     "offset": [
+      1.5,
+      0,
+      -1.0
+     ]
+    }
+   }
+  },
+  {
+   "id": "shot_29",
+   "beat": 29,
+   "line": "Just as the rival's cart hits the bottom of that perfect circle.",
+   "t0": 59.8,
+   "t1": 62.9,
+   "f0": 1794,
+   "f1": 1887,
+   "set": "coaster_climax",
+   "mood": "morning_fair",
+   "stage": {
+    "props": {
+     "loop_rival": {
+      "anchor": "cc.rival_loop"
+     },
+     "cart_rival": {
+      "track": "loop_rival"
+     }
+    },
+    "chars": {
+     "rival": {
+      "anchor": "cc.rival_bottom",
+      "scale": 0.7
+     }
+    }
+   },
+   "cam": {
+    "pos": {
+     "anchor": "cc.rival_loop",
+     "offset": [
+      1.5,
+      -8,
+      0.6
+     ]
+    },
+    "look": {
+     "anchor": "cc.rival_loop",
+     "offset": [
+      1.0,
+      0,
+      1.5
+     ]
+    },
+    "lens": 24,
+    "ease": "inout",
+    "roll": 0,
+    "pos2": {
+     "anchor": "cc.rival_loop",
+     "offset": [
+      1.2,
+      -6.5,
+      0.6
+     ]
+    },
+    "look2": {
+     "anchor": "cc.rival_loop",
+     "offset": [
+      1.0,
+      0,
+      1.3
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,1199 @@
+{
+ "fps": 30,
+ "cast": {
+  "props": {
+   "loop_owner": {
+    "type": "loop_track",
+    "opts": {
+     "rail": [
+      0.8,
+      0.17,
+      0.14
+     ]
+    }
+   },
+   "loop_rival": {
+    "type": "loop_track",
+    "opts": {
+     "rail": [
+      0.2,
+      0.45,
+      0.8
+     ]
+    }
+   },
+   "hammer": {
+    "type": "sledgehammer"
+   },
+   "dummy": {
+    "type": "test_dummy"
+   },
+   "turnbuckle": {
+    "type": "turnbuckle_crank"
+   },
+   "cart_owner": {
+    "type": "coaster_cart",
+    "opts": {
+     "color": [
+      0.15,
+      0.62,
+      0.66
+     ]
+    }
+   },
+   "cart_rival": {
+    "type": "coaster_cart",
+    "opts": {
+     "color": [
+      0.95,
+      0.72,
+      0.18
+     ]
+    }
+   },
+   "cart_demo": {
+    "type": "coaster_cart",
+    "opts": {
+     "color": [
+      0.62,
+      0.62,
+      0.66
+     ]
+    }
+   }
+  },
+  "chars": {
+   "builder": {
+    "style": "builder"
+   },
+   "rival": {
+    "style": "rival"
+   }
+  },
+  "links": {
+   "turnbuckle": {
+    "loop": "loop_owner",
+    "turns": 3.0
+   }
+  }
+ },
+ "verbs": [
+  "hold",
+  "operate",
+  "clasp",
+  "emotion",
+  "impact"
+ ],
+ "events": [
+  {
+   "verb": "operate",
+   "id": "teaser_swing_1.1",
+   "actor": "builder",
+   "prop": "hammer",
+   "channel": "swing_stroke",
+   "keys": [
+    [
+     0.3500000000000001,
+     0.0
+    ],
+    [
+     0.7500000000000001,
+     0.25
+    ],
+    [
+     0.9800000000000001,
+     0.25
+    ],
+    [
+     1.1,
+     1.0,
+     "in"
+    ],
+    [
+     1.4500000000000002,
+     0.25,
+     "out"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "teaser_swing_2.0",
+   "actor": "builder",
+   "prop": "hammer",
+   "channel": "swing_stroke",
+   "keys": [
+    [
+     1.88,
+     0.25
+    ],
+    [
+     2.0,
+     1.0,
+     "in"
+    ],
+    [
+     2.35,
+     0.25,
+     "out"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "teaser_lower",
+   "actor": "builder",
+   "prop": "hammer",
+   "channel": "swing_stroke",
+   "keys": [
+    [
+     2.6,
+     0.25
+    ],
+    [
+     3.2,
+     0.0
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "teaser_bend1",
+   "actor": "builder",
+   "via": "hammer",
+   "prop": "loop_owner",
+   "channel": "bend_bottom",
+   "keys": [
+    [
+     1.1,
+     null
+    ],
+    [
+     1.22,
+     0.25,
+     "out"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "teaser_bend2",
+   "actor": "builder",
+   "via": "hammer",
+   "prop": "loop_owner",
+   "channel": "bend_bottom",
+   "keys": [
+    [
+     2.0,
+     null
+    ],
+    [
+     2.12,
+     0.5,
+     "out"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "cut_reset_loop",
+   "prop": "loop_owner",
+   "channel": "bend_bottom",
+   "keys": [
+    [
+     7.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "swing_0",
+   "actor": "builder",
+   "prop": "hammer",
+   "channel": "swing_stroke",
+   "keys": [
+    [
+     15.5,
+     0.0
+    ],
+    [
+     15.9,
+     0.25
+    ],
+    [
+     16.13,
+     0.25
+    ],
+    [
+     16.25,
+     1.0,
+     "in"
+    ],
+    [
+     16.6,
+     0.25,
+     "out"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "bend_0",
+   "actor": "builder",
+   "via": "hammer",
+   "prop": "loop_owner",
+   "channel": "bend_bottom",
+   "keys": [
+    [
+     16.25,
+     null
+    ],
+    [
+     16.37,
+     0.2,
+     "out"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "swing_1",
+   "actor": "builder",
+   "prop": "hammer",
+   "channel": "swing_stroke",
+   "keys": [
+    [
+     16.93,
+     0.25
+    ],
+    [
+     17.05,
+     1.0,
+     "in"
+    ],
+    [
+     17.400000000000002,
+     0.25,
+     "out"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "bend_1",
+   "actor": "builder",
+   "via": "hammer",
+   "prop": "loop_owner",
+   "channel": "bend_bottom",
+   "keys": [
+    [
+     17.05,
+     null
+    ],
+    [
+     17.17,
+     0.4,
+     "out"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "swing_2",
+   "actor": "builder",
+   "prop": "hammer",
+   "channel": "swing_stroke",
+   "keys": [
+    [
+     17.68,
+     0.25
+    ],
+    [
+     17.8,
+     1.0,
+     "in"
+    ],
+    [
+     18.150000000000002,
+     0.25,
+     "out"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "bend_2",
+   "actor": "builder",
+   "via": "hammer",
+   "prop": "loop_owner",
+   "channel": "bend_bottom",
+   "keys": [
+    [
+     17.8,
+     null
+    ],
+    [
+     17.92,
+     0.6000000000000001,
+     "out"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "swing_3",
+   "actor": "builder",
+   "prop": "hammer",
+   "channel": "swing_stroke",
+   "keys": [
+    [
+     18.33,
+     0.25
+    ],
+    [
+     18.45,
+     1.0,
+     "in"
+    ],
+    [
+     18.8,
+     0.25,
+     "out"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "bend_3",
+   "actor": "builder",
+   "via": "hammer",
+   "prop": "loop_owner",
+   "channel": "bend_bottom",
+   "keys": [
+    [
+     18.45,
+     null
+    ],
+    [
+     18.57,
+     0.8,
+     "out"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "swing_4",
+   "actor": "builder",
+   "prop": "hammer",
+   "channel": "swing_stroke",
+   "keys": [
+    [
+     18.88,
+     0.25
+    ],
+    [
+     19.0,
+     1.0,
+     "in"
+    ],
+    [
+     19.35,
+     0.25,
+     "out"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "bend_4",
+   "actor": "builder",
+   "via": "hammer",
+   "prop": "loop_owner",
+   "channel": "bend_bottom",
+   "keys": [
+    [
+     19.0,
+     null
+    ],
+    [
+     19.12,
+     1.0,
+     "out"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "hammer_lower",
+   "actor": "builder",
+   "prop": "hammer",
+   "channel": "swing_stroke",
+   "keys": [
+    [
+     19.55,
+     0.25
+    ],
+    [
+     20.2,
+     0.0
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "dummy_crush",
+   "prop": "dummy",
+   "channel": "crush_progress",
+   "keys": [
+    [
+     11.9,
+     0.0
+    ],
+    [
+     12.35,
+     1.0,
+     "in"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "dummy_crush_replay",
+   "prop": "dummy",
+   "channel": "crush_progress",
+   "keys": [
+    [
+     50.7,
+     0.0
+    ],
+    [
+     51.2,
+     1.0,
+     "in"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "crank_turns",
+   "actor": "rival",
+   "prop": "turnbuckle",
+   "channel": "crank_angle",
+   "keys": [
+    [
+     23.4,
+     0.0
+    ],
+    [
+     26.0,
+     1080.0
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "rival_cart_a",
+   "prop": "cart_rival",
+   "channel": "track_progress",
+   "keys": [
+    [
+     31.9,
+     "@lift_start"
+    ],
+    [
+     35.3,
+     "@lift_start"
+    ],
+    [
+     37.0,
+     "@crest"
+    ],
+    [
+     41.0,
+     "@pre_loop",
+     "in"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "rival_cart_b",
+   "prop": "cart_rival",
+   "channel": "track_progress",
+   "keys": [
+    [
+     59.6,
+     "@pre_loop"
+    ],
+    [
+     61.2,
+     "@loop_in",
+     "in"
+    ],
+    [
+     62.9,
+     "@loop_q1",
+     "out"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "owner_cart_a",
+   "prop": "cart_owner",
+   "channel": "track_progress",
+   "keys": [
+    [
+     33.9,
+     "@lift_start"
+    ],
+    [
+     35.3,
+     "@lift_start"
+    ],
+    [
+     37.0,
+     "@crest"
+    ],
+    [
+     41.0,
+     "@pre_loop",
+     "in"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "owner_cart_b",
+   "prop": "cart_owner",
+   "channel": "track_progress",
+   "keys": [
+    [
+     52.1,
+     "@pre_loop"
+    ],
+    [
+     53.8,
+     "@loop_q1"
+    ],
+    [
+     56.5,
+     "@top_in",
+     "out"
+    ],
+    [
+     57.5,
+     "@top_out"
+    ],
+    [
+     59.8,
+     "@loop_out",
+     "in"
+    ],
+    [
+     62.9,
+     "@exit"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "demo_a",
+   "prop": "cart_demo",
+   "channel": "track_progress",
+   "keys": [
+    [
+     41.1,
+     "@top_in"
+    ],
+    [
+     44.0,
+     "@top_out"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "demo_b",
+   "prop": "cart_demo",
+   "channel": "track_progress",
+   "keys": [
+    [
+     44.0,
+     "@loop_q1"
+    ],
+    [
+     45.3,
+     "@top_in",
+     "in"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "demo_c",
+   "prop": "cart_demo",
+   "channel": "track_progress",
+   "keys": [
+    [
+     46.0,
+     "@pre_loop"
+    ],
+    [
+     47.6,
+     "@loop_in",
+     "in"
+    ],
+    [
+     48.2,
+     "@loop_q1"
+    ]
+   ]
+  },
+  {
+   "verb": "operate",
+   "id": "demo_d",
+   "prop": "cart_demo",
+   "channel": "track_progress",
+   "keys": [
+    [
+     48.2,
+     "@pre_loop"
+    ],
+    [
+     49.6,
+     "@loop_in",
+     "in"
+    ],
+    [
+     50.7,
+     "@loop_q1"
+    ]
+   ]
+  },
+  {
+   "verb": "emotion",
+   "id": "builder_determined_0.0",
+   "actor": "builder",
+   "t0": 0.0,
+   "emotion": "determined",
+   "blend": 0.25
+  },
+  {
+   "verb": "hold",
+   "actor": "builder",
+   "t0": 0.1,
+   "t1": 5.4,
+   "id": "teaser_grip",
+   "hands": {
+    "R": [
+     "hammer",
+     "grip_main"
+    ],
+    "L": [
+     "hammer",
+     "grip_twohand"
+    ]
+   }
+  },
+  {
+   "verb": "impact",
+   "id": "teaser_hit_1.1",
+   "actor": "builder",
+   "t": 1.1,
+   "at": [
+    "loop_owner",
+    "strike_spot"
+   ],
+   "kinds": [
+    "sparks"
+   ],
+   "strength": 1.0,
+   "shake": 0.1
+  },
+  {
+   "verb": "impact",
+   "id": "teaser_hit_2.0",
+   "actor": "builder",
+   "t": 2.0,
+   "at": [
+    "loop_owner",
+    "strike_spot"
+   ],
+   "kinds": [
+    "sparks"
+   ],
+   "strength": 1.0,
+   "shake": 0.1
+  },
+  {
+   "verb": "emotion",
+   "id": "builder_proud_2.6",
+   "actor": "builder",
+   "t0": 2.6,
+   "emotion": "proud",
+   "blend": 0.25
+  },
+  {
+   "verb": "emotion",
+   "id": "builder_sad_5.4",
+   "actor": "builder",
+   "t0": 5.4,
+   "emotion": "sad",
+   "blend": 0.25
+  },
+  {
+   "verb": "clasp",
+   "actor": "rival",
+   "t0": 7.0,
+   "t1": 9.7,
+   "id": "rival_smug_clasp",
+   "hands": {
+    "R": {
+     "local": [
+      0.3,
+      1.55
+     ]
+    },
+    "L": {
+     "local": [
+      0.3,
+      1.55
+     ]
+    }
+   }
+  },
+  {
+   "verb": "emotion",
+   "id": "rival_smug_7.0",
+   "actor": "rival",
+   "t0": 7.0,
+   "emotion": "smug",
+   "blend": 0.25
+  },
+  {
+   "verb": "emotion",
+   "id": "builder_neutral_9.7",
+   "actor": "builder",
+   "t0": 9.7,
+   "emotion": "neutral",
+   "blend": 0.25
+  },
+  {
+   "verb": "emotion",
+   "id": "builder_shocked_12.0",
+   "actor": "builder",
+   "t0": 12.0,
+   "emotion": "shocked",
+   "blend": 0.25
+  },
+  {
+   "verb": "impact",
+   "id": "dummy_dust",
+   "t": 12.35,
+   "at": [
+    "dummy",
+    "seat_hip"
+   ],
+   "kinds": [
+    "dust"
+   ],
+   "strength": 1.0,
+   "shake": 0.12
+  },
+  {
+   "verb": "clasp",
+   "actor": "builder",
+   "t0": 13.9,
+   "t1": 15.1,
+   "id": "builder_wring",
+   "hands": {
+    "R": {
+     "local": [
+      0.25,
+      1.55
+     ]
+    },
+    "L": {
+     "local": [
+      0.25,
+      1.55
+     ]
+    }
+   }
+  },
+  {
+   "verb": "emotion",
+   "id": "builder_worried_13.9",
+   "actor": "builder",
+   "t0": 13.9,
+   "emotion": "worried",
+   "blend": 0.25
+  },
+  {
+   "verb": "emotion",
+   "id": "builder_determined_14.7",
+   "actor": "builder",
+   "t0": 14.7,
+   "emotion": "determined",
+   "blend": 0.25
+  },
+  {
+   "verb": "hold",
+   "actor": "builder",
+   "t0": 15.3,
+   "t1": 21.0,
+   "id": "hammer_grip",
+   "hands": {
+    "R": [
+     "hammer",
+     "grip_main"
+    ],
+    "L": [
+     "hammer",
+     "grip_twohand"
+    ]
+   }
+  },
+  {
+   "verb": "impact",
+   "id": "strike_0",
+   "actor": "builder",
+   "t": 16.25,
+   "at": [
+    "loop_owner",
+    "strike_spot"
+   ],
+   "kinds": [
+    "sparks"
+   ],
+   "strength": 1.0,
+   "shake": 0.12
+  },
+  {
+   "verb": "impact",
+   "id": "strike_1",
+   "actor": "builder",
+   "t": 17.05,
+   "at": [
+    "loop_owner",
+    "strike_spot"
+   ],
+   "kinds": [
+    "sparks"
+   ],
+   "strength": 1.0,
+   "shake": 0.12
+  },
+  {
+   "verb": "impact",
+   "id": "strike_2",
+   "actor": "builder",
+   "t": 17.8,
+   "at": [
+    "loop_owner",
+    "strike_spot"
+   ],
+   "kinds": [
+    "sparks"
+   ],
+   "strength": 1.0,
+   "shake": 0.12
+  },
+  {
+   "verb": "impact",
+   "id": "strike_3",
+   "actor": "builder",
+   "t": 18.45,
+   "at": [
+    "loop_owner",
+    "strike_spot"
+   ],
+   "kinds": [
+    "sparks"
+   ],
+   "strength": 1.0,
+   "shake": 0.12
+  },
+  {
+   "verb": "impact",
+   "id": "strike_4",
+   "actor": "builder",
+   "t": 19.0,
+   "at": [
+    "loop_owner",
+    "strike_spot"
+   ],
+   "kinds": [
+    "sparks"
+   ],
+   "strength": 1.0,
+   "shake": 0.12
+  },
+  {
+   "verb": "emotion",
+   "id": "builder_worried_19.4",
+   "actor": "builder",
+   "t0": 19.4,
+   "emotion": "worried",
+   "blend": 0.25
+  },
+  {
+   "verb": "emotion",
+   "id": "rival_laugh_21.0",
+   "actor": "rival",
+   "t0": 21.0,
+   "emotion": "laugh",
+   "blend": 0.25
+  },
+  {
+   "verb": "emotion",
+   "id": "rival_smug_22.2",
+   "actor": "rival",
+   "t0": 22.2,
+   "emotion": "smug",
+   "blend": 0.25
+  },
+  {
+   "verb": "clasp",
+   "actor": "rival",
+   "t0": 23.2,
+   "t1": 26.3,
+   "id": "crank_grip",
+   "hands": {
+    "R": [
+     "turnbuckle",
+     "grip_handle"
+    ],
+    "L": [
+     "turnbuckle",
+     "grip_hub"
+    ]
+   }
+  },
+  {
+   "verb": "emotion",
+   "id": "rival_laugh_25.8",
+   "actor": "rival",
+   "t0": 25.8,
+   "emotion": "laugh",
+   "blend": 0.25
+  },
+  {
+   "verb": "impact",
+   "id": "twig_snap",
+   "t": 27.7,
+   "at": [
+    "cart_owner",
+    "seat"
+   ],
+   "kinds": [
+    "dust",
+    "sparks"
+   ],
+   "strength": 0.8,
+   "shake": 0.15
+  },
+  {
+   "verb": "emotion",
+   "id": "rival_proud_28.3",
+   "actor": "rival",
+   "t0": 28.3,
+   "emotion": "proud",
+   "blend": 0.25
+  },
+  {
+   "verb": "hold",
+   "actor": "rival",
+   "t0": 31.9,
+   "t1": 63.6,
+   "id": "rival_mount",
+   "blend": 0.6,
+   "root": [
+    "cart_rival",
+    "seat"
+   ]
+  },
+  {
+   "verb": "clasp",
+   "actor": "rival",
+   "t0": 31.9,
+   "t1": 63.6,
+   "id": "rival_bar",
+   "blend": 0.8,
+   "hands": {
+    "R": [
+     "cart_rival",
+     "bar"
+    ],
+    "L": [
+     "cart_rival",
+     "bar"
+    ]
+   }
+  },
+  {
+   "verb": "emotion",
+   "id": "rival_smug_31.9",
+   "actor": "rival",
+   "t0": 31.9,
+   "emotion": "smug",
+   "blend": 0.25
+  },
+  {
+   "verb": "hold",
+   "actor": "builder",
+   "t0": 34.0,
+   "t1": 63.6,
+   "id": "builder_mount",
+   "blend": 0.6,
+   "root": [
+    "cart_owner",
+    "seat"
+   ]
+  },
+  {
+   "verb": "clasp",
+   "actor": "builder",
+   "t0": 34.0,
+   "t1": 63.6,
+   "id": "builder_bar",
+   "blend": 0.8,
+   "hands": {
+    "R": [
+     "cart_owner",
+     "bar"
+    ],
+    "L": [
+     "cart_owner",
+     "bar"
+    ]
+   }
+  },
+  {
+   "verb": "emotion",
+   "id": "builder_worried_34.0",
+   "actor": "builder",
+   "t0": 34.0,
+   "emotion": "worried",
+   "blend": 0.25
+  },
+  {
+   "verb": "emotion",
+   "id": "builder_shocked_37.3",
+   "actor": "builder",
+   "t0": 37.3,
+   "emotion": "shocked",
+   "blend": 0.25
+  },
+  {
+   "verb": "emotion",
+   "id": "builder_panic_40.0",
+   "actor": "builder",
+   "t0": 40.0,
+   "emotion": "panic",
+   "blend": 0.25
+  },
+  {
+   "verb": "impact",
+   "id": "flip",
+   "t": 45.3,
+   "at": [
+    "cart_demo",
+    "seat"
+   ],
+   "kinds": [
+    "dust",
+    "sparks"
+   ],
+   "strength": 1.2,
+   "shake": 0.2
+  },
+  {
+   "verb": "impact",
+   "id": "perfect_circle_bottom",
+   "t": 49.6,
+   "at": [
+    "loop_rival",
+    "bottom"
+   ],
+   "kinds": [
+    "dust"
+   ],
+   "strength": 1.0,
+   "shake": 0.1
+  },
+  {
+   "verb": "impact",
+   "id": "dummy_dust2",
+   "t": 51.2,
+   "at": [
+    "dummy",
+    "seat_hip"
+   ],
+   "kinds": [
+    "dust",
+    "sparks"
+   ],
+   "strength": 1.0,
+   "shake": 0.12
+  },
+  {
+   "verb": "emotion",
+   "id": "builder_determined_52.0",
+   "actor": "builder",
+   "t0": 52.0,
+   "emotion": "determined",
+   "blend": 0.25
+  },
+  {
+   "verb": "emotion",
+   "id": "builder_proud_53.2",
+   "actor": "builder",
+   "t0": 53.2,
+   "emotion": "proud",
+   "blend": 0.25
+  },
+  {
+   "verb": "emotion",
+   "id": "builder_shocked_56.6",
+   "actor": "builder",
+   "t0": 56.6,
+   "emotion": "shocked",
+   "blend": 0.25
+  },
+  {
+   "verb": "emotion",
+   "id": "builder_laugh_58.2",
+   "actor": "builder",
+   "t0": 58.2,
+   "emotion": "laugh",
+   "blend": 0.25
+  },
+  {
+   "verb": "emotion",
+   "id": "rival_panic_60.2",
+   "actor": "rival",
+   "t0": 60.2,
+   "emotion": "panic",
+   "blend": 0.25
+  },
+  {
+   "verb": "impact",
+   "id": "finale_crash",
+   "t": 61.2,
+   "at": [
+    "loop_rival",
+    "bottom"
+   ],
+   "kinds": [
+    "sparks",
+    "dust"
+   ],
+   "strength": 1.7,
+   "shake": 0.35
+  }
+ ]
+}
