@@ -58,8 +58,8 @@ class StoryDirector:
         bpy.context.scene.camera = self.camera
         
         # Render resolution (9:16 portrait)
-        bpy.context.scene.render.resolution_x = 720
-        bpy.context.scene.render.resolution_y = 1280
+        bpy.context.scene.render.resolution_x = 1080
+        bpy.context.scene.render.resolution_y = 1920
         bpy.context.scene.render.resolution_percentage = 100
         bpy.context.scene.render.fps = 30
         bpy.context.scene.render.use_compositing = False
@@ -113,12 +113,14 @@ class StoryDirector:
         os.makedirs(out_dir, exist_ok=True)
         bpy.context.scene.render.filepath = os.path.join(out_dir, "f")
         bpy.context.scene.render.image_settings.file_format = 'PNG'
+        if hasattr(bpy.context.scene, 'eevee'):
+            bpy.context.scene.eevee.taa_render_samples = samples
         
         print(f"=====================================================")
         print(f"[Gemini] Rendering frames {start_f} to {end_f}")
         print(f"=====================================================")
         
-        for f in range(start_f, end_f):
+        for f in range(start_f, end_f + 1):
             bpy.context.scene.frame_set(f)
             self.apply_frame_actions(f)
             
